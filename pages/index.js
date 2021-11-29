@@ -27,35 +27,32 @@ export default function Home() {
             </a>
           </Link>
 
-          <a
-            href="https://iloveto.fish/about"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about stuff!
-            </p>
-          </a>
+          <Link href="/about">
+            <a className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600">
+              <h3 className="text-2xl font-bold">Learn &rarr;</h3>
+              <p className="mt-4 text-xl">
+                Learn about stuff!
+              </p>
+            </a>
+          </Link>
 
-          <a
-            href="https://iloveto.fish/landskein"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Landskein &rarr;</h3>
-            <p className="mt-4 text-xl">
-              What the heck is a landskein?
-            </p>
-          </a>
+          <Link href="/landskein">
+            <a className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600">
+              <h3 className="text-2xl font-bold">Landskein &rarr;</h3>
+              <p className="mt-4 text-xl">
+                What the heck is landskein?
+              </p>
+            </a>
+          </Link>
 
-          <a
-            href="https://iloveto.fish/stuff"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Stuff &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Stuff!
-            </p>
-          </a>
+          <Link href="/stuff">
+            <a className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600">
+              <h3 className="text-2xl font-bold">Stuff &rarr;</h3>
+              <p className="mt-4 text-xl">
+                Stuff!
+              </p>
+            </a>
+          </Link>
         </div>
       </main>
 
