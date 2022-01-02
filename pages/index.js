@@ -1,9 +1,12 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
+import Footer from '../pages/components/footer'
+
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className='bg-neutral-500'>
+      <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
         <title>I Love To Fish</title>
         <link rel="icon" href="/favicon.png" />
@@ -13,8 +16,8 @@ export default function Home() {
         <h1 className="text-6xl font-bold">
           Welcome to{' '}
           <Link href="/">
-            <a className="text-blue-600">iloveto.fish!</a>
-          </Link>
+            <a className="text-blue-600">iloveto.fish</a>
+          </Link>!
         </h1>
 
         <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
@@ -55,31 +58,8 @@ export default function Home() {
           </Link>
         </div>
       </main>
-
-      <footer className="text-gray-800 w-full px-2 text-center text-xs flex flex-row justify-between">
-            <div>
-              <p>© {new Date().getFullYear()} I Love To Fish&nbsp;</p>
-            </div>
-
-            <div>
-                <p>
-                    Another&nbsp;
-                    <a
-                    href="https://mountaintopcoding.dev"
-                    className="text-blue-600 hover:text-pink-700"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >
-                    mountainTopCoding(
-                    <span role="img" aria-label="mountain with snow-cap">
-                        &#127956;
-                    </span>
-                    );
-                    </a>{' '}
-                    project
-                </p>
-            </div>
-        </footer>
+    </div>
+    <Footer />
     </div>
   )
 }
