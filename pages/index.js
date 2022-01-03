@@ -5,57 +5,56 @@ import Footer from '../pages/components/footer'
 
 export default function Home() {
   return (
-    <div className='bg-neutral-500'>
-      <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className='heropattern-bubbles-neutral-100'>
+      <div className="flex flex-col items-center justify-center h-screen py-2">
       <Head>
         <title>I Love To Fish</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
+      <header className='w-full ml-2'>
+        <h1 className="text-6xl font-bold">
+            <a className="text-amber-400">iloveto.fish</a>
+        </h1>
+      </header>
 
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <Link href="/">
-            <a className="text-blue-600">iloveto.fish</a>
-          </Link>!
-        </h1>
+        {/*Grid columns */}
+        <div className='grid grid-cols-6 gap-4'>
+        
+          <div className='col-start-2 col-span-4 w-96 h-48 flex justify-center'>
+            <Link href="/prose">
+            <a className="text-fuchsia-400 hover:text-indigo-500">
+                <h3 className="text-2xl font-extrabold">Prose &rarr;</h3>
+              </a>
+            </Link>
+          </div>
 
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <Link href="/blog">
-          <a className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600">
-              <h3 className="text-2xl font-bold">Blog &rarr;</h3>
-              <p className="mt-4 text-xl">
-                Read about fishing here...
-              </p>
-            </a>
-          </Link>
+          <div className='col-start-1 col-end-3 h-48 flex justify-center'>
+            <Link href="/landskein">
+              <a className="text-rose-400 hover:text-indigo-500">
+                <h3 className="text-2xl font-extrabold">Landskein &rarr;</h3>
+              </a>
+            </Link>
+          </div>
 
-          <Link href="/about">
-            <a className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600">
-              <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-              <p className="mt-4 text-xl">
-                Learn about stuff!
-              </p>
-            </a>
-          </Link>
+          <div className='col-end-7 col-span-2 h-48 flex justify-center'>
+            <Link href="/skiing">
+              <a className="text-teal-400 hover:text-indigo-500">
+                <h3 className="text-2xl font-extrabold">Skiing &rarr;</h3>
+              </a>
+            </Link>
+          </div>
 
-          <Link href="/landskein">
-            <a className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600">
-              <h3 className="text-2xl font-bold">Landskein &rarr;</h3>
-              <p className="mt-4 text-xl">
-                What the heck is landskein?
-              </p>
-            </a>
-          </Link>
+          {/*Empty Div */}
+          <div></div>
 
-          <Link href="/stuff">
-            <a className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600">
-              <h3 className="text-2xl font-bold">Stuff &rarr;</h3>
-              <p className="mt-4 text-xl">
-                Stuff!
-              </p>
-            </a>
-          </Link>
+          <div className='col-start-1 col-span-7 h-48 flex justify-center'>
+            <Link href="/veganism">
+              <a className="text-lime-400 hover:text-blue-600">
+                <h3 className="text-2xl font-extrabold">Veganism &rarr;</h3>
+              </a>
+            </Link>
+          </div>
         </div>
       </main>
     </div>
