@@ -34,7 +34,7 @@ const Blog = () => {
             </header>
             <div className='max-w-6xl mx-auto h-screen'>
             <h1 className="text-2xl bg-fuchsia-400 flex flex-row justify-center text-neutral-100 rounded-xl mt-1">Venue for my thoughts, adventures, and ideas. Read at your own risk...</h1>
-            <Link href="/blog/bouldering">
+            <Link href="/prose/bouldering">
                 <a className='underline text-amber-500'>
                 <p>Boulders</p>
                 </a>
