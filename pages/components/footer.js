@@ -5,8 +5,8 @@ const Footer = () => {
     <div className='flex items-center justify-between bg-rose-200'>
       <div className='text-slate-500'>
         <p className='ml-1'>© 2021 - {new Date().getFullYear()}, Built with&nbsp;
-          <a href="https://nextjs.org/" class="text-indigo-500 hover:text-amber-400" target="_blank" rel="noopener noreferrer">Next.js</a> &&nbsp;
-          <a  href="https://tailwindcss.com" class="text-indigo-500 hover:text-lime-400" target="_blank" rel="noopener noreferrer">TailwindCSS</a>.
+          <a href="https://nextjs.org/" className="text-indigo-500 hover:text-amber-400" target="_blank" rel="noopener noreferrer">Next.js</a> &&nbsp;
+          <a  href="https://tailwindcss.com" className="text-indigo-500 hover:text-lime-400" target="_blank" rel="noopener noreferrer">TailwindCSS</a>.
         </p>
       </div>
       <div className='text-slate-500'>
