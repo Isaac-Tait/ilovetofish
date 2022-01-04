@@ -54,8 +54,8 @@ const Bouldering = () => {
                             alt={"Exit Strategy"}
                         />
                     </div>
-                    <p className='flex justify-center text-xs italic'>The backside of "Sponge Bob V1" - the overhang is "Exit Strategy" and the blank face to the right is "Dancing in the Sky" both are V1</p>
-                    <p>It has been a fun project developing this "new" climbing area. There is another huge boulder off by itself on top of the ridge overlooking the boulder field. Unfortunately it is located on private property - and therefore I did not climb it. I call it "The Castle".</p>
+                    <p className='flex justify-center text-xs italic'>The backside of &#34;Sponge Bob V1&#34; - the overhang is &#34;Exit Strategy&#34; and the blank face to the right is &#34;Dancing in the Sky&#34; both are V1</p>
+                    <p>It has been a fun project developing this &#34;new&#34; climbing area. There is another huge boulder off by itself on top of the ridge overlooking the boulder field. Unfortunately it is located on private property - and therefore I did not climb it. I call it &#34;The Castle&#34;.</p>
                     <div className='flex justify-center'>
                         <Image 
                             src='/images/boulder-project.jpg'
