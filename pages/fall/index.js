@@ -6,7 +6,7 @@ import Footer from '../components/footer';
 const Blog = () => {
     return (
         <div className='heropattern-topography-indigo-100'>
-            <header className='w-full ml-2 flex flex-wrap justify-between'>
+            <header className='flex flex-wrap justify-between'>
                 <div className='lg:w-1/3'>
                     <h1 className="text-6xl font-bold">
                         <Link href={'/'}>

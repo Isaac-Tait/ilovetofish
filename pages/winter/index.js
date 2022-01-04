@@ -6,7 +6,7 @@ import Footer from '../components/footer';
 const Skiing = () => {
     return (
         <div className='heropattern-topography-violet-100'>
-            <header className='w-full ml-2 flex flex-wrap justify-between'>
+            <header className='flex flex-wrap justify-between'>
                 <div className='lg:w-1/3'>
                     <h1 className="text-6xl font-bold">
                         <Link href={'/'}>
@@ -33,7 +33,7 @@ const Skiing = () => {
                 </div>
             </header>
             <div className='max-w-6xl mx-auto h-screen px-1'>
-                <h1 className="text-2xl bg-teal-400 flex flex-row justify-center text-neutral-100 rounded-xl mt-1">Gliding on snow...</h1>
+                <h1 className="text-2xl bg-teal-400 flex flex-row justify-center text-neutral-100 rounded-xl mt-1">Winter</h1>
             </div>
             <Footer />
         </div>

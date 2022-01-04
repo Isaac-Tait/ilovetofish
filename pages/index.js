@@ -11,13 +11,13 @@ export default function Home() {
           <title>I Love To Fish</title>
           <link rel="icon" href="/favicon.png" />
         </Head>
-        <header className='w-full ml-2'>
+        <header className='w-full pl-1'>
           <h1 className="text-6xl font-bold">
               <a className="text-amber-400">iloveto.fish</a>
           </h1>
         </header>
 
-        <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
+        <main className="flex flex-col items-center justify-center flex-1 px-20 text-center">
           {/*Grid columns */}
           <div className='md:grid grid-cols-6 md:gap-4'>
           
@@ -54,10 +54,7 @@ export default function Home() {
             </div>
           </div>
         </main>
-      
-      <div className=''>
-        <Footer />
-      </div>
+      <Footer />
     </div>
   )
 }
