@@ -7,38 +7,38 @@ import Footer from '../components/footer'
 const Bouldering = () => {
     return (
         <div className='heropattern-topography-neutral-100'>
-        <header className='w-full ml-2 flex flex-wrap justify-between'>
-                <div className='w-1/3'>
-                    <h1 className="text-6xl font-bold">
-                        <Link href={'/'}>
-                            <a className="text-amber-400">iloveto.fish</a>
-                        </Link>
-                    </h1>
-                </div>
-                <div className='w-2/3 flex my-auto justify-between'>
-                    <h3 className='text-xl font-semibold'>
-                        <Link href={'/skiing'}>
-                            <a className="text-teal-400 hover:text-indigo-500">Skiing</a>
-                        </Link>
-                    </h3>
-                    <h3 className='text-xl font-semibold'>
-                        <Link href={'/landskein'}>
-                            <a className="text-rose-400 hover:text-indigo-500">Landskein</a>
-                        </Link>
-                    </h3>
-                    <h3 className='text-xl font-semibold'>
-                        <Link href={'/veganism'}>
-                            <a className="text-lime-400 hover:text-indigo-500">Veganism</a>
-                        </Link>
-                    </h3>
-                    <h3 className='text-xl font-semibold mr-4'>
-                        <Link href={'/prose'}>
-                            <a className="text-fuchsia-400 hover:text-indigo-500">Prose</a>
-                        </Link>
-                    </h3>
-                </div>
-            </header>
-            <div className='h-screen max-w-6xl mx-auto'>
+            <header className='w-full ml-2 flex flex-wrap justify-between'>
+                    <div className='lg:w-1/3'>
+                        <h1 className="text-6xl font-bold">
+                            <Link href={'/'}>
+                                <a className="text-amber-400">iloveto.fish</a>
+                            </Link>
+                        </h1>
+                    </div>
+                    <div className='lg:w-2/3 flex my-auto justify-between'>
+                        <h3 className='text-xl font-semibold'>
+                            <Link href={'/skiing'}>
+                                <a className="text-teal-400 hover:text-indigo-500">Skiing</a>
+                            </Link>
+                        </h3>
+                        <h3 className='text-xl font-semibold'>
+                            <Link href={'/landskein'}>
+                                <a className="text-rose-400 hover:text-indigo-500">Landskein</a>
+                            </Link>
+                        </h3>
+                        <h3 className='text-xl font-semibold'>
+                            <Link href={'/veganism'}>
+                                <a className="text-lime-400 hover:text-indigo-500">Veganism</a>
+                            </Link>
+                        </h3>
+                        <h3 className='text-xl font-semibold mr-4'>
+                            <Link href={'/prose'}>
+                                <a className="text-fuchsia-400 hover:text-indigo-500">Prose</a>
+                            </Link>
+                        </h3>
+                    </div>
+                </header>
+            <div className='h-screen max-w-6xl mx-auto overflow-y-scroll px-1'>
                 <h1 className='text-2xl font-semibold text-emerald-600 flex justify-center'>Morgan R. Chaney Sanctuary</h1>
                 <p>So, there I was hiking through the woods when I saw as if an apparition the tops of several large boulders sticking up above the foliage of Azalea bushes.</p>
                 <p>I had to get in for a closer look!</p>
