@@ -22,33 +22,33 @@ export default function Home() {
           <div className='md:grid grid-cols-6 md:gap-4'>
           
             <div className='col-start-2 col-span-4 h-20 md:h-48 flex justify-center'>
-              <Link href="/prose">
+              <Link href="/fall">
               <a className="text-fuchsia-400 hover:text-indigo-500">
-                  <h3 className="text-2xl font-extrabold">Prose &rarr;</h3>
+                  <h3 className="text-2xl font-extrabold">Fall &rarr;</h3>
                 </a>
               </Link>
             </div>
 
             <div className='col-start-1 col-end-3 h-20 md:h-48 flex justify-center'>
-              <Link href="/landskein">
+              <Link href="/summer">
                 <a className="text-rose-400 hover:text-indigo-500">
-                  <h3 className="text-2xl font-extrabold">Landskein &rarr;</h3>
+                  <h3 className="text-2xl font-extrabold">Summer &rarr;</h3>
                 </a>
               </Link>
             </div>
 
             <div className='col-end-7 col-span-2 h-20 md:h-48 flex justify-center'>
-              <Link href="/skiing">
+              <Link href="/winter">
                 <a className="text-teal-400 hover:text-indigo-500">
-                  <h3 className="text-2xl font-extrabold">Skiing &rarr;</h3>
+                  <h3 className="text-2xl font-extrabold">Winter &rarr;</h3>
                 </a>
               </Link>
             </div>
 
             <div className='col-start-1 col-span-7 h-20 md:h-48 flex justify-center'>
-              <Link href="/veganism">
+              <Link href="/spring">
                 <a className="text-lime-400 hover:text-blue-600">
-                  <h3 className="text-2xl font-extrabold">Veganism &rarr;</h3>
+                  <h3 className="text-2xl font-extrabold">Spring &rarr;</h3>
                 </a>
               </Link>
             </div>

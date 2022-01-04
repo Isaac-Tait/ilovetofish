@@ -3,9 +3,9 @@ import Link from 'next/link';
 
 import Footer from '../components/footer';
 
-const Landskein = () => {
+const Vegan = () => {
     return (
-        <div className='heropattern-topography-lime-100'>
+        <div className='heropattern-topography-rose-100'>
             <header className='w-full ml-2 flex flex-wrap justify-between'>
                 <div className='lg:w-1/3'>
                     <h1 className="text-6xl font-bold">
@@ -16,28 +16,28 @@ const Landskein = () => {
                 </div>
                 <div className='lg:w-2/3 flex my-auto justify-between'>
                     <h3 className='text-xl font-semibold'>
-                        <Link href={'/skiing'}>
-                            <a className="text-teal-400 hover:text-indigo-500">Skiing</a>
+                        <Link href={'/winter'}>
+                            <a className="text-teal-400 hover:text-indigo-500">Winter</a>
                         </Link>
                     </h3>
                     <h3 className='text-xl font-semibold'>
-                        <Link href={'/prose'}>
-                            <a className="text-fuchsia-400 hover:text-indigo-500">Prose</a>
+                        <Link href={'/summer'}>
+                            <a className="text-rose-400 hover:text-indigo-500">Summer</a>
                         </Link>
                     </h3>
                     <h3 className='text-xl font-semibold mr-4'>
-                        <Link href={'/veganism'}>
-                            <a className="text-lime-400 hover:text-indigo-500">Veganism</a>
+                        <Link href={'/fall'}>
+                            <a className="text-fuchsia-400 hover:text-indigo-500">Spring</a>
                         </Link>
                     </h3>
                 </div>
             </header>
             <div className='max-w-6xl mx-auto h-screen px-1'>
-                <h1 className="text-2xl bg-rose-400 flex flex-row justify-center text-neutral-100 rounded-xl mt-1">What the heck is landskein???</h1>
+                <h1 className="text-2xl bg-lime-400 flex flex-row justify-center text-neutral-100 rounded-xl mt-1">Eating plants...</h1>
             </div>
             <Footer />
         </div>
     );
 }
 
-export default Landskein;
+export default Vegan;
