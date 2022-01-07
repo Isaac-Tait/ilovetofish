@@ -98,7 +98,7 @@ const Bouldering = () => {
                             alt={"Exit Strategy"}
                         />
                     </div>
-                    <p className='flex justify-center text-xs italic'>The approach</p>
+                    <p className='flex justify-center text-xs italic'>The approach..</p>
                 </div>
             <Footer />
         </div>
