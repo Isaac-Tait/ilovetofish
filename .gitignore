@@ -12,6 +12,9 @@
 /.next/
 /out/
 
+# Font Awesome
+.npmrc
+
 # production
 /build
 

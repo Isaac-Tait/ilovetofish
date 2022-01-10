@@ -7,10 +7,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-pro": "^5.15.4",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/pro-light-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
+    "add": "^2.0.6",
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "tailwindcss-hero-patterns": "^0.0.1"
+    "tailwindcss-hero-patterns": "^0.0.1",
+    "yarn": "^1.22.17"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.1",
