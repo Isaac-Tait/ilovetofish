@@ -30,7 +30,7 @@ export default function Home() {
           <div className='col-start-1 col-end-3 h-20 md:h-48 flex justify-center'>
             <Link href="/summer">
               <a className="text-rose-400 hover:text-indigo-500 my-auto">
-              <FontAwesomeIcon icon={['fal', 'cloud-sun-rain']} className='h-14' />
+                <FontAwesomeIcon icon={['fal', 'cloud-sun-rain']} className='h-14' />
               </a>
             </Link>
           </div>
@@ -38,8 +38,8 @@ export default function Home() {
           <div className='col-end-8 col-span-3 flex justify-center'>
             <Link href="/fall">
               <a className="text-fuchsia-400 hover:text-indigo-500 my-auto">
-              <FontAwesomeIcon icon={['fal', 'leaf-maple']} className='h-14' />
-                </a>
+                <FontAwesomeIcon icon={['fal', 'leaf-maple']} className='h-14' />
+              </a>
               </Link>
           </div>
 
