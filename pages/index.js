@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import Header from '../pages/components/header'
 import Footer from '../pages/components/footer'
 
 export default function Home() {
@@ -11,11 +13,9 @@ export default function Home() {
         <title>I Love To Fish</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <header className='w-full pl-1'>
-        <h1 className="text-6xl font-bold">
-            <a className="text-amber-400">iloveto.fish</a>
-        </h1>
-      </header>
+      <div className='pl-1'>
+        <Header />
+      </div>
       <main className="flex-1">
         {/*Grid columns */}
         <div className='md:grid grid-cols-6 md:gap-4 max-w-6xl mx-auto mt-20'>

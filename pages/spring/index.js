@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Footer from '../components/footer';
 
-const Vegan = () => {
+const Spring = () => {
     return (
         <div className='heropattern-topography-rose-100'>
             <header className='flex flex-wrap justify-between'>
@@ -49,4 +49,4 @@ const Vegan = () => {
     );
 }
 
-export default Vegan;
+export default Spring;
