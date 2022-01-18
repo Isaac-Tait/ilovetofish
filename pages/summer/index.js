@@ -3,19 +3,14 @@ import Link from 'next/link';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import Header from '../components/header'
 import Footer from '../components/footer';
 
 const Summer = () => {
     return (
         <div className='heropattern-topography-lime-100'>
             <header className='flex flex-wrap justify-between'>
-                <div className='lg:w-1/3'>
-                    <h1 className="text-6xl font-bold">
-                        <Link href={'/'}>
-                            <a className="text-amber-400">iloveto.fish</a>
-                        </Link>
-                    </h1>
-                </div>
+                <Header />
                 <div className='lg:w-2/3 flex my-auto justify-between'>
                     <h3 className='text-xl font-semibold'>
                         <Link href={'/spring'}>

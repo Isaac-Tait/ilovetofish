@@ -36,14 +36,14 @@ const Blog = () => {
                 </div>
             </header>
             <div className='max-w-6xl mx-auto h-screen px-1'>
-            <h1 className="text-2xl bg-fuchsia-400 flex flex-row justify-center text-neutral-100 rounded-xl mt-1">Venue for my thoughts, adventures, and ideas. Read at your own risk...</h1>
-            <Link href="/fall/bouldering">
-                <a className='underline text-amber-500'>
-                <p>Boulders</p>
-                </a>
-            </Link>
-            <p>I like to climb rocks. So, imagine my excitement when I discoverd a collection of boulders not too far from home...</p>
-        </div>
+                <h1 className="text-2xl bg-fuchsia-400 flex flex-row justify-center text-neutral-100 rounded-xl mt-1">Fall</h1>
+                    <Link href="/fall/bouldering">
+                        <a className='underline text-amber-500'>
+                        <p>Boulders</p>
+                        </a>
+                    </Link>
+                <p>I like to climb rocks. So, imagine my excitement when I discoverd a collection of boulders not too far from home...</p>
+            </div>
             <Footer />
         </div>
     );
