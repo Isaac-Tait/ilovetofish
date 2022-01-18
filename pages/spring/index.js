@@ -9,7 +9,7 @@ import Footer from '../components/footer';
 const Spring = () => {
     return (
         <div className='heropattern-topography-rose-100'>
-            <header className='flex flex-wrap justify-between'>
+            <header className='lg:flex lg:flex-wrap lg:justify-between mx-1'>
                 <Header />
                 <div className='lg:w-2/3 flex my-auto justify-between'>
                     <h3 className='text-xl font-semibold'>
