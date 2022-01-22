@@ -43,6 +43,13 @@ const Blog = () => {
                         </a>
                     </Link>
                 <p>I like to climb rocks. So, imagine my excitement when I discoverd a collection of boulders not too far from home...</p>
+
+                <Link href="/fall/october">
+                    <a className='underline text-amber-500'>
+                    <p>October</p>
+                    </a>
+                </Link>
+                <p>It has been too long since I chased down obscure blue lines on a map to see if they held trout. It was time to brush off the cobwebs...</p>
             </div>
             <Footer />
         </div>
