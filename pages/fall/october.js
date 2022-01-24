@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -6,8 +6,73 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Header from '../components/header'
 import Footer from '../components/footer'
+import { mapImageResources, search, getFolders } from '../../lib/cloudinary';
 
-const October = () => {
+export default function October({ images: defaultImages, nextCursor: defaultNextCursor, folders }) {
+    const [images, setImages] = useState(defaultImages);
+    const [nextCursor, setNextCursor] = useState(defaultNextCursor);
+    const [activeFolder, setActiveFolder] = useState('');
+    //console.log('images', images)
+    //console.log('nextCursor', nextCursor)
+    //console.log('activeFolder', activeFolder)
+
+    async function handleLoadMore(event) {
+        event.preventDefault();
+
+        const results = await fetch('/api/search', {
+            method: 'POST',
+            body: JSON.stringify({
+                nextCursor,
+                expression: `folder=${activeFolder}`,
+            })
+        }).then(r => r.json());
+
+        const { resources, next_cursor: updatedNextCursor } = results;
+        const images = mapImageResources(resources);
+
+        setImages(prev => {
+            return [
+                ...prev,
+                ...images
+            ]
+        })
+
+        setNextCursor(updatedNextCursor);
+    }
+
+    function handleOnFolderClick(event) {
+        const folderPath = event.target.dataset.folderPath;
+        setActiveFolder(folderPath);
+        setNextCursor(undefined);
+        setImages([]);
+    }
+
+    useEffect(() => {
+        (async function run() {
+
+            const results = await fetch('/api/search', {
+                method: 'POST',
+                body: JSON.stringify({
+                    nextCursor, 
+                    expression: `folder="${activeFolder}"`,
+                })
+            }).then(r => r.json());
+
+            const { resources, next_cursor: updatedNextCursor } = results;
+            const images = mapImageResources(resources);
+
+            setImages(prev => {
+                return [
+                    ...prev,
+                    ...images
+                ]
+            })
+
+            setNextCursor(updatedNextCursor);
+
+        })
+    })
+
     return (
         <div className='heropattern-topography-neutral-100'>
             <header className='w-full ml-2 flex flex-wrap justify-between'>
@@ -45,27 +110,54 @@ const October = () => {
             </header>
             <div className='h-screen max-w-6xl mx-auto overflow-y-scroll px-1'>
                 <h1 className='text-2xl font-semibold text-emerald-600 flex justify-center'>October</h1>
-                <p>More text here{' '}<a 
-                    href="https://www.thatscandinavianfeeling.com/lifestyle/norwegian-concept-koselig" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className='underline text-teal-400 hover:text-indigo-400'
-                >here</a>.</p>
-                <p>Text</p>
+                <p>A collection of images of my fishing adventures </p>
+            <h1 className='font-semibold'>Image Collections</h1>
                 <div className='flex justify-center'>
-                    <Image 
-                        src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1642812149/iloveto.fish/ilovetofish-connecticut-new_england-fishing-tenkara-clouds_3_vmloxr.jpg'
-                        height={562}
-                        width={750}
-                        className='rounded-lg'
-                        alt={"Project"}
-                    />
+                    <ul onClick={handleOnFolderClick}>
+                        {folders.map(folder => {
+                            return (
+                            <li key={folder.path} className=''>
+                                <button data-folder-path={folder.path}>{ folder.name }</button>
+                            </li>
+                            )
+                        })}
+                    </ul>
                 </div>
-                <p className='flex justify-center text-xs italic'>This is a photo caption</p>
+
+                <h1 className='font-semibold underline'>Images</h1>
+                <ul>
+                    {images.map(image => {
+                        return (
+                        <li key={image.id}>
+                            <a href={image.link} rel="noreferrer">
+                            <div className='w-1/2 mx-auto'>
+                                <Image width={image.width} height={image.height} src={image.image} alt="" />
+                            </div>
+                            </a>
+                        </li>
+                        )
+                    })}
+                </ul>            
             </div>
             <Footer />
         </div>
         )
     }
 
-    export default October;
+    export async function getStaticProps() {
+        const results = await search({
+            expression: 'folder=""'
+        });
+        
+        const { resources, next_cursor: nextCursor } = results;
+        const images = mapImageResources(resources);
+        const { folders } = await getFolders();
+        //console.log('folders', folders)
+        return {
+          props: {
+            images,
+            nextCursor: nextCursor || false,
+            folders
+          }
+        }
+      };
