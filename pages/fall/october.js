@@ -8,71 +8,7 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 import { mapImageResources, search, getFolders } from '../../lib/cloudinary';
 
-export default function October({ images: defaultImages, nextCursor: defaultNextCursor, folders }) {
-    const [images, setImages] = useState(defaultImages);
-    const [nextCursor, setNextCursor] = useState(defaultNextCursor);
-    const [activeFolder, setActiveFolder] = useState('');
-    //console.log('images', images)
-    //console.log('nextCursor', nextCursor)
-    //console.log('activeFolder', activeFolder)
-
-    async function handleLoadMore(event) {
-        event.preventDefault();
-
-        const results = await fetch('/api/search', {
-            method: 'POST',
-            body: JSON.stringify({
-                nextCursor,
-                expression: `folder=${activeFolder}`,
-            })
-        }).then(r => r.json());
-
-        const { resources, next_cursor: updatedNextCursor } = results;
-        const images = mapImageResources(resources);
-
-        setImages(prev => {
-            return [
-                ...prev,
-                ...images
-            ]
-        })
-
-        setNextCursor(updatedNextCursor);
-    }
-
-    function handleOnFolderClick(event) {
-        const folderPath = event.target.dataset.folderPath;
-        setActiveFolder(folderPath);
-        setNextCursor(undefined);
-        setImages([]);
-    }
-
-    useEffect(() => {
-        (async function run() {
-
-            const results = await fetch('/api/search', {
-                method: 'POST',
-                body: JSON.stringify({
-                    nextCursor, 
-                    expression: `folder="${activeFolder}"`,
-                })
-            }).then(r => r.json());
-
-            const { resources, next_cursor: updatedNextCursor } = results;
-            const images = mapImageResources(resources);
-
-            setImages(prev => {
-                return [
-                    ...prev,
-                    ...images
-                ]
-            })
-
-            setNextCursor(updatedNextCursor);
-
-        })
-    })
-
+export default function October() {
     return (
         <div className='heropattern-topography-neutral-100'>
             <header className='w-full ml-2 flex flex-wrap justify-between'>
@@ -143,21 +79,3 @@ export default function October({ images: defaultImages, nextCursor: defaultNext
         </div>
         )
     }
-
-    export async function getStaticProps() {
-        const results = await search({
-            expression: 'folder=""'
-        });
-        
-        const { resources, next_cursor: nextCursor } = results;
-        const images = mapImageResources(resources);
-        const { folders } = await getFolders();
-        //console.log('folders', folders)
-        return {
-          props: {
-            images,
-            nextCursor: nextCursor || false,
-            folders
-          }
-        }
-      };
