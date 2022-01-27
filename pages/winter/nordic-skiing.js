@@ -4,12 +4,12 @@ import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Carousel } from 'react-responsive-carousel';
 
-import Slide from '../components/slide';
+import Slide from  '../components/slide'
 import Header from '../components/header'
 import Footer from '../components/footer'
 
 const NordicSkiing = () => {
-    
+    const customRenderItem = (item, props) => <item.type {...item.props} {...props} />;
 
     return (
         <div className='heropattern-topography-neutral-100'>
@@ -49,7 +49,7 @@ const NordicSkiing = () => {
             <div className='h-screen max-w-6xl mx-auto overflow-y-scroll px-1'>
                 <h1 className='text-2xl font-semibold text-emerald-600 flex justify-center'>Title</h1>
                 <Carousel
-                    
+                    renderItem={customRenderItem}
                     showThumbs={true}
                 >
                     <Slide
