@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import Link from 'next/link'
+import Image from 'next/image'
 
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
@@ -142,6 +143,40 @@ export default function NordicSkiing() {
                
                 <p>I think I am done paying astronomical prices for downhill skiing. Every year the slopes are getting more and more crowded (I used to be able go midweek and have no lift lines, that is no longer true). It seems every year I have more and more close calls with idiot snow boarders trying to prove something for the Instagram followers too.</p>
                 <p>With Nordic skiing you do not have all that drama... at least for now. Hopefully the exertion required will keep the average American away. Only time will tell.</p>
+            
+                <div className='flex justify-between'>
+                    <Image 
+                        src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643297375/Prospect%20Mountain/vertical/nordicSkiing_ProspectMountain-Vermont-Bennington-skiing-crossCountry-running_c7glqx.jpg'
+                        height={725}
+                        width={540}
+                        className='rounded-lg'
+                        alt={"Project"}
+                    />
+                    <Image 
+                        src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643297375/Prospect%20Mountain/vertical/nordicSkiing_ProspectMountain-Vermont-Bennington-skiing-crossCountry-cabin_s1o58j.jpg'
+                        height={725}
+                        width={540}
+                        className='rounded-lg'
+                        alt={"Project"}
+                    />
+                </div>
+
+                <div className='flex justify-between mt-2'>
+                    <Image 
+                        src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643297375/Prospect%20Mountain/vertical/nordicSkiing_ProspectMountain-Vermont-Bennington-skiing-crossCountry-lesson_ibuqqz.jpg'
+                        height={725}
+                        width={540}
+                        className='rounded-lg'
+                        alt={"Project"}
+                    />
+                    <Image 
+                        src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643297374/Prospect%20Mountain/vertical/nordicSkiing_ProspectMountain-Vermont-Bennington-skiing-crossCountry-_altiav.jpg'
+                        height={725}
+                        width={540}
+                        className='rounded-lg'
+                        alt={"Project"}
+                    />
+                </div>
             </div>
             <Footer />
         </div>
