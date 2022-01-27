@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Header from '../components/header'
 import Footer from '../components/footer'
-import { mapImageResources, search, getFolders } from '../../lib/cloudinary';
 
 export default function October() {
     return (
@@ -45,35 +44,7 @@ export default function October() {
                 </div>
             </header>
             <div className='h-screen max-w-6xl mx-auto overflow-y-scroll px-1'>
-                <h1 className='text-2xl font-semibold text-emerald-600 flex justify-center'>October</h1>
-                <p>A collection of images of my fishing adventures </p>
-            <h1 className='font-semibold'>Image Collections</h1>
-                <div className='flex justify-center'>
-                    <ul onClick={handleOnFolderClick}>
-                        {folders.map(folder => {
-                            return (
-                            <li key={folder.path} className=''>
-                                <button data-folder-path={folder.path}>{ folder.name }</button>
-                            </li>
-                            )
-                        })}
-                    </ul>
-                </div>
-
-                <h1 className='font-semibold underline'>Images</h1>
-                <ul>
-                    {images.map(image => {
-                        return (
-                        <li key={image.id}>
-                            <a href={image.link} rel="noreferrer">
-                            <div className='w-1/2 mx-auto'>
-                                <Image width={image.width} height={image.height} src={image.image} alt="" />
-                            </div>
-                            </a>
-                        </li>
-                        )
-                    })}
-                </ul>            
+            <h1 className='text-2xl font-semibold text-emerald-600 flex justify-center'>October</h1> 
             </div>
             <Footer />
         </div>
