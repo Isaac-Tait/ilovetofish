@@ -1,7 +1,6 @@
 {/*
     This page utilizes a long dormant react photo gallery. 
     If you have any issues, or find any bugs, let me know!
-    BTW - I also installed react-responsive-carousel which is still in development.
     - Isaac
 */}
 
