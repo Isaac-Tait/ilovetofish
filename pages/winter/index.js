@@ -43,6 +43,13 @@ const Skiing = () => {
                         </a>
                     </Link>
                 <p>Let us get cozy for a second and have a quick chat about a positive mental state surrounding winter and all her cold, dark, and gray glory...</p>
+
+                <Link href="/winter/nordic-skiing">
+                        <a className='underline text-amber-500'>
+                        <p>Nordic Skiing</p>
+                        </a>
+                    </Link>
+                <p>I thought you had to be ultra wealthy to go skiing until I discovered Nordic Skiing...</p>
             </div>
             <Footer />
         </div>
