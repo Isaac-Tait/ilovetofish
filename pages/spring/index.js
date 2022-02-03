@@ -38,6 +38,13 @@ const Spring = () => {
             </header>
             <div className='max-w-6xl mx-auto h-screen px-1'>
                 <h1 className="text-2xl bg-lime-400 flex flex-row justify-center text-neutral-100 rounded-xl mt-1">Spring</h1>
+                <Link href="/spring/pat-metheny">
+                        <a className='underline text-amber-500'>
+                        <p>Pat Metheny</p>
+                        </a>
+                    </Link>
+                <p>My most favorite musician of all time has to be Pat Metheny. The man is a prodigy and his music is such a joy to listen too imho...</p>
+
             </div>
             <Footer />
         </div>
