@@ -86,7 +86,7 @@ const Blank = () => {
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className='underline text-teal-400 hover:text-indigo-400'
-                >here</a>.</p>
+                >here</a>...</p>
             </div>
             <Footer />
         </div>
