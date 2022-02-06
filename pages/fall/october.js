@@ -90,34 +90,34 @@ export default function October() {
     ]
     return (
         <div className='heropattern-topography-neutral-100'>
-            <header className='w-full ml-2 flex flex-wrap justify-between'>
-                <Header />
-                <div className='lg:w-2/3 flex my-auto justify-between'>
-                    <h3 className='text-xl font-semibold mr-4'>
+        <Header />
+            <header className='w-full px-2 flex flex-wrap justify-between'>
+                <div className='w-full flex my-auto justify-between'>
+                    <h3 className='text-3xl font-semibold'>
                         <Link href={'/spring'}>
                             <a className="text-lime-400 hover:text-indigo-500">
-                                <FontAwesomeIcon icon={['fal', 'flower-daffodil']} className='w-10' />
+                                <FontAwesomeIcon icon={['fal', 'flower-daffodil']} className='h-16' />
                             </a>
                         </Link>
                     </h3>
-                    <h3 className='text-xl font-semibold'>
+                    <h3 className='text-3xl font-semibold'>
                         <Link href={'/summer'}>
                             <a className="text-rose-400 hover:text-indigo-500">
-                                <FontAwesomeIcon icon={['fal', 'cloud-sun-rain']} className='w-10' />
+                                <FontAwesomeIcon icon={['fal', 'cloud-sun-rain']} className='h-16' />
                             </a>
                         </Link>
                     </h3>
-                    <h3 className='text-xl font-semibold'>
+                    <h3 className='text-3xl font-semibold'>
                         <Link href={'/fall'}>
                             <a className="text-fuchsia-400 hover:text-indigo-500">
-                                <FontAwesomeIcon icon={['fal', 'leaf-maple']} className='w-10' />
+                                <FontAwesomeIcon icon={['fal', 'leaf-maple']} className='h-16' />
                             </a>
                         </Link>
                     </h3>
-                    <h3 className='text-xl font-semibold mr-4'>
+                    <h3 className='text-3xl font-semibold'>
                         <Link href={'/winter'}>
                             <a className="text-teal-400 hover:text-indigo-500">
-                                <FontAwesomeIcon icon={['fal', 'snowflakes']} className='w-10' />
+                                <FontAwesomeIcon icon={['fal', 'snowflakes']} className='h-16' />
                             </a>
                         </Link>
                     </h3>
@@ -147,7 +147,7 @@ export default function October() {
                 </div>
             
             </div>
-            <Footer />
+        <Footer />
         </div>
         )
     }

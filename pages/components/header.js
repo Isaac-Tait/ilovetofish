@@ -37,7 +37,7 @@ const Header = () => {
             />
           </svg>
         </button>
-        {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
+        {/*Note that in this div I use a ternary operator to decide whether or not to display the content of the div*/}
         <div
           className={`${
             active ? '' : 'hidden'

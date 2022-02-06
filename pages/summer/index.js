@@ -8,9 +8,9 @@ import Footer from '../components/footer';
 
 const Summer = () => {
     return (
-        <div className='heropattern-topography-lime-100'>
+        <div className='heropattern-topography-neutral-100'>
+        <Header />
             <header className='lg:flex lg:flex-wrap lg:justify-between mx-1'>
-                <Header />
                 <div className='lg:w-2/3 flex my-auto justify-between'>
                     <h3 className='text-xl font-semibold'>
                         <Link href={'/spring'}>
