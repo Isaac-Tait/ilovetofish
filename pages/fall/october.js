@@ -93,31 +93,31 @@ export default function October() {
         <Header />
             <header className='w-full px-2 flex flex-wrap justify-between'>
                 <div className='w-full flex my-auto justify-between'>
-                    <h3 className='text-3xl font-semibold'>
+                    <h3 className='text-2xl font-semibold'>
                         <Link href={'/spring'}>
                             <a className="text-lime-400 hover:text-indigo-500">
-                                <FontAwesomeIcon icon={['fal', 'flower-daffodil']} className='h-16' />
+                                <FontAwesomeIcon icon={['fal', 'flower-daffodil']} />
                             </a>
                         </Link>
                     </h3>
-                    <h3 className='text-3xl font-semibold'>
+                    <h3 className='text-2xl font-semibold'>
                         <Link href={'/summer'}>
                             <a className="text-rose-400 hover:text-indigo-500">
-                                <FontAwesomeIcon icon={['fal', 'cloud-sun-rain']} className='h-16' />
+                                <FontAwesomeIcon icon={['fal', 'cloud-sun-rain']} />
                             </a>
                         </Link>
                     </h3>
-                    <h3 className='text-3xl font-semibold'>
+                    <h3 className='text-2xl font-semibold'>
                         <Link href={'/fall'}>
                             <a className="text-fuchsia-400 hover:text-indigo-500">
-                                <FontAwesomeIcon icon={['fal', 'leaf-maple']} className='h-16' />
+                                <FontAwesomeIcon icon={['fal', 'leaf-maple']} />
                             </a>
                         </Link>
                     </h3>
-                    <h3 className='text-3xl font-semibold'>
+                    <h3 className='text-2xl font-semibold'>
                         <Link href={'/winter'}>
                             <a className="text-teal-400 hover:text-indigo-500">
-                                <FontAwesomeIcon icon={['fal', 'snowflakes']} className='h-16' />
+                                <FontAwesomeIcon icon={['fal', 'snowflakes']} />
                             </a>
                         </Link>
                     </h3>
