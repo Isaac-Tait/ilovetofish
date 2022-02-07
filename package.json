@@ -7,6 +7,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^2.2.4",
     "@fortawesome/fontawesome-pro": "^5.15.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/pro-light-svg-icons": "^5.15.4",
