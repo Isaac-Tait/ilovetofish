@@ -1,3 +1,5 @@
+{/* https://dev.to/andrewespejo/how-to-design-a-simple-and-beautiful-navbar-using-nextjs-and-tailwindcss-26p1 */}
+
 import React, { useState } from 'react'
 
 import Link from 'next/link'

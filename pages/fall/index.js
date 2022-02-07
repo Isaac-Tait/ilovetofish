@@ -10,7 +10,7 @@ const Blog = () => {
     return (
         <div className='heropattern-topography-neutral-100'>
             <Header />
-            <header className='lg:flex lg:flex-wrap lg:justify-between mx-1'> 
+            <header className='lg:flex lg:flex-wrap lg:justify-center mx-1'> 
                 <div className='lg:w-2/3 flex my-auto justify-between'>
                     <h3 className='text-xl font-semibold'>
                         <Link href={'/spring'}>
