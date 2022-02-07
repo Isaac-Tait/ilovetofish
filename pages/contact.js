@@ -51,7 +51,7 @@ export default function Contact() {
             </header>
             <h2 className='font-semibold text-2xl text-center text-red-500'>How to get a hold of me...</h2>
             
-            <form onSubmit={handleSubmit} className='max-w-6xl mx-auto bg-indigo-100'> 
+            <form onSubmit={handleSubmit} className='max-w-6xl mx-auto bg-indigo-100' method='POST'> 
                 <div className='flex flex-wrap justify-center pt-2'>
                     <label htmlFor="email" className='mr-2'>Your Email Address</label>
                     <input id="email" type="email" name="email" />
@@ -68,6 +68,8 @@ export default function Contact() {
                     </button>
                     <ValidationError errors={state.errors} />
                 </div>
+
+                <input type="hidden" name="_next" value="https://iloveto.fish/thank-you"></input>
             </form>
             
             <div className='fixed bottom-0 w-full'>
