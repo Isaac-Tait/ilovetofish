@@ -44,7 +44,7 @@ const NewEngland = () => {
                 </div>
             </header>
             <div className='h-screen max-w-6xl mx-auto overflow-y-scroll px-1'>
-                <h1 className='text-2xl font-semibold text-emerald-600 flex justify-center'>Lakes and Rivers</h1>
+                <h1 className='text-2xl font-semibold text-emerald-600 flex justify-center'>Lakes and Streams</h1>
                 <p>Today I am experiencing my first sleet storm. It is pretty gnarly out there. I woke up expecting the predicted 4-6 inches of snow (perhaps enough for a lap or two on my favorite{' '}
                 <a 
                     href="https://www.thatscandinavianfeeling.com/lifestyle/norwegian-concept-koselig" 
