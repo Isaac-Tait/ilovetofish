@@ -2,6 +2,7 @@ import 'tailwindcss/tailwind.css'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fal } from '@fortawesome/pro-light-svg-icons'
+config.autoAddCss = false
 
 library.add(fal)
 
