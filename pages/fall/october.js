@@ -90,39 +90,7 @@ export default function October() {
     ]
     return (
         <div className='heropattern-topography-neutral-100'>
-        <Header />
-            <header className='w-full px-2 flex flex-wrap justify-between'>
-                <div className='w-full flex my-auto justify-between'>
-                    <h3 className='text-2xl font-semibold'>
-                        <Link href={'/spring'}>
-                            <a className="text-lime-400 hover:text-indigo-500">
-                                <FontAwesomeIcon icon={['fal', 'flower-daffodil']} />
-                            </a>
-                        </Link>
-                    </h3>
-                    <h3 className='text-2xl font-semibold'>
-                        <Link href={'/summer'}>
-                            <a className="text-rose-400 hover:text-indigo-500">
-                                <FontAwesomeIcon icon={['fal', 'cloud-sun-rain']} />
-                            </a>
-                        </Link>
-                    </h3>
-                    <h3 className='text-2xl font-semibold'>
-                        <Link href={'/fall'}>
-                            <a className="text-fuchsia-400 hover:text-indigo-500">
-                                <FontAwesomeIcon icon={['fal', 'leaf-maple']} />
-                            </a>
-                        </Link>
-                    </h3>
-                    <h3 className='text-2xl font-semibold'>
-                        <Link href={'/winter'}>
-                            <a className="text-teal-400 hover:text-indigo-500">
-                                <FontAwesomeIcon icon={['fal', 'snowflakes']} />
-                            </a>
-                        </Link>
-                    </h3>
-                </div>
-            </header>
+            <Header />
             <div className='h-screen max-w-6xl mx-auto overflow-y-scroll px-1'>
             <h1 className='text-2xl font-semibold text-emerald-600 flex justify-center'>Lake Fishing in October</h1> 
             <p>We arrived in Connecticut after a long <a href="https://macadamgrinding.com/posts/connecticut/" arget="_blank" rel="noopener noreferrer" className='text-amber-400 hover:underline'>cross country road trip</a> during the first week of October. The trees were still green and the water was incredibly warm. We were living on an island in our RV waiting for our home to finish being built. So, it was quite easy to get out and fish everyday. We even had our own private dock!</p>
@@ -147,7 +115,7 @@ export default function October() {
                 </div>
             
             </div>
-        <Footer />
+            <Footer />
         </div>
         )
     }
