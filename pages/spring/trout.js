@@ -47,7 +47,12 @@ const Blank = () => {
                     rel='noopener noreferrer' 
                     className='underline text-teal-400 hover:text-indigo-400'
                 >Zimmerbuilt pack</a> but somehow I managed. I spotted two turtles but no fish (<span className='italic'>except some surprise Tiger trout stockers down low...they were just trying to throw me off my game I know it</span>).</p>
-                <p>As I made my way upstream I came across a small spring fed tributary. This is where I pulled out my trusty Daiwa spin rod, and I brought to hand and released a beautiful 13&quot; wild Brook trout. I guess the lower section is too warm for trout (<span className='italic'>there is also a few very wide and shallow spots with minimal tree cover that I think contribute to warming the water too much in the lower sections of this river...</span>).</p>
+                <p>As I made my way upstream I came across a small spring fed tributary. This is where I pulled out my trusty{' '}<a 
+                    href='https://jdmtackleheaven.com/products/daiwa-wise-stream-45ul-3?variant=32188060434550'
+                    target='_blank' 
+                    rel='noopener noreferrer' 
+                    className='underline text-teal-400 hover:text-indigo-400'
+                    >Daiwa Wise Stream 45UL-3</a>, and I brought to hand and released a beautiful 13&quot; wild Brook trout. I guess the lower section is too warm for trout (<span className='italic'>there is also a few very wide and shallow spots with minimal tree cover that I think contribute to warming the water too much in the lower sections of this river...</span>).</p>
                 <div className='flex justify-center'>
                     <Image 
                         src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1651021452/Trout/connecticut-trout_fishing-tenkara-spin_fishing-ultralight_rtdmct.jpg'
