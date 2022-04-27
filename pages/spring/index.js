@@ -46,7 +46,12 @@ const Spring = () => {
                         </a>
                     </Link>
                 <p>My most favorite musician of all time has to be Pat Metheny. The man is a prodigy and his music is such a joy to listen too imho...</p>
-
+                <Link href="/spring/trout">
+                        <a className='underline text-amber-500'>
+                        <p>Trout Fishing</p>
+                        </a>
+                    </Link>
+                <p>It was exactly 180 days since I last caught a wild trout. I was itching to bring one to hand. So, I set off for a river that has become my favorite - for some reason...</p>
             </div>
             <Footer />
         </div>
