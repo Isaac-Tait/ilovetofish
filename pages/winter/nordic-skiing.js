@@ -79,9 +79,7 @@ export default function NordicSkiing() {
     return (
         <div className='heropattern-topography-neutral-100'>
             <Header />
-            <div className='flex flex-row'>   
-                <Breadcrumbs useDefaultStyle omitRootLabel />
-            </div>
+            <Breadcrumbs useDefaultStyle omitRootLabel labelsToUppercase={true} />
             <div className='h-screen max-w-6xl mx-auto overflow-y-scroll px-1'>
                 <h1 className='text-2xl font-semibold text-emerald-600 flex justify-center mb-8'>Prospect Mountain Nordic Skiing</h1>
                 <p
