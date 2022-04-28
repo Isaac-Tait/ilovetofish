@@ -1,10 +1,10 @@
 import React, { useState, useCallback } from 'react';
-import Link from 'next/link'
 import Image from 'next/image'
 
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import Breadcrumbs from 'nextjs-breadcrumbs';
 
 import Header from '../components/header'
 import Footer from '../components/footer'
@@ -79,6 +79,9 @@ export default function NordicSkiing() {
     return (
         <div className='heropattern-topography-neutral-100'>
             <Header />
+            <div className='flex flex-row'>   
+                <Breadcrumbs useDefaultStyle omitRootLabel />
+            </div>
             <div className='h-screen max-w-6xl mx-auto overflow-y-scroll px-1'>
                 <h1 className='text-2xl font-semibold text-emerald-600 flex justify-center mb-8'>Prospect Mountain Nordic Skiing</h1>
                 <p

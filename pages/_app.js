@@ -1,4 +1,5 @@
 import 'tailwindcss/tailwind.css'
+import 'nextjs-breadcrumbs/dist/index.css';
 
 import { config } from '@fortawesome/fontawesome-svg-core'
 import { library } from '@fortawesome/fontawesome-svg-core'

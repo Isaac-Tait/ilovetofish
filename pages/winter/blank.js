@@ -1,6 +1,7 @@
 import React from 'react';
-import Link from 'next/link'
 import Image from 'next/image'
+
+import Breadcrumbs from 'nextjs-breadcrumbs';
 
 import Header from '../components/header'
 import Footer from '../components/footer'
@@ -9,6 +10,9 @@ const Blank = () => {
     return (
         <div className='heropattern-topography-neutral-100'>
             <Header />
+            <div className='flex flex-row'>   
+                <Breadcrumbs useDefaultStyle omitRootLabel />
+            </div>
             <div className='h-screen max-w-6xl mx-auto overflow-y-scroll px-1'>
                 <h1 className='text-2xl font-semibold text-emerald-600 flex justify-center mb-8'>Title</h1>
                 <p
