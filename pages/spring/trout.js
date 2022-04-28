@@ -12,8 +12,12 @@ const Blank = () => {
         <div className='heropattern-topography-neutral-100'>
             <Header />
             <div className='h-screen max-w-6xl mx-auto overflow-y-scroll px-1'>
-                <h1 className='text-2xl font-semibold text-emerald-600 flex justify-center'>Trout</h1>
-                <p>There is a stream not too far from my home that keeps beckoning me back despite the fact that all but one of the dozen or so times I fished it I caught a fish. It certainly is not the fish that keeps drawing me back but something{' '}<a 
+                <h1 className='text-2xl font-semibold text-emerald-600 flex justify-center mb-8'>Trout</h1>
+                <p 
+                    className='first-line:uppercase first-line:tracking-widest
+                    first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
+                    first-letter:mr-3 first-letter:float-left'
+                >There is a stream not too far from my home that keeps beckoning me back despite the fact that all but one of the dozen or so times I fished it I caught a fish. It certainly is not the fish that keeps drawing me back but something{' '}<a 
                     href='https://iloveto.fish/winter/new-england' 
                     target='_blank' 
                     rel='noopener noreferrer' 

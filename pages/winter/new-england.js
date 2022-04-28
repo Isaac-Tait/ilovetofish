@@ -12,8 +12,12 @@ const NewEngland = () => {
         <div className='heropattern-topography-neutral-100'>
             <Header />
             <div className='h-screen max-w-6xl mx-auto overflow-y-scroll px-1'>
-                <h1 className='text-2xl font-semibold text-emerald-600 flex justify-center'>Lakes and Streams</h1>
-                <p>Today I am experiencing my first sleet storm. It is pretty gnarly out there. I woke up expecting the predicted 4-6 inches of snow (perhaps enough for a lap or two on my favorite{' '}
+                <h1 className='text-2xl font-semibold text-emerald-600 flex justify-center mb-8'>Lakes and Streams</h1>
+                <p
+                    className='first-line:uppercase first-line:tracking-widest
+                    first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
+                    first-letter:mr-3 first-letter:float-left'
+                >Today I am experiencing my first sleet storm. It is pretty gnarly out there. I woke up expecting the predicted 4-6 inches of snow (perhaps enough for a lap or two on my favorite{' '}
                 <a 
                     href="https://www.thatscandinavianfeeling.com/lifestyle/norwegian-concept-koselig" 
                     target="_blank" 

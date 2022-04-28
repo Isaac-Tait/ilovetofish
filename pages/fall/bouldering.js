@@ -12,8 +12,12 @@ const Bouldering = () => {
         <div className='heropattern-topography-neutral-100'>
             <Header />
             <div className='h-screen max-w-6xl mx-auto overflow-y-scroll px-1'>
-                <h1 className='text-2xl font-semibold text-emerald-600 flex justify-center'>A climbers sanctuary, close to home</h1>
-                <p>So, there I was hiking through the woods when I saw as if an apparition the tops of several large boulders sticking up above the foliage of Azalea bushes.</p>
+                <h1 className='text-2xl font-semibold text-emerald-600 flex justify-center mb-8'>A climbers sanctuary, close to home</h1>
+                <p 
+                    className='first-line:uppercase first-line:tracking-widest
+                    first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
+                    first-letter:mr-3 first-letter:float-left'
+                >So, there I was hiking through the woods when I saw as if an apparition the tops of several large boulders sticking up above the foliage of Azalea bushes.</p>
                 <p>I had to get in for a closer look!</p>
                 <p>What I discovered was a veritable paradise of a dozen or so boulders with a smattering of fun looking problems.</p>
                 <p>I returned a week later with a rake, pruning shears, my crash pad, shoes, and chalk.</p>

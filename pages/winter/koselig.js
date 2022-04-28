@@ -12,8 +12,12 @@ const Koselig = () => {
         <div className='heropattern-topography-neutral-100'>
             <Header />
             <div className='h-screen max-w-6xl mx-auto overflow-y-scroll px-1'>
-                <h1 className='text-2xl font-semibold text-emerald-600 flex justify-center'>Koselig</h1>
-                    <p className='flex justify-center'>I posted a collage of photos to&nbsp;
+                <h1 className='text-2xl font-semibold text-emerald-600 flex justify-center mb-8'>Koselig</h1>
+                    <p 
+                        className='first-line:uppercase first-line:tracking-widest
+                        first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
+                        first-letter:mr-3 first-letter:float-left'
+                    >I posted a collage of photos to&nbsp;
                     <a 
                         href="https://www.instagram.com/p/CY2pJkbtud0/" 
                         target="_blank" 

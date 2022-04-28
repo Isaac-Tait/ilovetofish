@@ -80,8 +80,12 @@ export default function NordicSkiing() {
         <div className='heropattern-topography-neutral-100'>
             <Header />
             <div className='h-screen max-w-6xl mx-auto overflow-y-scroll px-1'>
-                <h1 className='text-2xl font-semibold text-emerald-600 flex justify-center'>Prospect Mountain Nordic Skiing</h1>
-                <p>I wanted to go on a family ski trip last season but COVID made things difficult and the snow in southern California was not very inspirational. Then there were the astronomical prices...</p>
+                <h1 className='text-2xl font-semibold text-emerald-600 flex justify-center mb-8'>Prospect Mountain Nordic Skiing</h1>
+                <p
+                    className='first-line:uppercase first-line:tracking-widest
+                    first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
+                    first-letter:mr-3 first-letter:float-left'
+                >I wanted to go on a family ski trip last season but COVID made things difficult and the snow in southern California was not very inspirational. Then there were the astronomical prices...</p>
                 <p>I had always been intrigued with Nordic skiing (aka cross country skiing) and when we moved to New England with a much more reliable snow pack I decided the 2021/22 season was the perfect time to give it a try.</p>
                 
                 <p>The prices are much more reasonable too which is{' '}<a 
