@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Header from '../components/header';
-import Footer from '../components/Footer';
+import Footer from '../components/footer';
 
 const Blog = () => {
     return (
