@@ -8,7 +8,11 @@ module.exports = {
       topography: heroPatterns.deathstar,
       bubbles: heroPatterns.bubbles,
     },
-    extend: {},
+    extend: {
+      animation: {
+        'spin-slow': 'spin linear 2000ms',
+      }
+    },
   },
   plugins: [require('tailwindcss-hero-patterns')],
 }
