@@ -10,7 +10,7 @@ const Bouldering = () => {
     return (
         <div className='heropattern-topography-neutral-100'>
             <Header />
-            <Breadcrumbs useDefaultStyle omitRootLabel labelsToUppercase={true} />
+            <Breadcrumbs useDefaultStyle omitRootLabel labelsToUppercase={true} />            
             <div className='h-screen max-w-6xl mx-auto overflow-y-scroll px-1'>
                 <h1 className='text-2xl font-semibold text-emerald-600 flex justify-center mb-8'>A climbers sanctuary, close to home</h1>
                 <p 

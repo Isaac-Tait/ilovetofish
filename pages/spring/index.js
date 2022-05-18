@@ -52,6 +52,12 @@ const Spring = () => {
                         </a>
                     </Link>
                 <p>It was exactly 180 days since I last caught a wild trout. I was itching to bring one to hand. So, I set off for a river that has become my favorite - for some reason...</p>
+                <Link href="/spring/finesse-fishing">
+                    <a className='underline text-amber-500'>
+                    <p>Finesse Fishing</p>
+                    </a>
+                </Link>
+                <p>One of the last things I bought before moving back to the USA from Japan was a JDM finesse spin rod and reel as well as a few dozen ultralight spoons. Little did I know how much use I would get out of that rod over the years...</p>
             </div>
             <Footer />
         </div>
