@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import Breadcrumbs from 'nextjs-breadcrumbs';
 
+import Comment from '../components/comment';
 import Header from '../components/header'
 import Footer from '../components/footer'
 
@@ -142,20 +143,10 @@ const Finesse = () => {
                 </div>
                 <p>So, yea a lot of thoughts and opinions in this rather long blog post. I guess I had more to say than I thought when I set off to write this blog post... Now I guess I should implement a comment system for this site so you can tell me how much you agree with me...<span role="img" aria-label="laughing emoji">&#129315;</span></p>
             </div>
-            <div className='max-w-6xl mx-auto'>
-                <div id="remark42">{''}</div>
-                <script
-                    dangerouslySetInnerHTML={{
-                        __html: `
-                        const remark_config = {
-                        host: 'http://iloveto.fish',
-                        site_id: 'i_love_to_fish',
-                        };
-                        window.remark_config = remark_config;
-                            !function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);`,
-                    }}
-                ></script>
+            <div className='max-w-6xl mx-auto'> 
+                <Comment />
             </div>
+            
             <Footer />
         </div>
         
