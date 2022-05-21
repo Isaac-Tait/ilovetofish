@@ -148,8 +148,8 @@ const Finesse = () => {
                     dangerouslySetInnerHTML={{
                         __html: `
                         const remark_config = {
-                        host: 'http://localhost:8080',
-                        site_id: 'remark123',
+                        host: 'http://iloveto.fish',
+                        site_id: 'i_love_to_fish',
                         };
                         window.remark_config = remark_config;
                             !function(e,n){for(var o=0;o<e.length;o++){var r=n.createElement("script"),c=".js",d=n.head||n.body;"noModule"in r?(r.type="module",c=".mjs"):r.async=!0,r.defer=!0,r.src=remark_config.host+"/web/"+e[o]+c,d.appendChild(r)}}(remark_config.components||["embed"],document);`,
