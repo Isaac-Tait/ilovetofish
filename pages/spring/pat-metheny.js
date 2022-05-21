@@ -3,8 +3,9 @@ import Image from 'next/image'
 
 import Breadcrumbs from 'nextjs-breadcrumbs';
 
-import Header from '../components/header'
-import Footer from '../components/footer'
+import Comment from '../components/Comment';
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const Blank = () => {
     return (
@@ -59,6 +60,9 @@ const Blank = () => {
                     rel="noopener noreferrer" 
                     className='underline text-teal-400 hover:text-indigo-400'
                 >here</a>...</p>
+            </div>
+            <div className='max-w-6xl mx-auto'> 
+                <Comment />
             </div>
             <Footer />
         </div>

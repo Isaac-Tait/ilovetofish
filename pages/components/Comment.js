@@ -8,7 +8,7 @@ const DisqusComments = () => {
             config={{
                 url: 'https://iloveto.fish',
                 identifier: '123',
-                title: 'Spring Finesse Fishing'
+                title: 'Why, do I need this?'
             }}
         />
       </div>
