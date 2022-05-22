@@ -1,6 +1,6 @@
 import {DiscussionEmbed} from "disqus-react"
 
-const DisqusComments = () => {    
+const Comment = () => {    
     return (
       <div>
        <DiscussionEmbed
@@ -15,4 +15,4 @@ const DisqusComments = () => {
     )
   } 
   
-  export default DisqusComments;
+  export default Comment;
