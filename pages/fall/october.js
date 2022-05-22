@@ -10,6 +10,7 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 
 import Breadcrumbs from 'nextjs-breadcrumbs';
 
+import Comment from '..components/Comment'
 import Header from '../components/header'
 import Footer from '../components/footer'
 
@@ -118,6 +119,9 @@ export default function October() {
                     </ModalGateway>
                 </div>
             
+            </div>
+            <div className='max-w-6xl mx-auto'> 
+                <Comment />
             </div>
             <Footer />
         </div>

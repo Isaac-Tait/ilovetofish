@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import Breadcrumbs from 'nextjs-breadcrumbs';
 
+import Comment from '../components/Comment'
 import Header from '../components/header'
 import Footer from '../components/footer'
 
@@ -52,6 +53,9 @@ const Koselig = () => {
                     />
                 </div>
                 <p className='flex justify-center text-xs italic'>This small brook by my house is almost completely frozen solid. Pretty wild!</p>
+            </div>
+            <div className='max-w-6xl mx-auto'> 
+                <Comment />
             </div>
             <Footer />
         </div>

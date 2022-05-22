@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import Breadcrumbs from 'nextjs-breadcrumbs';
 
+import Comment from '../components/Comment'
 import Header from '../components/header'
 import Footer from '../components/footer'
 
@@ -34,6 +35,9 @@ const Blank = () => {
                     />
                 </div>
                 <p className='flex justify-center text-xs italic'>This is a photo caption</p>
+            </div>
+            <div className='max-w-6xl mx-auto'> 
+                <Comment />
             </div>
             <Footer />
         </div>

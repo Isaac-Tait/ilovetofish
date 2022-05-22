@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import Breadcrumbs from 'nextjs-breadcrumbs';
 
+import Comment from '../components/Comment'
 import Header from '../components/header'
 import Footer from '../components/footer'
 
@@ -53,6 +54,9 @@ const NewEngland = () => {
                 <div className='flex justify-center mb-4'>
                     <iframe width="660" height="415" src="https://www.youtube.com/embed/VUXWlXaIyTM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                 </div>
+            </div>
+            <div className='max-w-6xl mx-auto'> 
+                <Comment />
             </div>
             <Footer />
         </div>
