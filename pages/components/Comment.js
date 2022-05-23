@@ -1,14 +1,14 @@
 import {DiscussionEmbed} from "disqus-react"
 
-const Comment = () => {    
+const Comment = ({ slug, title }) => {    
     return (
       <div>
-       <DiscussionEmbed
+        <DiscussionEmbed
             shortname="iloveto-fish"
             config={{
-                url: 'https://iloveto.fish',
+                url: `https://iloveto.fish/${slug}`,
                 identifier: '123',
-                title: 'Why, do I need this?'
+                title,
             }}
         />
       </div>
