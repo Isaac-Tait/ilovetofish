@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { useForm, ValidationError } from "@formspree/react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import Header from '../pages/components/header'
-import Footer from '../pages/components/footer'
+import Header from '../components/header'
+import Footer from '../components/footer'
 
 export default function Contact() {
     const [state, handleSubmit] = useForm("https://formspree.io/f/mdobeblw");

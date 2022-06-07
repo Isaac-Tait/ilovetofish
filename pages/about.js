@@ -3,8 +3,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import Header from '../pages/components/header'
-import Footer from '../pages/components/footer'
+import Header from '../components/header'
+import Footer from '../components/footer'
 
 const About = () => {
     return (

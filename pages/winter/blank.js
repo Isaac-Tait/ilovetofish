@@ -3,9 +3,9 @@ import Image from 'next/image'
 
 import Breadcrumbs from 'nextjs-breadcrumbs';
 
-import Comment from '../components/Comment'
-import Header from '../components/header'
-import Footer from '../components/footer'
+import Comment from '../../components/Comment'
+import Header from '../../components/header'
+import Footer from '../../components/footer'
 
 const Blank = () => {
     return (
