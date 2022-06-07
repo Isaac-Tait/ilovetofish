@@ -42,7 +42,7 @@ const Spring = () => {
                 <h1 className="text-2xl bg-lime-400 flex flex-row justify-center text-neutral-100 rounded-xl mt-1">Spring</h1>
                 <Link href="/spring/pat-metheny">
                         <a className='underline text-amber-500'>
-                        <p>Pat Metheny</p>
+                            <p>Pat Metheny</p>
                         </a>
                     </Link>
                 <p>My most favorite musician of all time has to be Pat Metheny. The man is a prodigy and his music is such a joy to listen too imho...</p>
@@ -58,6 +58,12 @@ const Spring = () => {
                     </a>
                 </Link>
                 <p>One of the last things I bought before moving back to the USA from Japan was a JDM finesse spin rod and reel as well as a few dozen ultralight spoons. Little did I know how much use I would get out of that rod over the years...</p>
+                <Link href="/spring/mountain-laurel">
+                    <a className='underline text-amber-500'>
+                    <p>Mountain Laurel</p>
+                    </a>
+                </Link>
+                <p>After five years of faithful service my Daiwa spin reel seized up and the internal spring snapped. I took the plunge and got a BFS reel. To break it in I checked out a stream near the border of Rhode Island...</p>
             </div>
             <Footer />
         </div>
