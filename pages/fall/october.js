@@ -11,8 +11,8 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 import Breadcrumbs from 'nextjs-breadcrumbs';
 
 import Comment from '../../components/Comment'
-import Header from '../../components/header'
-import Footer from '../../components/footer'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 
 export default function October() {
     const [currentImage, setCurrentImage] = useState(0);
