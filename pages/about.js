@@ -2,7 +2,6 @@ import Link from 'next/link'
 
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-H
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
