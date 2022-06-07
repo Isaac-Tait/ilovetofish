@@ -2,9 +2,9 @@ import Link from 'next/link'
 
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-import Header from '../components/header'
-import Footer from '../components/footer'
+H
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const About = () => {
     return (
