@@ -18,8 +18,8 @@ const Finesse = () => {
                     className='first-line:uppercase first-line:tracking-widest
                     first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
                     first-letter:mr-3 first-letter:float-left'
-                >Discovering tenkara in 2013 launched my love affair with fishing. I was 30, perhaps a little late in life to &quot;discover&quot; a love for fishing but in my defense I found fishing to be a pretty boring way to pass time. I had been fishing a few times before then. The first time I went fishing was when I was four or five. I caught a blue gill in the pond on my mother&#39;s aunts property in New Jersey.</p>
-                <p>However, that style of fishing never really intrigued me. Too much standing around in one spot and I always felt bad for the worms that I was using as bait.</p>
+                >Discovering tenkara in 2013 launched my love affair with fishing. I was 30, perhaps a little late in life to &quot;discover&quot; a love for fishing but honestly up until that point in my life I found fishing to be a pretty boring way to pass time. The few times I went fishing in my younger days fishing entailed standing in one spot for hours staring at the water and catching maybe one or two fish...</p>
+                <p>This &quot;style&quot; of fishing never really intrigued me. So, I wrote off fishing as boring - a sport for obese, cheap beer swilling, old men who left all their trash on the bank when they went home.</p>
                 <div className='flex justify-center'>
                     <Image 
                         src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1652881436/Finesse/finesse_bait_fishing-new_england-jdm_fishing_gear-ultra_light-spoons-adventure-the_best_pool_I_have_found_in_Connecticut_so_far_sp0zpk.jpg'
@@ -30,7 +30,7 @@ const Finesse = () => {
                     />
                 </div>
                 <p className='flex justify-center text-xs italic mb-2'>Hands down the best fishing hole I have found in Connecticut and top three of my entire life...Where is it? I am not telling.</p>
-                <p>Then I discovered tenkara and it was anything but boring (and my vegan heart was happy to save the worms <span role="img" aria-label="seedling">&#127793;</span>&nbsp;). Then I moved to Japan. The Japanese mountain streams that I discovered there were the birth place of tenkara as we know it in the USA today <span className='italic text-sm'>(btw you can read all about my adventures in Japan by clicking Fallfish Tenkara in the menu above <span role="img" aria-label="finger pointing up">&#128070;</span>&nbsp;)</span>. I was hooked (pun intended).</p>
+                <p>Then I discovered tenkara and it was anything but boring (and my vegan heart was happy to save the worms <span role="img" aria-label="seedling">&#127793;</span>&nbsp;). Shortly after the discovery I moved to Japan, arguably the birth place of tenkara <span className='italic text-sm'>(btw you can read all about my adventures in Japan by clicking Fallfish Tenkara in the menu above <span role="img" aria-label="finger pointing up">&#128070;</span>&nbsp;)</span>. I was hooked (pun intended).</p>
                 <div className='flex justify-center'>
                     <Image 
                         src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1652881445/Finesse/finesse_bait_fishing-new_england-jdm_fishing_gear-ultra_light-spoons-adventure-grassy_island_ccikpr.jpg'
@@ -41,7 +41,7 @@ const Finesse = () => {
                     />
                 </div>
                 <p className='flex justify-center text-xs italic'>A heavenly little spot...</p>
-                <p>It may sound a slightly elitist to say this but tenkara is a method of fishing to catch trout in medium and high gradient smaller cold streams. Anything else (lakes, big water, low gradient, warm water, and any other kind of fish than trout is &#39;fixed line fishing&#39;, not tenkara...). Trust me I am fully aware of the irony in the name for my site Fallfish Tenkara in the light of previous statement. Some people get really bent out of shape about this topic but to say that tenkara is not just about mountain stream fishing for trout is redefining something that has been around for a lot longer than you or I. The roots of tenkara have been growing into the austere mountain scapes of Japan for hundreds, maybe thousands of years. To suddenly appropriate the pastime and redefine it is just disrespectful to those who have come before... My $0.02 - take it or leave it (but deep down you know I am right).</p>
+                <p>It may sound a slightly elitist to say this but tenkara is a method of fishing to catch trout in medium and high gradient smaller cold streams. Anything else (lakes, big water, low gradient, warm water, and any other kind of fish than trout is &#39;fixed line fishing&#39;, not tenkara...). Trust me I am fully aware of the irony in the name for my site Fallfish Tenkara in the light of previous statement. Some people get really bent out of shape about this topic but to say that tenkara is not just about mountain stream fishing for trout is redefining something that has been around for a lot longer than you or I (would you say you are deep sea fishing if you were using a deep sea fishing rod but fishing beach surf?). The roots of tenkara have been growing in the austere mountain scapes of Japan for hundreds, maybe thousands of years. To suddenly appropriate the pastime and redefine it is just disrespectful to those who have come before... My $0.02 - take it or leave it (but deep down you know I am right).</p>
                 <div className='flex justify-center'>
                     <Image 
                         src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1652881429/Finesse/finesse_bait_fishing-new_england-jdm_fishing_gear-ultra_light-spoons-adventure_j4bmcf.jpg'
@@ -63,7 +63,7 @@ const Finesse = () => {
                     />
                 </div>
                 <p className='flex justify-center text-xs italic'>Stream-side lunch - dolmas, miso soup, and homemade umeboshi onigiri (a.k.a pickled plum rice ball wrapped in dried seaweed).</p>
-                <p>I have been looking high and low for high gradient small cold streams in Connecticut but so far I have found more medium size low gradient water that is on the fringe of barely cold enough to support trout. Do not get me wrong I LOVE the fishing here, it is magical - but it is not quintessential tenkara water. It is actually better suited for an ultra light finesse spin rod lobbing very light lures/spoons.</p>
+                <p>I have been looking high and low for high gradient small cold streams in Connecticut but so far I have found more medium size low gradient water that is on the fringe of barely cold enough to support trout. Do not get me wrong I LOVE the fishing here, it is magical - but it is not quintessential tenkara water. It is actually better suited for an ultra light finesse rod lobbing very light lures/spoons.</p>
                 <div className='flex justify-center'>
                     <Image 
                         src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1652881345/Finesse/finesse_bait_fishing-new_england-jdm_fishing_gear-ultra_light-spoons-adventure-moss_bl2g4r.jpg'
@@ -74,7 +74,7 @@ const Finesse = () => {
                     />
                 </div>
                 <p className='flex justify-center text-xs italic mb-2'>Wow, just wow!</p>
-                <p>At first I was fishing with ultra light Rapalla lures. I replaced the treble hook with a single hook (I crush the barb). My go to hook is the <a 
+                <p>At first I was fishing with ultra light Rapalla lures. I replaced the treble hook with a single hook (I file off the barb). My go to hook is the <a 
                     href="https://vmcpeche.com/products/light-inline-single" 
                     target="_blank" 
                     rel="noopener noreferrer" 

@@ -42,7 +42,7 @@ const MountainLaurel = () => {
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className='underline text-teal-400 hover:text-indigo-400'
-                >this</a> article I wrote)</span>. For the past few months I have been using my trusty old Diawa spin rod but then one day I picked it up and the reel had completely seized up. It had been running pretty rough even after a full tear down, cleaning, and re-lube - so, I decided it was time for a new rod.</p>
+                >this</a> article I wrote)</span>. For the past few months I have been using my trusty old Diawa spin rod but then one day I picked it up and the reel had completely seized up. It had been running pretty rough even after a full tear down, cleaning, and re-lube - so, I decided it was time for a new reel.</p>
                 <a href="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1654561704/mountain-laurel/mountain-laurel-voluntown-tenkara-bfs-finesse_fishing-connecticut-new_england-blue_skies_yeyicr.jpg">
                         <div className='flex justify-center'>
                             <Image 
