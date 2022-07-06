@@ -37,6 +37,12 @@ const Summer = () => {
             </header>
             <div className='max-w-6xl mx-auto h-screen px-1'>
                 <h1 className="text-2xl bg-rose-400 flex flex-row justify-center text-neutral-100 rounded-xl mt-1">Summer</h1>
+                    <Link href="/summer/chanterelle-adventure">
+                        <a className='underline text-amber-500'>
+                            <p>Chanterelle Adventure</p>
+                        </a>
+                    </Link>
+                    <p>After a pleasant, yet jam packed with yard work 4th of July weekend I was itching to catch some fish...</p>
             </div>
             <Footer />
         </div>
