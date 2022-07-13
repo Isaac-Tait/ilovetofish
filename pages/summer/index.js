@@ -42,7 +42,13 @@ const Summer = () => {
                             <p>Chanterelle Adventure</p>
                         </a>
                     </Link>
-                    <p>After a pleasant, yet jam packed with yard work 4th of July weekend I was itching to catch some fish...</p>
+                    <p>After a pleasant, yet jam packed, with yard work, 4th of July weekend I was itching to catch some fish...</p>
+                    <Link href="/summer/kayaking">
+                        <a className='underline text-amber-500'>
+                            <p>Have kayak, will travel</p>
+                        </a>
+                    </Link>
+                    <p>For the past month or two I have been dreaming about buying a kayak and using it to access water that had proven to be out of reach by foot. Well last week I found a really good deal for one on Craigslist and took the plunge...</p>
             </div>
             <Footer />
         </div>
