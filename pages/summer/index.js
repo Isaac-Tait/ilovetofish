@@ -49,6 +49,12 @@ const Summer = () => {
                         </a>
                     </Link>
                     <p>For the past month or two I have been dreaming about buying a kayak and using it to access water that had proven to be out of reach by foot. Well last week I found a really good deal for one on Craigslist and took the plunge...</p>
+                    <Link href="/summer/the-whites">
+                        <a className='underline text-amber-500'>
+                            <p>The White Mountains</p>
+                        </a>
+                    </Link>
+                    <p>Back in March of 2022 I skied, for four days in the White Mountains of New Hampshire. It was an epic trip and I got a small taste of what these mountains could offer in terms of fishing in the spring or summer. I knew I had to come back. Well I did come back in August of 2022 and I spent three wonderful days exploring the headwater streams of the White Mountains.</p>
             </div>
             <Footer />
         </div>
