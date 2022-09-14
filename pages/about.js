@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 
 const About = () => {
     return (
-        <div className='heropattern-bubbles-neutral-100 h-screen'>
+        <div className='heropattern-bubbles-neutral-100 h-screen overflow-y-auto'>
             <Header />
             <header className='lg:flex lg:flex-wrap lg:justify-center mx-1'>
                 
@@ -46,6 +46,7 @@ const About = () => {
             <div className='max-w-6xl mx-auto px-1'>
             <h2 className='font-semibold text-2xl text-center text-red-500'>About the author</h2>
                 <p>My name is Isaac Tait. I love to fish. I also love trail running, cycling, skiing, rock climbing, && backpacking. I also enjoy cooking vegan meals at home and listening to jazz.</p>
+                <p>To stay up to date with blog posts follow me on Instagram (the link is below<span aria-label='finger pointing down' role='img'>&#128071;</span>)</p>
                 <div className='flex justify-center pt-10'>
                     <Image 
                         src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1644193725/profile/profile-pic_xnjych.jpg'
