@@ -125,7 +125,7 @@ export default function Autumn() {
                 <p>The next day, despite the unseasonably cool weather I went fishing. I was not expecting too much action due to the sudden change in temperature. And so, I was pleasantly surprised when I landed numerous fish. It was a great day out and quite chilly. Every spot in the river where the canopy opened up and let in the sun I was very grateful for. I put together a video of the escapade. You can watch it below</p>
                 
                 <div className='flex justify-center mb-4'>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/C8SZPr1D-yc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/C8SZPr1D-yc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                 </div>
 
                 <p className='text-center mb-2'>Lastly, I will leave you with a collage of photos taken during the last week or so of my travels around Connecticut in search of my favorite quarry - fish!</p>
