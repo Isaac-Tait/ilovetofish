@@ -50,6 +50,12 @@ const Blog = () => {
                     </a>
                 </Link>
                 <p>It has been too long since I chased down obscure blue lines on a map to see if they held trout. It was time to brush off the cobwebs...</p>
+                <Link href="/fall/autumn-equinox">
+                    <a className='underline text-amber-500'>
+                    <p>Fall is in the air!</p>
+                    </a>
+                </Link>
+                <p>The days are getting shorter, the weather is cooler, and the trees leaves are turning from green to gold, red, yellow, and orange...</p>
             </div>
             <Footer />
         </div>
