@@ -43,7 +43,7 @@ export default function Contact() {
             </header>
             <h2 className='font-semibold text-2xl text-center text-red-500'>How to get a hold of me...</h2>
             
-            <p>The best way to reach me is through my <a 
+            <p className='text-center text-lg text-lime-400 hover:underline hover:text-fuchsia-400 pt-10'>The best way to reach me is through my <a 
                 href='https://www.instagram.com/iloveto.fish/' 
                 target="_blank" 
                 rel="noopener noreferrer"
