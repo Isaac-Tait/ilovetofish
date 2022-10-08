@@ -1,6 +1,5 @@
 import Link from 'next/link'
 
-import { useForm, ValidationError } from "@formspree/react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Header from '../components/Header'
