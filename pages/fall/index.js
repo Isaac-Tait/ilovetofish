@@ -56,6 +56,12 @@ const Blog = () => {
                     </a>
                 </Link>
                 <p>The days are getting shorter, the weather is cooler, and the trees leaves are turning from green to gold, red, yellow, and orange...</p>
+                <Link href="/fall/anniversary">
+                    <a className='underline text-amber-500'>
+                    <p>My first year living in New England</p>
+                    </a>
+                </Link>
+                <p>My first year living in Connecticut is now in the history books. I must say that I was absolutely blown away my first year living here. Everything about this state has surpassed my expectations...</p>
             </div>
             <Footer />
         </div>
