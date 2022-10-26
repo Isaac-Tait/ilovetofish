@@ -8,6 +8,7 @@ import React, { useState, useCallback } from 'react';
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 
+import Link from 'next/link'
 import Breadcrumbs from 'nextjs-breadcrumbs';
 
 import Comment from '../../components/Comment'
@@ -98,7 +99,7 @@ export default function October() {
                 className='first-line:uppercase first-line:tracking-widest
                 first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
                 first-letter:mr-3 first-letter:float-left'
-            >We arrived in Connecticut after a long <a href="https://macadamgrinding.com/posts/connecticut/" arget="_blank" rel="noopener noreferrer" className='text-amber-400 hover:underline'>cross country road trip</a> during the first week of October. The trees were still green and the water was incredibly warm. We were living on an island in our RV waiting for our home to finish being built. So, it was quite easy to get out and fish everyday. We even had our own private dock!</p>
+            >We arrived in Connecticut after a long <Link href="https://macadamgrinding.com/posts/connecticut/" target="_blank" rel="noopener noreferrer" className='text-amber-400 hover:underline'>cross country road trip</Link> during the first week of October. The trees were still green and the water was incredibly warm. We were living on an island in our RV waiting for our home to finish being built. So, it was quite easy to get out and fish everyday. We even had our own private dock!</p>
             <p className='mt-1'>Due to the high amount of rain over the previous month the trees were still green so we got to witness the leaves turning from green to gold, orange, yellow, and red. It was magnificent!</p>
                 {/*The code for the gallery*/}
                 <div>

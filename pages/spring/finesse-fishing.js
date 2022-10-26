@@ -1,6 +1,7 @@
 import React from 'react';
-import Image from 'next/image'
 
+import Image from 'next/image'
+import Link from 'next/link'
 import Breadcrumbs from 'nextjs-breadcrumbs';
 
 import Comment from '../../components/Comment'
@@ -74,12 +75,12 @@ const Finesse = () => {
                     />
                 </div>
                 <p className='flex justify-center text-xs italic mb-2'>Wow, just wow!</p>
-                <p>At first I was fishing with ultra light Rapalla lures. I replaced the treble hook with a single hook (I file off the barb). My go to hook is the <a 
+                <p>At first I was fishing with ultra light Rapalla lures. I replaced the treble hook with a single hook (I file off the barb). My go to hook is the <Link 
                     href="https://vmcpeche.com/products/light-inline-single" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className='underline text-teal-400 hover:text-indigo-400'
-                >VMC Inline Single X Strong-Large Ring Size 2</a>&nbsp;(7237CB). It is a salt-water hook but I have found that those hooks retain their sharpness and resist corrosion a lot better than the fresh water variants... However, I got tired of breaking the little clear plastic &quot;tongues&quot; off of the six to seven dollar lures. So, I switched to ultra-light Japanese spoons. They drive the fish nuts and are nearly impossible to break even if I cast to far and the lure bounces off of a few rocks on the far side of the river.</p>
+                >VMC Inline Single X Strong-Large Ring Size 2</Link>&nbsp;(7237CB). It is a salt-water hook but I have found that those hooks retain their sharpness and resist corrosion a lot better than the fresh water variants... However, I got tired of breaking the little clear plastic &quot;tongues&quot; off of the six to seven dollar lures. So, I switched to ultra-light Japanese spoons. They drive the fish nuts and are nearly impossible to break even if I cast to far and the lure bounces off of a few rocks on the far side of the river.</p>
                 <div className='flex justify-center'>
                     <Image 
                         src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1652881357/Finesse/finesse_bait_fishing-new_england-jdm_fishing_gear-ultra_light-spoons-adventure-nice_spot_xhrdu2.jpg'
@@ -89,12 +90,12 @@ const Finesse = () => {
                         alt={"Project"}
                     />
                 </div>
-                <p>A few months ago I came across <a
+                <p>A few months ago I came across <Link
                     href="https://baitfinesseempire.com/product-category/lines/braid/" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className='underline text-teal-400 hover:text-indigo-400'
-                >Bait Finesse Empire</a> on Instagram and I picked up a few different braid lines from them. Currently I am using Kastking Kastpro 13X Finesse Braided Line at 6lb test.</p>
+                >Bait Finesse Empire</Link> on Instagram and I picked up a few different braid lines from them. Currently I am using Kastking Kastpro 13X Finesse Braided Line at 6lb test.</p>
                 <p>I love this line, it casts effortlessly and lobs even my lightest spoons (around 0.5 grams) an impressive distance. The only issue I have with it is the chartreuse color fades very quickly. After a few times out it is more of a pale yellowish green. This makes it a little harder for me to see in awkward light conditions but then again it is a little harder for the fish to see too...</p>
                 <div className='flex justify-center'>
                     <Image 
@@ -116,12 +117,12 @@ const Finesse = () => {
                     />
                 </div>
                 <p>I still carry my tenkara rod and paraphernalia with me on the river but the rivers around my neck of the woods tend to be bigger and lower gradient and the time it takes to segment the river and fish all possible fish holding spots with a tenkara rod versus a spin rod is huge. In a 4-6 hour day on the river I can cover one to two miles of water with my spin rod. With my tenkara rod I am lucky to get half that.</p>
-                <p>Another interesting thing I <a
+                <p>Another interesting thing I <Link
                     href="https://www.finesse-fishing.com/finesse-spin-fishing.html" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className='underline text-teal-400 hover:text-indigo-400'
-                >read</a> and than found to be quite true is that larger fish are piscivores rather than insectivores. I put this hypothesis to the test last week when I fished a very nice pool with my tenkara rod. No matter my presentation - dead drift, pulsing, cross current, floating on the surface, or letting the white water pull it down deep I could not entice any action from the fish I was certain were there. Then I switched to my finesse rod and the first cast into the pool I hooked a 14&quot; wild Brook Trout.</p>
+                >read</Link> and than found to be quite true is that larger fish are piscivores rather than insectivores. I put this hypothesis to the test last week when I fished a very nice pool with my tenkara rod. No matter my presentation - dead drift, pulsing, cross current, floating on the surface, or letting the white water pull it down deep I could not entice any action from the fish I was certain were there. Then I switched to my finesse rod and the first cast into the pool I hooked a 14&quot; wild Brook Trout.</p>
                 <div className='flex justify-center'>
                     <Image 
                         src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1652881345/Finesse/finesse_bait_fishing-new_england-jdm_fishing_gear-ultra_light-spoons-adventure-spring_csb5xa.jpg'

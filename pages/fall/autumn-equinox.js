@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import Image from 'next/image'
+import Link from 'next/link'
 
 import Breadcrumbs from 'nextjs-breadcrumbs';
 
@@ -81,12 +82,12 @@ export default function Autumn() {
                     className='first-line:uppercase first-line:tracking-widest
                     first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
                     first-letter:mr-3 first-letter:float-left'
-                >Well my second fall in Connecticut started on a good note. I was able to get out for a great, albeit, chilly day of fishing on a river not too far from home. Last year my first blog on this site was about a local{' '}<a 
-                    href="https://www.iloveto.fish/fall/bouldering" 
+                >Well my second fall in Connecticut started on a good note. I was able to get out for a great, albeit, chilly day of fishing on a river not too far from home. Last year my first blog on this site was about a local{' '}<Link 
+                    href="fall/bouldering" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className='underline text-teal-400 hover:text-indigo-400'
-                >bouldering</a>&nbsp;area I had discovered.</p>
+                >bouldering</Link>&nbsp;area I had discovered.</p>
                 <p>Well this week I discovered a new field of boulders while I was out scoping a new area to do some kayak (and maybe stream) fishing. I am looking forward to returning to the area soon with my bouldering gear and do some exploring...</p>
                 <div className='flex justify-center'>
                     <Image 
