@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
+import Link from 'next/link'
 
 import Breadcrumbs from 'nextjs-breadcrumbs';
 
@@ -54,12 +55,12 @@ const Blank = () => {
                     />
                 </div>
                 <p className='flex justify-center text-xs'>The required tour bus selfie before the show started</p>
-                <p>You can find other Pat Metheny playlists{' '}<a 
+                <p>You can find other Pat Metheny playlists{' '}<Link 
                     href="https://patmetheny.com/pmradio/" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className='underline text-teal-400 hover:text-indigo-400'
-                >here</a>...</p>
+                >here</Link>...</p>
             </div>
             <div className='max-w-6xl mx-auto'> 
                 <Comment />

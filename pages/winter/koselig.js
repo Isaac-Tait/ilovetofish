@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
+import Link from 'next/link'
 
 import Breadcrumbs from 'nextjs-breadcrumbs';
 
@@ -19,13 +20,13 @@ const Koselig = () => {
                         first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
                         first-letter:mr-3 first-letter:float-left'
                     >I posted a collage of photos to&nbsp;
-                    <a 
+                    <Link 
                         href="https://www.instagram.com/p/CY2pJkbtud0/" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className='underline text-teal-400 hover:text-indigo-400'
-                    >Instagram</a>&nbsp;this evening (1/17/2022) all about Koselig.</p>
-                    <p>I was inspired by two articles that I wanted to share here. The first was written in &quot;The Atlantic&quot;. It is an older article that was first published in 2015 (a simpler time for sure...) but I only just recently discovered it because well I did not really need to think about cold gray winters in San Diego California... Here is the <a href='https://www.theatlantic.com/health/archive/2015/07/the-norwegian-town-where-the-sun-doesnt-rise/396746/' target="_blank" rel="noopener noreferrer" className='underline text-teal-400 hover:text-indigo-400'>Link</a></p>
+                    >Instagram</Link>&nbsp;this evening (1/17/2022) all about Koselig.</p>
+                    <p>I was inspired by two articles that I wanted to share here. The first was written in &quot;The Atlantic&quot;. It is an older article that was first published in 2015 (a simpler time for sure...) but I only just recently discovered it because well I did not really need to think about cold gray winters in San Diego California... Here is the <Link href='https://www.theatlantic.com/health/archive/2015/07/the-norwegian-town-where-the-sun-doesnt-rise/396746/' target="_blank" rel="noopener noreferrer" className='underline text-teal-400 hover:text-indigo-400'>Link</Link></p>
                         <div className='flex justify-center'>
                         <Image 
                             src='/images/koselig1-750.jpg'
@@ -36,12 +37,12 @@ const Koselig = () => {
                         />
                         </div>
                         <p className='flex justify-center text-xs italic'>Yesterday all the lakes, bogs, and puddles were frozen. Then a warm storm blew in and the ice sunk, which I thought was pretty cool looking...</p>
-                    <p>The second article can be found <a 
+                    <p>The second article can be found <Link 
                         href="https://www.thatscandinavianfeeling.com/lifestyle/norwegian-concept-koselig" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className='underline text-teal-400 hover:text-indigo-400'
-                    >here</a>.</p>
+                    >here</Link>.</p>
                     <p>There now I feel a lot better. As a writer I would seriously dislike someone stealing my words and claiming them as my own. I quoted the second article in my Instagram post and since you cannot put links in posts I decided the next best thing to do was blog about it...</p>
                 <div className='flex justify-center'>
                     <Image 

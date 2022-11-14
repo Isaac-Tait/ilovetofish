@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
+import Link from 'next/link'
 
 import Breadcrumbs from 'nextjs-breadcrumbs';
 
@@ -18,12 +19,12 @@ const Kayak = () => {
                     className='first-line:uppercase first-line:tracking-widest
                     first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
                     first-letter:mr-3 first-letter:float-left'
-                >With the drier season fast approaching and the rivers getting smaller and smaller I was beginning to feel guilty for continuing to put pressure on the fish in the rapidly dwindling and warming water. I began considering switching to lake fishing for the summer. However, standing on the bank in one area all day does not{' '}<a 
+                >With the drier season fast approaching and the rivers getting smaller and smaller I was beginning to feel guilty for continuing to put pressure on the fish in the rapidly dwindling and warming water. I began considering switching to lake fishing for the summer. However, standing on the bank in one area all day does not{' '}<Link 
                     href="https://www.iloveto.fish/spring/finesse-fishing" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className='underline text-teal-400 hover:text-indigo-400'
-                >excite</a> me at all.</p>
+                >excite</Link> me at all.</p>
                 <div className='flex justify-center'>
                     <Image 
                         src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1657742689/kayak/kayak-fishing-tenkara-bait_finesse_fishing-connecticut-new_england-nice_spot_for_lunch_hwkm3f.jpg'

@@ -14,7 +14,7 @@ const Spring = () => {
                 
                 <div className='lg:w-2/3 flex my-auto justify-between'>
                     <h3 className='text-2xl font-semibold'>
-                        <Link href={'/summer'}>
+                        <Link href={'/summer'} legacyBehavior>
                             <a className="text-rose-400 hover:text-indigo-500">
                                 <FontAwesomeIcon icon={['fal', 'cloud-sun-rain']} className='h-10' />
                             </a>
@@ -22,7 +22,7 @@ const Spring = () => {
                     </h3>
                     
                     <h3 className='text-2xl font-semibold'>
-                        <Link href={'/fall'}>
+                        <Link href={'/fall'} legacyBehavior>
                             <a className="text-fuchsia-400 hover:text-indigo-500">
                                 <FontAwesomeIcon icon={['fal', 'leaf-maple']} className='h-10' />
                             </a>
@@ -30,7 +30,7 @@ const Spring = () => {
                     </h3>
 
                     <h3 className='text-2xl font-semibold mr-4'>
-                        <Link href={'/winter'}>
+                        <Link href={'/winter'} legacyBehavior>
                             <a className="text-teal-400 hover:text-indigo-500">
                                 <FontAwesomeIcon icon={['fal', 'snowflakes']} className='h-10'/>
                             </a>
@@ -40,25 +40,25 @@ const Spring = () => {
             </header>
             <div className='max-w-6xl mx-auto h-screen px-1'>
                 <h1 className="text-2xl bg-lime-400 flex flex-row justify-center text-neutral-100 rounded-xl mt-1">Spring</h1>
-                <Link href="/spring/pat-metheny">
+                <Link href="/spring/pat-metheny" legacyBehavior>
                         <a className='underline text-amber-500'>
                             <p>Pat Metheny</p>
                         </a>
                     </Link>
                 <p>My most favorite musician of all time has to be Pat Metheny. The man is a prodigy and his music is such a joy to listen too imho...</p>
-                <Link href="/spring/trout">
+                <Link href="/spring/trout" legacyBehavior>
                         <a className='underline text-amber-500'>
                         <p>Trout</p>
                         </a>
                     </Link>
                 <p>It was exactly 180 days since I last caught a wild trout. I was itching to bring one to hand. So, I set off for a river that has become my favorite - for some reason...</p>
-                <Link href="/spring/finesse-fishing">
+                <Link href="/spring/finesse-fishing" legacyBehavior>
                     <a className='underline text-amber-500'>
                     <p>Finesse Fishing</p>
                     </a>
                 </Link>
                 <p>One of the last things I bought before moving back to the USA from Japan was a JDM finesse spin rod and reel as well as a few dozen ultralight spoons. Little did I know how much use I would get out of that rod over the years...</p>
-                <Link href="/spring/mountain-laurel">
+                <Link href="/spring/mountain-laurel" legacyBehavior>
                     <a className='underline text-amber-500'>
                     <p>Mountain Laurel</p>
                     </a>

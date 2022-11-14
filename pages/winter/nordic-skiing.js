@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import Image from 'next/image'
+import Link from 'next/link'
 
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
@@ -90,12 +91,12 @@ export default function NordicSkiing() {
                 >I wanted to go on a family ski trip last season but COVID made things difficult and the snow in southern California was not very inspirational. Then there were the astronomical prices...</p>
                 <p>I had always been intrigued with Nordic skiing (aka cross country skiing) and when we moved to New England with a much more reliable snow pack I decided the 2021/22 season was the perfect time to give it a try.</p>
                 
-                <p>The prices are much more reasonable too which is{' '}<a 
+                <p>The prices are much more reasonable too which is{' '}<Link 
                     href="https://prospectmountain.com/prices/" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className='underline text-teal-400 hover:text-indigo-400'
-                >great</a>. We stayed in town at the Catamount Hotel ($70 a night and 4.5+ star average reviews) and ate some great vegan/vegetarian food too. Including food, lodging, gas, and lessons we spent less for a weekend of nordic skiing then we would have spent on tickets and rentals alone at the nearby Mount Snow.</p>
+                >great</Link>. We stayed in town at the Catamount Hotel ($70 a night and 4.5+ star average reviews) and ate some great vegan/vegetarian food too. Including food, lodging, gas, and lessons we spent less for a weekend of nordic skiing then we would have spent on tickets and rentals alone at the nearby Mount Snow.</p>
                 {/*The code for the gallery*/}
                 <div>
                     <Gallery photos={photos} onClick={openLightbox} />

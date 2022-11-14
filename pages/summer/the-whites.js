@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import Image from 'next/image'
+import Link from 'next/link'
 
 import Breadcrumbs from 'nextjs-breadcrumbs';
 
@@ -96,12 +97,12 @@ export default function WhiteMountains() {
                     className='first-line:uppercase first-line:tracking-widest
                     first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
                     first-letter:mr-3 first-letter:float-left'
-                >I awoke to the sound of rain pattering on the roof of the RV. &#34;Had I slept in too late?!!&#34; I said to myself as I fumbled around as quietly as possible to find my iPhone without waking my wife. &#34;Phew, it is 0430.&#34; I said to myself as I slipped out of bed, donned my fishing clothes I had laid out the night before, and crept silently from the{' '}<a 
+                >I awoke to the sound of rain pattering on the roof of the RV. &#34;Had I slept in too late?!!&#34; I said to myself as I fumbled around as quietly as possible to find my iPhone without waking my wife. &#34;Phew, it is 0430.&#34; I said to myself as I slipped out of bed, donned my fishing clothes I had laid out the night before, and crept silently from the{' '}<Link 
                     href="https://macadamgrinding.com/posts/connecticut/" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className='underline text-teal-400 hover:text-indigo-400'
-                >RV</a>&nbsp;into the darkness and rain</p>
+                >RV</Link>&nbsp;into the darkness and rain</p>
                 <p></p>
                 <div className='flex justify-center pt-2'>
                     <Image 
@@ -132,12 +133,12 @@ export default function WhiteMountains() {
                         ) : null}
                     </ModalGateway>
                 </div>
-                <p className='pt-2'>In total I spent four days fishing in The White Mountains. The lionshare of the fishing was with my{' '}<a 
+                <p className='pt-2'>In total I spent four days fishing in The White Mountains. The lionshare of the fishing was with my{' '}<Link 
                     href="https://macadamgrinding.com/posts/connecticut/" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className='underline text-teal-400 hover:text-indigo-400'
-                >Tenryu Furaibo TF39TA</a>&nbsp;but I did use my finesse rod a bit with no luck. The fish seemed to be mostly interested in flies instead of crank or jerk baits. The water reminded me a lot of Japan - gin clear, high gradient, easily spooked fish, and lots and lots of mushrooms and sansai.</p>
+                >Tenryu Furaibo TF39TA</Link>&nbsp;but I did use my finesse rod a bit with no luck. The fish seemed to be mostly interested in flies instead of crank or jerk baits. The water reminded me a lot of Japan - gin clear, high gradient, easily spooked fish, and lots and lots of mushrooms and sansai.</p>
                 <p>I hooked into some rather large Brook Trout by casting above the pool and allowing the plunging water to drive my fly down deep into the pool. Then as it floated down stream I gave the rod a few quick and fairly large jerks, which moved the fly about three to six inches through the water. My thought was that with all the &#39;noise&#39; of the water I had to make my fly stand out. It seemed to do the trick. It was definitely some fun fishing.</p>
                 <div className='flex justify-center pt-2'>
                     <Image 

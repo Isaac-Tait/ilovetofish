@@ -28,9 +28,9 @@ const Blank = () => {
                 <p>Text</p>
                 <div className='flex justify-center'>
                     <Image 
-                        src='/images/koselig2-500.jpg'
-                        height={750}
-                        width={562}
+                        src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1668383155/secondSummer/second_summer-connecticut-fishing-tenkara-finesse_fishing-bfs-new_england-small_stream_gmi6ud.jpg'
+                        height={562}
+                        width={750}
                         className='rounded-lg'
                         alt={"Project"}
                     />

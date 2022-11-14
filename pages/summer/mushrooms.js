@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
+import Link from 'next/link'
 
 import Breadcrumbs from 'nextjs-breadcrumbs';
 
@@ -18,12 +19,12 @@ const Blank = () => {
                     className='first-line:uppercase first-line:tracking-widest
                     first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
                     first-letter:mr-3 first-letter:float-left'
-                >This week we got some more much needed rain. In the past seven days we have gotten over seven inches of rain. The rain has restored the lakes and rivers to late spring levels and consequently the fishing has improved dramatically. I had a great day on the{' '}<a 
+                >This week we got some more much needed rain. In the past seven days we have gotten over seven inches of rain. The rain has restored the lakes and rivers to late spring levels and consequently the fishing has improved dramatically. I had a great day on the{' '}<Link 
                     href="https://iloveto.fish/summer/kayaking" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className='underline text-teal-400 hover:text-indigo-400'
-                >kayak</a>, followed by two epic days of stream fishing (something I have sorely missed while Connecticut was going through the drought for the last two and a half months).</p>
+                >kayak</Link>, followed by two epic days of stream fishing (something I have sorely missed while Connecticut was going through the drought for the last two and a half months).</p>
                 <p className='my-2'>In the last few days the mushrooms have been popping up with a vengeance and I have had a lot of fun foraging for them. Here are some of the ones I came across during my most recent excursion.</p>
                 <div className='flex justify-center'>
                     <Image 
@@ -55,12 +56,12 @@ const Blank = () => {
                     />
                 </div>
                 <p className='flex justify-center text-xs italic mb-2'>Possibly White Cheese Polypore a.k.a. Tyromyces chioneus</p>
-                <p>On my fishing kayak trip last week I brought to hand and released two very nice Bass and had at least another four or five that put up quite the fight and got off. Switching to the {' '}<a 
+                <p>On my fishing kayak trip last week I brought to hand and released two very nice Bass and had at least another four or five that put up quite the fight and got off. Switching to the {' '}<Link 
                     href="https://www.eurotackle.net/collections/micro-finesse" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className='underline text-teal-400 hover:text-indigo-400'
-                >Eurovision Micro Finesse Jighead with soft lures</a>&nbsp;has really upped my fishing game since I added them to my tackle box.</p>
+                >Eurovision Micro Finesse Jighead with soft lures</Link>&nbsp;has really upped my fishing game since I added them to my tackle box.</p>
                 <p>I found a nice island on the lake and stopped to eat lunch and explore the island a bit. There was an old fire pit and some great spots for a hammock. Perhaps this winter I could ice skate to the island...</p>
                 <div className='flex justify-center'>
                     <Image 
@@ -113,12 +114,12 @@ const Blank = () => {
                     />
                 </div>
                 <p className='flex justify-center text-xs italic mb-2'>I found this Beefsteak Polypore a.k.a. Fistulina hepatica in my yard.</p>
-                <p>A few days later I rode my{' '}<a 
+                <p>A few days later I rode my{' '}<Link 
                     href="https://macadamgrinding.com/posts/connecticut/" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className='underline text-teal-400 hover:text-indigo-400'
-                >gravel bike</a>&nbsp;out to my favorite river. The water was much higher now but still not up to its normal levels. Also many of the springs and seeps on its banks were dry. I guess five plus inches was not enough to get the springs flowing. Luckily there was another good storm on the way that I was hoping would change that.</p>
+                >gravel bike</Link>&nbsp;out to my favorite river. The water was much higher now but still not up to its normal levels. Also many of the springs and seeps on its banks were dry. I guess five plus inches was not enough to get the springs flowing. Luckily there was another good storm on the way that I was hoping would change that.</p>
                 <p>I stopped at a very nice pool to soak in the striking blue skies juxtaposed against the vibrant green trees while I ate a can of Trader Joes Giant Baked Beans. After my delicious lunch I did a bit of yoga and meditation on my flat rock perch listening to the water cascading over the rocks. When I was able to pry myself off of my sun soaked rock I began wading upstream again. I came across a HUGE turtle and then caught and released several nice sized Fallfish. It was a wonderful afternoon. The weather was perfect and the riding was superb.</p>
                 <div className='flex justify-center'>
                     <Image 

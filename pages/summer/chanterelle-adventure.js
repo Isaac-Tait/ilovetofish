@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
+import Link from 'next/link'
 
 import Breadcrumbs from 'nextjs-breadcrumbs';
 
@@ -18,12 +19,12 @@ const Blank = () => {
                     className='first-line:uppercase first-line:tracking-widest
                     first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
                     first-letter:mr-3 first-letter:float-left'
-                >Last week my brother and his family were in town. It was great to see him and his family (the last time I saw them was under less than ideal{' '}<a 
+                >Last week my brother and his family were in town. It was great to see him and his family (the last time I saw them was under less than ideal{' '}<Link 
                     href="https://macadamgrinding.com/posts/year-of-the-ox/" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className='underline text-teal-400 hover:text-indigo-400'
-                >circumstances</a>).</p>
+                >circumstances</Link>).</p>
                 <p>The Fourth of July weekend was relaxing and I got a lot of yard work done. Come Wednesday though I was itching for a bit of fishing action. So, I decided to re-visit an area I had been to before.</p>
                 <div className='flex justify-center'>
                     <Image 

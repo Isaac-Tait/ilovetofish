@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
+import Link from 'next/link'
 
 import Breadcrumbs from 'nextjs-breadcrumbs';
 
@@ -18,12 +19,12 @@ const Blank = () => {
                     className='first-line:uppercase first-line:tracking-widest
                     first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
                     first-letter:mr-3 first-letter:float-left'
-                >There is a stream not too far from my home that keeps beckoning me back despite the fact that all but one of the dozen or so times I fished it I caught a fish. It certainly is not the fish that keeps drawing me back but something{' '}<a 
+                >There is a stream not too far from my home that keeps beckoning me back despite the fact that all but one of the dozen or so times I fished it I caught a fish. It certainly is not the fish that keeps drawing me back but something{' '}<Link 
                     href='https://iloveto.fish/winter/new-england' 
                     target='_blank' 
                     rel='noopener noreferrer' 
                     className='underline text-teal-400 hover:text-indigo-400'
-                >else</a>...</p>
+                >else</Link>...</p>
                 <div className='flex justify-center'>
                     <Image 
                         src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1651021449/Trout/connecticut-trout_fishing-tenkara-spin_fishing-ultralight-water_nbywfc.jpg'
@@ -46,18 +47,18 @@ const Blank = () => {
                     />
                 </div>
                 <p>I was a little miffed that there were not any fish down lower, so I kept trying... Well the other day I decided to hike past all the great holes that look like they should hold trout but never had any when I visted.</p>
-                <p className='mt-2'>It was hard keeping my fishing rod in my{' '}<a 
+                <p className='mt-2'>It was hard keeping my fishing rod in my{' '}<Link 
                     href='https://fallfishtenkara.com/zimmerbuilt-tailwaters-pack/' 
                     target='_blank' 
                     rel='noopener noreferrer' 
                     className='underline text-teal-400 hover:text-indigo-400'
-                >Zimmerbuilt pack</a> but somehow I managed. I spotted two turtles but no fish (<span className='italic'>except some surprise Tiger trout stockers down low...they were just trying to throw me off my game I know it</span>).</p>
-                <p>As I made my way upstream I came across a small spring fed tributary. This is where I pulled out my trusty{' '}<a 
+                >Zimmerbuilt pack</Link> but somehow I managed. I spotted two turtles but no fish (<span className='italic'>except some surprise Tiger trout stockers down low...they were just trying to throw me off my game I know it</span>).</p>
+                <p>As I made my way upstream I came across a small spring fed tributary. This is where I pulled out my trusty{' '}<Link 
                     href='https://jdmtackleheaven.com/products/daiwa-wise-stream-45ul-3?variant=32188060434550'
                     target='_blank' 
                     rel='noopener noreferrer' 
                     className='underline text-teal-400 hover:text-indigo-400'
-                    >Daiwa Wise Stream 45UL-3</a>, and I brought to hand and released a beautiful 13&quot; wild Brook trout. I guess the lower section is too warm for trout (<span className='italic'>there is also a few very wide and shallow spots with minimal tree cover that I think contribute to warming the water too much in the lower sections of this river...</span>).</p>
+                    >Daiwa Wise Stream 45UL-3</Link>, and I brought to hand and released a beautiful 13&quot; wild Brook trout. I guess the lower section is too warm for trout (<span className='italic'>there is also a few very wide and shallow spots with minimal tree cover that I think contribute to warming the water too much in the lower sections of this river...</span>).</p>
                 <div className='flex justify-center'>
                     <Image 
                         src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1651021452/Trout/connecticut-trout_fishing-tenkara-spin_fishing-ultralight_rtdmct.jpg'
