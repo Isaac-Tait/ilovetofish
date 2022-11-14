@@ -39,21 +39,21 @@ const Skiing = () => {
                 <h1 className="text-2xl bg-teal-400 flex flex-row justify-center text-neutral-100 rounded-xl mt-1">Winter</h1>
                     <Link href="/winter/koselig" legacyBehavior>
                         <a className='underline text-amber-500'>
-                        <p>Koselig</p>
+                            <p>Koselig</p>
                         </a>
                     </Link>
                 <p>Let us get cozy for a second and have a quick chat about a positive mental state surrounding winter and all her cold, dark, and gray glory...</p>
 
                 <Link href="/winter/nordic-skiing" legacyBehavior>
                         <a className='underline text-amber-500'>
-                        <p>Nordic Skiing</p>
+                            <p>Nordic Skiing</p>
                         </a>
                     </Link>
                 <p>I thought you had to be wealthy to go skiing until I discovered nordic skiing...</p>
 
                 <Link href="/winter/new-england" legacyBehavior>
                         <a className='underline text-amber-500'>
-                        <p>New England</p>
+                            <p>New England</p>
                         </a>
                     </Link>
                 <p>I have fallen in love with New England. I do not think I will ever leave...</p>

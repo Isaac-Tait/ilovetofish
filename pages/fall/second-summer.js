@@ -36,7 +36,7 @@ const Blank = () => {
                     />
                 </div>
                 <p className='flex justify-center text-xs italic'>A nice spot for sure</p>
-                I checked the water temperature with my new Apple Ultra watch and it came in at 63 degrees. I saw numerous fish but was having zero luck enticing any to chomp my lure until I came across a really nice pool. As I retrieved my lure beside a half submerged log a lovely Brookie ducked out of the cover and slammed my lure. I brought her to hand and quickly released her back into the cool water.
+                <p>I checked the water temperature with my new Apple Ultra watch and it came in at 63 degrees. I saw numerous fish but was having zero luck enticing any to chomp my lure until I came across a really nice pool. As I retrieved my lure beside a half submerged log a lovely Brookie ducked out of the cover and slammed my lure. I brought her to hand and quickly released her back into the cool water.</p>
                 <div className='flex justify-center'>
                     <Image 
                         src='https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1668383156/secondSummer/second_summer-connecticut-fishing-tenkara-finesse_fishing-bfs-new_england-grass_zs5sxc.jpg'

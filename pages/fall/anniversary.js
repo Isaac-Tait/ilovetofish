@@ -55,7 +55,13 @@ const Anniversary = () => {
                 <p className='py-2'>I am having a lot of fun with my new iPhone 14 Pro. The camera is SO much better than my iPhone 11. I put together this video from my trip last week. The water and the colors are just surreal (IMHO). Enjoy.</p>
                 
                 <div className='flex justify-center mb-4'>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LEaS8Xs3sVs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/LEaS8Xs3sVs" 
+                        title="YouTube video player" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    ></iframe>
                 </div>
             </div>
             <div className='max-w-6xl mx-auto'> 

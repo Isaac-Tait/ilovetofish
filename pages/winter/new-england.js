@@ -53,7 +53,13 @@ const NewEngland = () => {
                 <p className='pt-2'>Having recently moved from here from San Diego my soul has come alive at the prospect of so much to explore. The trails, rivers, ponds, and lakes seem endless - and if they ever do run out here I have other states to explore within a one to two hour drive as well.</p>
                 <p className='text-center my-4'>So, without further ado I present <span className='italic'>&quot;Lakes and Streams&quot;</span></p>
                 <div className='flex justify-center mb-4'>
-                    <iframe width="660" height="415" src="https://www.youtube.com/embed/VUXWlXaIyTM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    <iframe 
+                        width="660" 
+                        height="415" 
+                        src="https://www.youtube.com/embed/VUXWlXaIyTM" 
+                        title="YouTube video player" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    ></iframe>
                 </div>
             </div>
             <div className='max-w-6xl mx-auto'> 

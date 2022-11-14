@@ -55,7 +55,7 @@ const Bouldering = () => {
                         />
                     </div>
                     <p className='flex justify-center text-xs italic'>Pull through the bulge onto the face above. A quick problem, good for warming up...V0</p>
-                    <p>There are several other boulders not pictured here. I revisted the area to get some more photos and put up some new problems but the temps were super low and my finger tips were frozen. So, more falling than climbing took place.</p>
+                    <p>There are several other boulders not pictured here. I re-visited the area to get some more photos and put up some new problems but the temps were super low and my finger tips were frozen. So, more falling than climbing took place.</p>
                     <div className='flex justify-center'>
                         <Image 
                             src='/images/boulder-unclimbed.jpg'

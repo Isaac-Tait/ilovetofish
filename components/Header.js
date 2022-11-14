@@ -16,7 +16,8 @@ const Header = () => {
     <nav className='flex items-center flex-wrap p-3 '>
       <Link
         href='/'
-        className='inline-flex items-center p-2 mr-4 lg:w-1/3 text-amber-400 text-6xl'>
+        className='inline-flex items-center p-2 mr-4 lg:w-1/3 text-amber-400 text-6xl'
+        legacyBehavior>
 
         <span className='flex'>I&nbsp;<FontAwesomeIcon icon={['fal', 'heart']} className='h-16'/>&nbsp;to&nbsp;<FontAwesomeIcon icon={['fal', 'fish']} className='h-16'/></span>
 

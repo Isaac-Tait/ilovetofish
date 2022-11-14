@@ -56,7 +56,7 @@ const Fallfish = () => {
                         href='https://fallfishtenkara.com'
                         target='_blank'
                         rel='noopener noreferrer'
-                        legacyBehavior>
+                    >
                         <Image 
                             src='/images/FfT_logo.png'
                             height={258}

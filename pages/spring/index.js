@@ -40,28 +40,20 @@ const Spring = () => {
             </header>
             <div className='max-w-6xl mx-auto h-screen px-1'>
                 <h1 className="text-2xl bg-lime-400 flex flex-row justify-center text-neutral-100 rounded-xl mt-1">Spring</h1>
-                <Link href="/spring/pat-metheny" legacyBehavior>
-                        <a className='underline text-amber-500'>
-                            <p>Pat Metheny</p>
-                        </a>
-                    </Link>
+                <Link href="/spring/pat-metheny">
+                    <p className='underline text-amber-500'>Pat Metheny</p>
+                </Link>
                 <p>My most favorite musician of all time has to be Pat Metheny. The man is a prodigy and his music is such a joy to listen too imho...</p>
-                <Link href="/spring/trout" legacyBehavior>
-                        <a className='underline text-amber-500'>
-                        <p>Trout</p>
-                        </a>
-                    </Link>
+                <Link href="/spring/trout">
+                    <p className='underline text-amber-500'>Trout</p>
+                </Link>
                 <p>It was exactly 180 days since I last caught a wild trout. I was itching to bring one to hand. So, I set off for a river that has become my favorite - for some reason...</p>
-                <Link href="/spring/finesse-fishing" legacyBehavior>
-                    <a className='underline text-amber-500'>
-                    <p>Finesse Fishing</p>
-                    </a>
+                <Link href="/spring/finesse-fishing">
+                    <p className='underline text-amber-500'>Finesse Fishing</p>
                 </Link>
                 <p>One of the last things I bought before moving back to the USA from Japan was a JDM finesse spin rod and reel as well as a few dozen ultralight spoons. Little did I know how much use I would get out of that rod over the years...</p>
-                <Link href="/spring/mountain-laurel" legacyBehavior>
-                    <a className='underline text-amber-500'>
-                    <p>Mountain Laurel</p>
-                    </a>
+                <Link href="/spring/mountain-laurel">
+                    <p className='underline text-amber-500'>Mountain Laurel</p>
                 </Link>
                 <p>After five years of faithful service my Daiwa spin reel seized up and the internal spring snapped. I took the plunge and got a BFS reel. To break it in I checked out a stream near the border of Rhode Island...</p>
             </div>

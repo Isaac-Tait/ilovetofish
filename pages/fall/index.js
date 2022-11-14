@@ -42,15 +42,15 @@ const Blog = () => {
                     </Link>
                 <p>I like to climb rocks. So, imagine my excitement when I discoverd a collection of boulders not too far from home...</p>
 
-                <Link href="/fall/october" legacyBehavior>
+                <Link href="/fall/october">
                     <p className='underline text-amber-500'>October</p>
                 </Link>
                 <p>It has been too long since I chased down obscure blue lines on a map to see if they held trout. It was time to brush off the cobwebs...</p>
-                <Link href="/fall/autumn-equinox" legacyBehavior>
+                <Link href="/fall/autumn-equinox">
                     <p className='underline text-amber-500'>Fall is in the air!</p>
                 </Link>
                 <p>The days are getting shorter, the weather is cooler, and the trees leaves are turning from green to gold, red, yellow, and orange...</p>
-                <Link href="/fall/anniversary" legacyBehavior>
+                <Link href="/fall/anniversary">
                     <p className='underline text-amber-500'>My first year living in New England</p>
                 </Link>
                 <p>My first year living in Connecticut is now in the history books. I must say that I was absolutely blown away my first year living here. Everything about this state has surpassed my expectations...</p>
