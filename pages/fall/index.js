@@ -37,20 +37,20 @@ const Blog = () => {
             </header>
             <div className='max-w-6xl mx-auto h-screen px-1'>
                 <h1 className="text-2xl bg-fuchsia-400 flex flex-row justify-center text-neutral-100 rounded-xl mt-1">Fall</h1>
-                    <Link href="/fall/bouldering">
+                    <Link href="/fall/bouldering" legacyBehavior>
                         <p className='underline text-amber-500'>Boulders</p>
                     </Link>
                 <p>I like to climb rocks. So, imagine my excitement when I discoverd a collection of boulders not too far from home...</p>
 
-                <Link href="/fall/october">
+                <Link href="/fall/october" legacyBehavior>
                     <p className='underline text-amber-500'>October</p>
                 </Link>
                 <p>It has been too long since I chased down obscure blue lines on a map to see if they held trout. It was time to brush off the cobwebs...</p>
-                <Link href="/fall/autumn-equinox">
+                <Link href="/fall/autumn-equinox" legacyBehavior>
                     <p className='underline text-amber-500'>Fall is in the air!</p>
                 </Link>
                 <p>The days are getting shorter, the weather is cooler, and the trees leaves are turning from green to gold, red, yellow, and orange...</p>
-                <Link href="/fall/anniversary">
+                <Link href="/fall/anniversary" legacyBehavior>
                     <p className='underline text-amber-500'>My first year living in New England</p>
                 </Link>
                 <p>My first year living in Connecticut is now in the history books. I must say that I was absolutely blown away my first year living here. Everything about this state has surpassed my expectations...</p>

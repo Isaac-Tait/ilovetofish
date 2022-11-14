@@ -52,7 +52,11 @@ const Fallfish = () => {
                 <p className='mt-1'>Now there are nearly 140 pages chronicling my adventures in Japan within the confines of Fallfish Tenkara. The whole site is dedicated to my adventures in Japan.</p>
                 <p className='mt-1'>So, go check it out by clicking the logo below.</p>
                 <div className='flex justify-center pt-10'>
-                    <Link href='https://fallfishtenkara.com' target='_blank' rel='noopener noreferrer'>
+                    <Link
+                        href='https://fallfishtenkara.com'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        legacyBehavior>
                         <Image 
                             src='/images/FfT_logo.png'
                             height={258}
@@ -67,7 +71,7 @@ const Fallfish = () => {
                 <Footer />
             </div>
         </div>
-    )
+    );
 };
 
 export default Fallfish;
