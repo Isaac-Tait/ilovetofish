@@ -21,11 +21,11 @@ const Footer = () => {
           </p>
         </div>
         <div className='mt-2 flex justify-center w-1/3'>
-          <Link 
-            href='https://github.com/Isaac-Tait/ilovetofish' 
-            target="_blank" 
+          <Link
+            href='https://github.com/Isaac-Tait/ilovetofish'
+            target="_blank"
             rel="noopener noreferrer"
-          >
+            legacyBehavior>
             <Image 
               src='/GitHub.png'
               height={20}
@@ -36,17 +36,17 @@ const Footer = () => {
         </div>
         <div className='text-slate-500 w-1/3 flex justify-end'>
           <p className=''>Another&nbsp;
-              <Link 
+              <Link
                 href="https://mountaintopcoding.dev"
-                className="text-indigo-500 hover:text-fuchsia-400" 
-                target="_blank" 
+                className="text-indigo-500 hover:text-fuchsia-400"
+                target="_blank"
                 rel="noopener noreferrer"
-              >mountainTopCoding(<span role="img" aria-label="mountain with snow-cap">&#127956;</span>);</Link> project
+                legacyBehavior>mountainTopCoding(<span role="img" aria-label="mountain with snow-cap">&#127956;</span>);</Link> project
           </p>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default Footer;
