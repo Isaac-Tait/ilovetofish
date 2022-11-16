@@ -21,8 +21,7 @@
     "nextjs-breadcrumbs": "^1.1.9",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-images": "^1.2.0-beta.7",
-    "react-photo-gallery": "^8.0.0",
+    "react-responsive-carousel": "^3.2.23",
     "tailwindcss-hero-patterns": "^0.0.1",
     "yarn": "^1.22.17"
   },

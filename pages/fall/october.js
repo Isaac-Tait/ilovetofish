@@ -1,14 +1,8 @@
-{/*
-    This page utilizes a long dormant react photo gallery. 
-    If you have any issues, or find any bugs, let me know!
-    - Isaac
-*/}
+import React from 'react';
 
-import React, { useState, useCallback } from 'react';
-import Gallery from "react-photo-gallery";
-import Carousel, { Modal, ModalGateway } from "react-images";
-
+import Image from 'next/image'
 import Link from 'next/link'
+
 import Breadcrumbs from 'nextjs-breadcrumbs';
 
 import Comment from '../../components/Comment'
@@ -16,79 +10,7 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
 export default function October() {
-    const [currentImage, setCurrentImage] = useState(0);
-    const [viewerIsOpen, setViewerIsOpen] = useState(false);
-  
-    const openLightbox = useCallback((event, { photo, index }) => {
-      setCurrentImage(index);
-      setViewerIsOpen(true);
-    }, []);
-  
-    const closeLightbox = () => {
-      setCurrentImage(0);
-      setViewerIsOpen(false);
-    };
-
-    const photos = [
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643045849/Lake%20Fishing/ilovetofish-connecticut-new_england-fishing-tenkara-epic_spot_2_ygpn9j_f1vu7d.jpg',
-            width: 4,
-            height: 3
-        },
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643045847/Lake%20Fishing/ilovetofish-connecticut-new_england-fishing-tenkara-pine_tree_water_qsczvz_pk6ayn.jpg',
-            width: 4,
-            height: 3
-        }, 
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643045846/Lake%20Fishing/ilovetofish-connecticut-new_england-fishing-tenkara-clouds_and_light_str2nc_bqj4oz.jpg',
-            width: 3,
-            height: 2
-        }, 
-        //Lilly Pad 👇🏼
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643045844/Lake%20Fishing/ilovetofish-connecticut-new_england-fishing-tenkara-lily_pad_uozvlb_d7vaf4.jpg',
-            width: 5,
-            height: 2
-        }, 
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643045849/Lake%20Fishing/ilovetofish-connecticut-new_england-fishing-tenkara-_flhnqo_ogwdxw.jpg',
-            width: 4,
-            height: 3
-        }, 
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643045849/Lake%20Fishing/ilovetofish-connecticut-new_england-fishing-tenkara-crawfish_pznlqo_jcmyqd.jpg',
-            width: 4,
-            height: 3
-        }, 
-        // Bass 👇🏼
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643045846/Lake%20Fishing/ilovetofish-connecticut-new_england-fishing-tenkara-another_fish_wy9abi_bbvqgj.jpg',
-            width: 7,
-            height: 3
-        }, 
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643045844/Lake%20Fishing/ilovetofish-connecticut-new_england-fishing-tenkara-clouds_udrovz_thb3a8.jpg',
-            width: 4,
-            height: 3
-        }, 
-        //Pickerel 👇🏼
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643045845/Lake%20Fishing/ilovetofish-connecticut-new_england-fishing-tenkara-pickerel_ne8kch_so2pdb.jpg',
-            width: 4927,
-            height: 1000
-        }, 
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643045843/Lake%20Fishing/ilovetofish-connecticut-new_england-fishing-tenkara-clouds_3_vmloxr_n48cjl.jpg',
-            width: 4,
-            height: 2
-        }, 
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643045846/Lake%20Fishing/ilovetofish-connecticut-new_england-fishing-tenkara-happy-kid_ioaikx_bqaioc.jpg',
-            width: 4,
-            height: 3
-        }, 
-    ]
+    var Carousel = require('react-responsive-carousel').Carousel;
     return (
         <div className='heropattern-topography-neutral-100'>
             <Header />
@@ -107,21 +29,42 @@ export default function October() {
             <p className='mt-1'>Due to the high amount of rain over the previous month the trees were still green so we got to witness the leaves turning from green to gold, orange, yellow, and red. It was magnificent!</p>
                 {/*The code for the gallery*/}
                 <div>
-                    <Gallery photos={photos} onClick={openLightbox} />
-                    <ModalGateway>
-                        {viewerIsOpen ? (
-                        <Modal onClose={closeLightbox}>
-                            <Carousel
-                            currentIndex={currentImage}
-                            views={photos.map(x => ({
-                                ...x,
-                                srcset: x.srcSet,
-                                caption: x.title
-                            }))}
-                            />
-                        </Modal>
-                        ) : null}
-                    </ModalGateway>
+                    <Carousel showArrows={true} showThumbs={false}>
+                        <div>
+                            <Image src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643045849/Lake%20Fishing/ilovetofish-connecticut-new_england-fishing-tenkara-epic_spot_2_ygpn9j_f1vu7d.jpg" width={1000} height={750} alt="photo"/>
+                        </div>
+                        <div>
+                            <Image src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643045847/Lake%20Fishing/ilovetofish-connecticut-new_england-fishing-tenkara-pine_tree_water_qsczvz_pk6ayn.jpg" width={1000} height={750} alt="photo"/>
+                        </div>
+                        <div>
+                            <Image src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643045846/Lake%20Fishing/ilovetofish-connecticut-new_england-fishing-tenkara-clouds_and_light_str2nc_bqj4oz.jpg" width={1000} height={750} alt="photo"/>
+                        </div>
+                        <div>
+                            <Image src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643045844/Lake%20Fishing/ilovetofish-connecticut-new_england-fishing-tenkara-lily_pad_uozvlb_d7vaf4.jpg" width={1000} height={750} alt="photo"/>
+                        </div>
+                        <div>
+                            <Image src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643045849/Lake%20Fishing/ilovetofish-connecticut-new_england-fishing-tenkara-_flhnqo_ogwdxw.jpg" width={1000} height={750} alt="photo"/>
+                        </div>
+                        <div>
+                            <Image src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643045849/Lake%20Fishing/ilovetofish-connecticut-new_england-fishing-tenkara-crawfish_pznlqo_jcmyqd.jpg" width={1000} height={750} alt="photo"/>
+                        </div>
+                        <div>
+                            <Image src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643045846/Lake%20Fishing/ilovetofish-connecticut-new_england-fishing-tenkara-another_fish_wy9abi_bbvqgj.jpg" width={1000} height={750} alt="photo"/>
+                        </div>
+
+                        <div>
+                            <Image src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643045844/Lake%20Fishing/ilovetofish-connecticut-new_england-fishing-tenkara-clouds_udrovz_thb3a8.jpg" width={1000} height={750} alt="photo"/>
+                        </div>
+                        <div>
+                            <Image src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643045845/Lake%20Fishing/ilovetofish-connecticut-new_england-fishing-tenkara-pickerel_ne8kch_so2pdb.jpg" width={1000} height={750} alt="photo"/>
+                        </div>
+                        <div>
+                            <Image src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643045843/Lake%20Fishing/ilovetofish-connecticut-new_england-fishing-tenkara-clouds_3_vmloxr_n48cjl.jpg" width={1000} height={750} alt="photo"/>
+                        </div>
+                        <div>
+                            <Image src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1643045846/Lake%20Fishing/ilovetofish-connecticut-new_england-fishing-tenkara-happy-kid_ioaikx_bqaioc.jpg" width={1000} height={750} alt="photo"/>
+                        </div>
+                    </Carousel>
                 </div>
             
             </div>

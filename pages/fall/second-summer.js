@@ -8,7 +8,7 @@ import Comment from '../../components/Comment'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
-const Blank = () => {
+const SecondSummer = () => {
     return (
         <div className='heropattern-topography-neutral-100'>
             <Header />
@@ -20,7 +20,7 @@ const Blank = () => {
                     first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
                     first-letter:mr-3 first-letter:float-left'
                 >A few weeks back my family and I flew out to California to visit friends and family for two weeks. When we came home Connecticut was experiencing a second summer. In fact it was warmer in Connecticut than it had been when we left Southern California! I took advantage of the second summer weather and headed out to find some trout on a few small blue lines. One was a new area and the other area I had been to a handful of times over the past{' '}<Link 
-                    href="spring/trout" 
+                    href="/spring/trout" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className='underline text-teal-400 hover:text-indigo-400'
@@ -117,4 +117,4 @@ const Blank = () => {
         )
     }
 
-    export default Blank;
+    export default SecondSummer;
