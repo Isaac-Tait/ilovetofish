@@ -17,10 +17,8 @@ const Header = () => {
       <Link
         href='/'
         className='inline-flex items-center p-2 mr-4 lg:w-1/3 text-amber-400 text-6xl'
-        legacyBehavior>
-
+      >
         <span className='flex text-amber-400'>I&nbsp;<FontAwesomeIcon icon={['fal', 'heart']} className='h-16'/>&nbsp;to&nbsp;<FontAwesomeIcon icon={['fal', 'fish']} className='h-16'/></span>
-
       </Link>
       <button
         className=' inline-flex p-3 bg-amber-400 rounded lg:hidden text-white ml-auto hover:text-white outline-none'

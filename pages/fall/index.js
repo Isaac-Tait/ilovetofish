@@ -54,6 +54,10 @@ const Blog = () => {
                     <p className='underline text-amber-500'>My first year living in New England</p>
                 </Link>
                 <p>My first year living in Connecticut is now in the history books. I must say that I was absolutely blown away my first year living here. Everything about this state has surpassed my expectations...</p>
+                <Link href="/fall/second-summer" legacyBehavior>
+                    <p className='underline text-amber-500'>A second chance at summer, but if only for a day</p>
+                </Link>
+                <p>Fresh off the plane from California (a two week visit to see family, friends, and go to a wedding) I was itching to get back out into the wild places of New England that I have fallen madly in love with. Lucky for me the weather was a warm 77 degrees in early November...</p>
             </div>
             <Footer />
         </div>
