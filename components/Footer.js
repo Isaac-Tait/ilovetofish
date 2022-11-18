@@ -41,7 +41,7 @@ const Footer = () => {
                 className="text-indigo-500 hover:text-fuchsia-400"
                 target="_blank"
                 rel="noopener noreferrer"
-                legacyBehavior>mountainTopCoding(<span role="img" aria-label="mountain with snow-cap">&#127956;</span>);</Link> project
+                legacyBehavior>mountainTopCoding(&#127956;);</Link> project
           </p>
         </div>
       </div>
