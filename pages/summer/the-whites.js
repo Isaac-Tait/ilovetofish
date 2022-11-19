@@ -1,92 +1,18 @@
-import React, { useState, useCallback } from 'react';
+import React from 'react';
+
 import Image from 'next/image'
 import Link from 'next/link'
 
 import Breadcrumbs from 'nextjs-breadcrumbs';
-
-import Gallery from "react-photo-gallery";
-import Carousel, { Modal, ModalGateway } from "react-images";
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import Comment from '../../components/Comment'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
 export default function WhiteMountains() {
-    const [currentImage, setCurrentImage] = useState(0);
-    const [viewerIsOpen, setViewerIsOpen] = useState(false);
-  
-    const openLightbox = useCallback((event, { photo, index }) => {
-      setCurrentImage(index);
-      setViewerIsOpen(true);
-    }, []);
-  
-    const closeLightbox = () => {
-      setCurrentImage(0);
-      setViewerIsOpen(false);
-    };
 
-    const photos = [
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1661817114/theWhiteMountains/the_white_mountains-new_hampshire-headwaters-mount_washington-brook_trout-tenkara-fixed_line_fishing-green_trees_gyhxwn.jpg',
-            width: 4,
-            height: 3
-        },
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1661817114/theWhiteMountains/the_white_mountains-new_hampshire-headwaters-mount_washington-brook_trout-tenkara-fixed_line_fishing-boulder_uchwtb.jpg',
-            width: 4,
-            height: 3
-        },
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1661817113/theWhiteMountains/the_white_mountains-new_hampshire-headwaters-mount_washington-brook_trout-tenkara-fixed_line_fishing-so_nice_ov1g3h.jpg',
-            width: 4,
-            height: 3
-        },
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1661817112/theWhiteMountains/the_white_mountains-new_hampshire-headwaters-mount_washington-brook_trout-tenkara-fixed_line_fishing-moss_aa3zyw.jpg',
-            width: 4,
-            height: 3
-        },
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1661817112/theWhiteMountains/the_white_mountains-new_hampshire-headwaters-mount_washington-brook_trout-tenkara-fixed_line_fishing-fog_i4skma.jpg',
-            width: 4,
-            height: 3
-        },
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1661817111/theWhiteMountains/the_white_mountains-new_hampshire-headwaters-mount_washington-brook_trout-tenkara-fixed_line_fishing-mushroom_m1ijoq.jpg',
-            width: 4,
-            height: 3
-        },
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1661817110/theWhiteMountains/the_white_mountains-new_hampshire-headwaters-mount_washington-brook_trout-tenkara-fixed_line_fishing-tenryu_furaibo_wnnrps.jpg',
-            width: 4,
-            height: 3
-        },
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1661817110/theWhiteMountains/the_white_mountains-new_hampshire-headwaters-mount_washington-brook_trout-tenkara-fixed_line_fishing-berries_fzweks.jpg',
-            width: 4,
-            height: 3
-        },
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1661817107/theWhiteMountains/the_white_mountains-new_hampshire-headwaters-mount_washington-brook_trout-tenkara-fixed_line_fishing-log_jam_xh9b30.jpg',
-            width: 4,
-            height: 3
-        },
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1661817107/theWhiteMountains/the_white_mountains-new_hampshire-headwaters-mount_washington-brook_trout-tenkara-fixed_line_fishing-cascades_o5cepc.jpg',
-            width: 4,
-            height: 3
-        },
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1661817107/theWhiteMountains/the_white_mountains-new_hampshire-headwaters-mount_washington-brook_trout-tenkara-fixed_line_fishing-i_want_to_go_back_gvdwjt.jpg',
-            width: 4,
-            height: 3
-        },
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1661817106/theWhiteMountains/the_white_mountains-new_hampshire-headwaters-mount_washington-brook_trout-tenkara-fixed_line_fishing-gin_clear_lg6wbq.jpg',
-            width: 4,
-            height: 3
-        },
-    ]
     return (
         <div className='heropattern-topography-neutral-100'>
             <Header />
@@ -116,23 +42,113 @@ export default function WhiteMountains() {
                 <p className='flex justify-center text-xs italic'>Scenes like this made it all to easy to get up every morning before light to fish</p>
                 <p className='pt-2'>I made it to Dunkin Donuts shortly after they opened and grabbed my usual - avocado toast, two hashbrowns, and a medium breakfast tea with oatmilk. The drive to the river went smoothly with no close calls from wildlife in the road. I donned my new sawanobori shoes and plunged into the forest towards the cacophony of water running over, around, and through boulders.</p>
             
-                <div>
-                    <Gallery photos={photos} onClick={openLightbox} />
-                    <ModalGateway>
-                        {viewerIsOpen ? (
-                        <Modal onClose={closeLightbox}>
-                            <Carousel
-                            currentIndex={currentImage}
-                            views={photos.map(x => ({
-                                ...x,
-                                srcset: x.srcSet,
-                                caption: x.title
-                            }))}
-                            />
-                        </Modal>
-                        ) : null}
-                    </ModalGateway>
-                </div>
+                <Carousel showArrows={true} showThumbs={false} className="mb-1">
+                    <div>
+                        <Image 
+                            src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1661817114/theWhiteMountains/the_white_mountains-new_hampshire-headwaters-mount_washington-brook_trout-tenkara-fixed_line_fishing-green_trees_gyhxwn.jpg" 
+                            width={1000} 
+                            height={750} 
+                            alt="photo"
+                        />
+                    </div>
+                    <div>
+                        <Image 
+                            src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1661817106/theWhiteMountains/the_white_mountains-new_hampshire-headwaters-mount_washington-brook_trout-tenkara-fixed_line_fishing-gin_clear_lg6wbq.jpg" 
+                            width={1000} 
+                            height={750} 
+                            alt="photo"
+                        />
+                    </div>
+                    <div>
+                        <Image 
+                            src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1661817107/theWhiteMountains/the_white_mountains-new_hampshire-headwaters-mount_washington-brook_trout-tenkara-fixed_line_fishing-i_want_to_go_back_gvdwjt.jpg" 
+                            width={1000} 
+                            height={750} 
+                            alt="photo"
+                        />
+                    </div>
+                    <div>
+                        <Image 
+                            src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1661817107/theWhiteMountains/the_white_mountains-new_hampshire-headwaters-mount_washington-brook_trout-tenkara-fixed_line_fishing-cascades_o5cepc.jpg" 
+                            width={1000} 
+                            height={750} 
+                            alt="photo"
+                        />
+                    </div>
+                    <div>
+                        <Image 
+                            src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1661817107/theWhiteMountains/the_white_mountains-new_hampshire-headwaters-mount_washington-brook_trout-tenkara-fixed_line_fishing-log_jam_xh9b30.jpg" 
+                            width={1000} 
+                            height={750} 
+                            alt="photo"
+                        />
+                    </div>
+                    <div>
+                        <Image 
+                            src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1661817110/theWhiteMountains/the_white_mountains-new_hampshire-headwaters-mount_washington-brook_trout-tenkara-fixed_line_fishing-berries_fzweks.jpg" 
+                            width={1000} 
+                            height={750} 
+                            alt="photo"
+                        />
+                    </div>
+                    <div>
+                        <Image 
+                            src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1661817110/theWhiteMountains/the_white_mountains-new_hampshire-headwaters-mount_washington-brook_trout-tenkara-fixed_line_fishing-tenryu_furaibo_wnnrps.jpg" 
+                            width={1000} 
+                            height={750} 
+                            alt="photo"
+                        />
+                    </div>
+                    <div>
+                        <Image 
+                            src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1661817111/theWhiteMountains/the_white_mountains-new_hampshire-headwaters-mount_washington-brook_trout-tenkara-fixed_line_fishing-mushroom_m1ijoq.jpg" 
+                            width={1000} 
+                            height={750} 
+                            alt="photo"
+                        />
+                    </div>
+                    <div>
+                        <Image 
+                            src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1661817112/theWhiteMountains/the_white_mountains-new_hampshire-headwaters-mount_washington-brook_trout-tenkara-fixed_line_fishing-fog_i4skma.jpg" 
+                            width={1000} 
+                            height={750} 
+                            alt="photo"
+                        />
+                    </div>
+                    <div>
+                        <Image 
+                            src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1661817112/theWhiteMountains/the_white_mountains-new_hampshire-headwaters-mount_washington-brook_trout-tenkara-fixed_line_fishing-moss_aa3zyw.jpg" 
+                            width={1000} 
+                            height={750} 
+                            alt="photo"
+                        />
+                    </div>
+                    <div>
+                        <Image 
+                            src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1661817113/theWhiteMountains/the_white_mountains-new_hampshire-headwaters-mount_washington-brook_trout-tenkara-fixed_line_fishing-so_nice_ov1g3h.jpg" 
+                            width={1000} 
+                            height={750} 
+                            alt="photo"
+                        />
+                    </div>
+                    <div>
+                        <Image 
+                            src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1661817114/theWhiteMountains/the_white_mountains-new_hampshire-headwaters-mount_washington-brook_trout-tenkara-fixed_line_fishing-green_trees_gyhxwn.jpg" 
+                            width={1000} 
+                            height={750} 
+                            alt="photo"
+                        />
+                    </div>
+                    <div>
+                        <Image 
+                            src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1661817114/theWhiteMountains/the_white_mountains-new_hampshire-headwaters-mount_washington-brook_trout-tenkara-fixed_line_fishing-boulder_uchwtb.jpg" 
+                            width={1000} 
+                            height={750} 
+                            alt="photo"
+                        />
+                    </div>
+                </Carousel>
+                <p className='flex justify-center text-xs italic mb-10'>Image Carousel (Click the arrows on the right or left to scroll through the photos).</p>
                 <p className='pt-2'>In total I spent four days fishing in The White Mountains. The lionshare of the fishing was with my{' '}<Link 
                     href="https://macadamgrinding.com/posts/connecticut/" 
                     target="_blank" 

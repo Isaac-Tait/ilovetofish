@@ -1,77 +1,17 @@
-import React, { useState, useCallback } from 'react';
+import React from 'react';
+
 import Image from 'next/image'
 import Link from 'next/link'
 
 import Breadcrumbs from 'nextjs-breadcrumbs';
-
-import Gallery from "react-photo-gallery";
-import Carousel, { Modal, ModalGateway } from "react-images";
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import Comment from '../../components/Comment'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
 export default function Autumn() {
-    const [currentImage, setCurrentImage] = useState(0);
-    const [viewerIsOpen, setViewerIsOpen] = useState(false);
-  
-    const openLightbox = useCallback((event, { photo, index }) => {
-      setCurrentImage(index);
-      setViewerIsOpen(true);
-    }, []);
-  
-    const closeLightbox = () => {
-      setCurrentImage(0);
-      setViewerIsOpen(false);
-    };
-
-    const photos = [
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1664375167/fallInConnecticut/new_england-connecticut-tenkara-ultra_light_finesse-fishing-bait_casting-bait_caster-kayak-lake_fishing-river_fishing-adventure-exploration-nice_pool_tgfklo.jpg',
-            width: 4,
-            height: 3
-        },
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1664375166/fallInConnecticut/new_england-connecticut-tenkara-ultra_light_finesse-fishing-bait_casting-bait_caster-kayak-lake_fishing-river_fishing-adventure-exploration-kayak_tlhtgb.jpg',
-            width: 4,
-            height: 3
-        },
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1664375161/fallInConnecticut/new_england-connecticut-tenkara-ultra_light_finesse-fishing-bait_casting-bait_caster-kayak-lake_fishing-river_fishing-adventure-exploration-_wpwxhj.jpg',
-            width: 4,
-            height: 3
-        },
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1664375164/fallInConnecticut/new_england-connecticut-tenkara-ultra_light_finesse-fishing-bait_casting-bait_caster-kayak-lake_fishing-river_fishing-adventure-exploration-river_nit7f2.jpg',
-            width: 4,
-            height: 3
-        },
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1664375164/fallInConnecticut/new_england-connecticut-tenkara-ultra_light_finesse-fishing-bait_casting-bait_caster-kayak-lake_fishing-river_fishing-adventure-exploration-reflection_c1buyc.jpg',
-            width: 4,
-            height: 3
-        },
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1664375163/fallInConnecticut/new_england-connecticut-tenkara-ultra_light_finesse-fishing-bait_casting-bait_caster-kayak-lake_fishing-river_fishing-adventure-exploration-clouds_l1d8zp.jpg',
-            width: 4,
-            height: 3
-        },
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1664375163/fallInConnecticut/new_england-connecticut-tenkara-ultra_light_finesse-fishing-bait_casting-bait_caster-kayak-lake_fishing-river_fishing-adventure-exploration-dead_tree_kxwr3q.jpg',
-            width: 4,
-            height: 3
-        },
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1664375163/fallInConnecticut/new_england-connecticut-tenkara-ultra_light_finesse-fishing-bait_casting-bait_caster-kayak-lake_fishing-river_fishing-adventure-exploration-shrooms_mmw4la.jpg',
-            width: 4,
-            height: 3
-        },
-        {
-            src: 'https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1664375163/fallInConnecticut/new_england-connecticut-tenkara-ultra_light_finesse-fishing-bait_casting-bait_caster-kayak-lake_fishing-river_fishing-adventure-exploration-windy_n6ntl0.jpg',
-            width: 4,
-            height: 3
-        },
-    ]
     return (
         <div className='heropattern-topography-neutral-100'>
             <Header />
@@ -131,23 +71,73 @@ export default function Autumn() {
 
                 <p className='text-center mb-2'>Lastly, I will leave you with a collage of photos taken during the last week or so of my travels around Connecticut in search of my favorite quarry - fish!</p>
 
-                <div>
-                    <Gallery photos={photos} onClick={openLightbox} />
-                    <ModalGateway>
-                        {viewerIsOpen ? (
-                        <Modal onClose={closeLightbox}>
-                            <Carousel
-                            currentIndex={currentImage}
-                            views={photos.map(x => ({
-                                ...x,
-                                srcset: x.srcSet,
-                                caption: x.title
-                            }))}
-                            />
-                        </Modal>
-                        ) : null}
-                    </ModalGateway>
-                </div>
+                <Carousel showArrows={true} showThumbs={false} className="mb-1">
+                    <div>
+                        <Image 
+                            src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1664375167/fallInConnecticut/new_england-connecticut-tenkara-ultra_light_finesse-fishing-bait_casting-bait_caster-kayak-lake_fishing-river_fishing-adventure-exploration-nice_pool_tgfklo.jpg" 
+                            width={1000} 
+                            height={750} 
+                            alt="photo"
+                        />
+                    </div>
+                    <div>
+                        <Image 
+                            src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1664375166/fallInConnecticut/new_england-connecticut-tenkara-ultra_light_finesse-fishing-bait_casting-bait_caster-kayak-lake_fishing-river_fishing-adventure-exploration-kayak_tlhtgb.jpg" 
+                            width={1000} 
+                            height={750} 
+                            alt="photo"
+                        />
+                    </div>
+                    <div>
+                        <Image 
+                            src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1664375161/fallInConnecticut/new_england-connecticut-tenkara-ultra_light_finesse-fishing-bait_casting-bait_caster-kayak-lake_fishing-river_fishing-adventure-exploration-_wpwxhj.jpg" 
+                            width={1000} 
+                            height={750} 
+                            alt="photo"
+                        />
+                    </div>
+                    <div>
+                        <Image 
+                            src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1664375164/fallInConnecticut/new_england-connecticut-tenkara-ultra_light_finesse-fishing-bait_casting-bait_caster-kayak-lake_fishing-river_fishing-adventure-exploration-river_nit7f2.jpg" 
+                            width={1000} 
+                            height={750} 
+                            alt="photo"
+                        />
+                    </div>
+                    <div>
+                        <Image 
+                            src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1664375164/fallInConnecticut/new_england-connecticut-tenkara-ultra_light_finesse-fishing-bait_casting-bait_caster-kayak-lake_fishing-river_fishing-adventure-exploration-reflection_c1buyc.jpg" 
+                            width={1000} 
+                            height={750} 
+                            alt="photo"
+                        />
+                    </div>
+                    <div>
+                        <Image 
+                            src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1664375163/fallInConnecticut/new_england-connecticut-tenkara-ultra_light_finesse-fishing-bait_casting-bait_caster-kayak-lake_fishing-river_fishing-adventure-exploration-clouds_l1d8zp.jpg" 
+                            width={1000} 
+                            height={750} 
+                            alt="photo"
+                        />
+                    </div>
+                    <div>
+                        <Image 
+                            src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1664375163/fallInConnecticut/new_england-connecticut-tenkara-ultra_light_finesse-fishing-bait_casting-bait_caster-kayak-lake_fishing-river_fishing-adventure-exploration-dead_tree_kxwr3q.jpg" 
+                            width={1000} 
+                            height={750} 
+                            alt="photo"
+                        />
+                    </div>
+                    <div>
+                        <Image 
+                            src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1664375163/fallInConnecticut/new_england-connecticut-tenkara-ultra_light_finesse-fishing-bait_casting-bait_caster-kayak-lake_fishing-river_fishing-adventure-exploration-shrooms_mmw4la.jpg" 
+                            width={1000} 
+                            height={750} 
+                            alt="photo"
+                        />
+                    </div>
+                </Carousel>
+                <p className='flex justify-center text-xs italic mb-10'>Image Carousel (Click the arrows on the right or left to scroll through the photos).</p>
             </div>
             <div className='max-w-6xl mx-auto'> 
                 <Comment />
