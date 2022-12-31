@@ -20,7 +20,7 @@ const Footer = () => {
               rel="noopener noreferrer">TailwindCSS</Link>.
           </p>
         </div>
-        <div className='mt-2 flex justify-center w-1/3'>
+        <div className='mt-2 flex justify-center w-1/3 pb-1'>
           <Link
             href='https://github.com/Isaac-Tait/ilovetofish'
             target="_blank"

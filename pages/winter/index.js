@@ -57,6 +57,12 @@ const Skiing = () => {
                         </a>
                     </Link>
                 <p>I have fallen in love with New England. I do not think I will ever leave...</p>
+                <Link href="/winter/father-son" legacyBehavior>
+                    <a className='underline text-amber-500'>
+                        <p>Father Son Ski Trip</p>
+                    </a>
+                </Link>
+                <p>I used to be entirely opposed to skiing during the holidays. I tried it once and the crowds (and prices) were insane. Well now that my son is in school I had no choice. Well it was a great trip and I was pleasantly surprised by the solitude and adventure...</p>
             </div>
             <Footer />
         </div>
