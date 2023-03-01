@@ -1,5 +1,11 @@
 {
+  "name": "i_love_to_fish",
+  "author": "Isaac_Tait",
+  "description": "my personal blog",
+  "version": "1.1.2",
   "private": false,
+  "license": "MIT",
+  "homepage": "https://iloveto.fish",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
