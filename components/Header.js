@@ -4,6 +4,10 @@
 
 import React, { useState } from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-regular-svg-icons';
+import { faFish } from '@fortawesome/free-solid-svg-icons';
+
 import Link from 'next/link';
 
 const Header = () => {
@@ -22,15 +26,9 @@ const Header = () => {
         >
           <span className='flex text-amber-400'>
             I&nbsp;
-            <FontAwesomeIcon
-              icon={['fal', 'heart']}
-              className='h-16'
-            />
+            <FontAwesomeIcon icon={faHeart} className='h-16' />
             &nbsp;to&nbsp;
-            <FontAwesomeIcon
-              icon={['fal', 'fish']}
-              className='h-16'
-            />
+            <FontAwesomeIcon icon={faFish} className='h-16' />
           </span>
         </Link>
         <button

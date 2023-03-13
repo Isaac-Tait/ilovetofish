@@ -1,6 +1,13 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faSnowflake,
+  faSun,
+} from '@fortawesome/free-regular-svg-icons';
+import { faRainbow, faTree } from '@fortawesome/free-solid-svg-icons';
+
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -22,7 +29,7 @@ export default function Home() {
               <Link href='/spring' legacyBehavior>
                 <a className='text-lime-400 hover:text-blue-600 my-auto'>
                   <FontAwesomeIcon
-                    icon={['fal', 'flower-daffodil']}
+                    icon={faRainbow}
                     className='h-14 hover:animate-spin-slow'
                   />
                 </a>
@@ -33,7 +40,7 @@ export default function Home() {
               <Link href='/summer' legacyBehavior>
                 <a className='text-rose-400 hover:text-indigo-500 my-auto'>
                   <FontAwesomeIcon
-                    icon={['fal', 'cloud-sun-rain']}
+                    icon={faSun}
                     className='h-14 hover:animate-spin-slow'
                   />
                 </a>
@@ -44,7 +51,7 @@ export default function Home() {
               <Link href='/fall' legacyBehavior>
                 <a className='text-fuchsia-400 hover:text-indigo-500 my-auto'>
                   <FontAwesomeIcon
-                    icon='fa-brands fa-canadian-maple-leaf'
+                    icon={faTree}
                     className='h-14 hover:animate-spin-slow'
                   />
                 </a>
@@ -55,7 +62,7 @@ export default function Home() {
               <Link href='/winter' legacyBehavior>
                 <a className='text-teal-400 hover:text-indigo-500 my-auto'>
                   <FontAwesomeIcon
-                    icon='fa-regular fa-snowflake'
+                    icon={faSnowflake}
                     className='h-14 hover:animate-spin-slow'
                   />
                 </a>
