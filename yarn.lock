@@ -2570,10 +2570,10 @@ synckit@^0.8.4:
     "@pkgr/utils" "^2.3.1"
     tslib "^2.5.0"
 
-tailwindcss-hero-patterns@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/tailwindcss-hero-patterns/-/tailwindcss-hero-patterns-0.0.1.tgz#724c24381c8858c5bef1dff5978e262ca89f4bef"
-  integrity sha512-eVuQpDLrxQgbb5N6gaJYQgb5cJwkecDb9sdnDGkClj9Ide/ZTHomt7hfASprFtF2ZvZQJGOXKPgXijR+jzKOmw==
+tailwindcss-hero-patterns@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/tailwindcss-hero-patterns/-/tailwindcss-hero-patterns-0.1.2.tgz#3ef2385e4dcb051c4565f788bf3935839d83f9f1"
+  integrity sha512-kC7LmBZsyu+ZPf1O79i+Lyjue8rDvH8hg1uEUM1bK/b175/U3US0+TL2FOk0eytlY0nOHxZwrrHOmmxC/RVq7w==
   dependencies:
     autoprefixer "^9.5.1"
     tailwindcss "^1.4"
