@@ -26,9 +26,9 @@ const Header = () => {
         >
           <span className='flex text-amber-400'>
             I&nbsp;
-            <FontAwesomeIcon icon={faHeart} className='h-16' />
+            <FontAwesomeIcon icon={faHeart} />
             &nbsp;to&nbsp;
-            <FontAwesomeIcon icon={faFish} className='h-16' />
+            <FontAwesomeIcon icon={faFish} />
           </span>
         </Link>
         <button

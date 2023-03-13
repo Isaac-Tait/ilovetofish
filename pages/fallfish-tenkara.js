@@ -17,28 +17,28 @@ const Fallfish = () => {
       <Header />
       <header className='lg:flex lg:flex-wrap lg:justify-center mx-1'>
         <div className='lg:w-2/3 flex my-auto justify-between'>
-          <h3 className='text-2xl font-semibold'>
+          <h3 className='text-3xl font-semibold'>
             <Link href={'/spring'} legacyBehavior>
               <a className='text-lime-400 hover:text-indigo-500'>
                 <FontAwesomeIcon icon={faRainbow} />
               </a>
             </Link>
           </h3>
-          <h3 className='text-2xl font-semibold'>
+          <h3 className='text-3xl font-semibold'>
             <Link href={'/summer'} legacyBehavior>
               <a className='text-rose-400 hover:text-indigo-500'>
                 <FontAwesomeIcon icon={faSun} />
               </a>
             </Link>
           </h3>
-          <h3 className='text-2xl font-semibold'>
+          <h3 className='text-3xl font-semibold'>
             <Link href={'/fall'} legacyBehavior>
               <a className='text-fuchsia-400 hover:text-indigo-500'>
                 <FontAwesomeIcon icon={faTree} />
               </a>
             </Link>
           </h3>
-          <h3 className='text-2xl font-semibold mr-4'>
+          <h3 className='text-3xl font-semibold mr-4'>
             <Link href={'/winter'} legacyBehavior>
               <a className='text-teal-400 hover:text-indigo-500'>
                 <FontAwesomeIcon icon={faSnowflake} />
@@ -53,9 +53,10 @@ const Fallfish = () => {
           Fallfish Tenkara
         </h2>
         <p className='mt-1'>
-          In 2013 I was living in the Mid-Atlantic region of the
-          United States of America, when I stumbled upon a method of
-          fishing called tenkara.
+          2013 I was living in the Mid-Atlantic region of the United
+          States of America, when I stumbled upon a method of fishing
+          called tenkara. I immediately fell in love with this style
+          of fishing...
         </p>
         <p className='mt-1'>
           In the Mid-Atlantic one of the most prevalent fresh water
@@ -84,7 +85,7 @@ const Fallfish = () => {
             href='https://fallfishtenkara.com'
             target='_blank'
             rel='noopener noreferrer'
-            legacyBehavior
+            className='cursor-pointer'
           >
             <Image
               src='/images/FfT_logo.png'

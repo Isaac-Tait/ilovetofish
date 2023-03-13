@@ -30,7 +30,7 @@ export default function Home() {
                 <a className='text-lime-400 hover:text-blue-600 my-auto'>
                   <FontAwesomeIcon
                     icon={faRainbow}
-                    className='h-14 hover:animate-spin-slow'
+                    className='text-5xl hover:animate-spin-slow'
                   />
                 </a>
               </Link>
@@ -41,7 +41,7 @@ export default function Home() {
                 <a className='text-rose-400 hover:text-indigo-500 my-auto'>
                   <FontAwesomeIcon
                     icon={faSun}
-                    className='h-14 hover:animate-spin-slow'
+                    className='text-5xl hover:animate-spin-slow'
                   />
                 </a>
               </Link>
@@ -52,7 +52,7 @@ export default function Home() {
                 <a className='text-fuchsia-400 hover:text-indigo-500 my-auto'>
                   <FontAwesomeIcon
                     icon={faTree}
-                    className='h-14 hover:animate-spin-slow'
+                    className='text-5xl hover:animate-spin-slow'
                   />
                 </a>
               </Link>
@@ -63,7 +63,7 @@ export default function Home() {
                 <a className='text-teal-400 hover:text-indigo-500 my-auto'>
                   <FontAwesomeIcon
                     icon={faSnowflake}
-                    className='h-14 hover:animate-spin-slow'
+                    className='text-5xl hover:animate-spin-slow'
                   />
                 </a>
               </Link>
