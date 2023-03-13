@@ -1,6 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faSnowflake,
+  faSun,
+} from '@fortawesome/free-regular-svg-icons';
+import { faRainbow, faTree } from '@fortawesome/free-solid-svg-icons';
+
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -13,28 +20,28 @@ const Fallfish = () => {
           <h3 className='text-2xl font-semibold'>
             <Link href={'/spring'} legacyBehavior>
               <a className='text-lime-400 hover:text-indigo-500'>
-                <FontAwesomeIcon icon={['fal', 'flower-daffodil']} />
+                <FontAwesomeIcon icon={faRainbow} />
               </a>
             </Link>
           </h3>
           <h3 className='text-2xl font-semibold'>
             <Link href={'/summer'} legacyBehavior>
               <a className='text-rose-400 hover:text-indigo-500'>
-                <FontAwesomeIcon icon={['fal', 'cloud-sun-rain']} />
+                <FontAwesomeIcon icon={faSun} />
               </a>
             </Link>
           </h3>
           <h3 className='text-2xl font-semibold'>
             <Link href={'/fall'} legacyBehavior>
               <a className='text-fuchsia-400 hover:text-indigo-500'>
-                <FontAwesomeIcon icon={['fal', 'leaf-maple']} />
+                <FontAwesomeIcon icon={faTree} />
               </a>
             </Link>
           </h3>
           <h3 className='text-2xl font-semibold mr-4'>
             <Link href={'/winter'} legacyBehavior>
               <a className='text-teal-400 hover:text-indigo-500'>
-                <FontAwesomeIcon icon={['fal', 'snowflakes']} />
+                <FontAwesomeIcon icon={faSnowflake} />
               </a>
             </Link>
           </h3>
