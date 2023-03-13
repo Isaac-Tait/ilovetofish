@@ -23,7 +23,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-responsive-carousel": "^3.2.23",
-    "tailwindcss-hero-patterns": "^0.0.1",
+    "tailwindcss-hero-patterns": "^0.1.2",
     "yarn": "^1.22.17"
   },
   "devDependencies": {
