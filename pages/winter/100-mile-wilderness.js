@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-//import Breadcrumbs from 'nextjs-breadcrumbs';
+import Breadcrumbs from 'nextjs-breadcrumbs';
 
 import Comment from '../../components/Comment';
 import Header from '../../components/Header';
@@ -12,7 +12,11 @@ const Wilderness = () => {
   return (
     <div className='heropattern-topography-neutral-100'>
       <Header />
-      {/* <Breadcrumbs useDefaultStyle omitRootLabel labelsToUppercase={true} /> */}
+      <Breadcrumbs
+        useDefaultStyle
+        omitRootLabel
+        labelsToUppercase={true}
+      />
       <div className='h-screen max-w-6xl mx-auto overflow-y-scroll px-1'>
         <h1 className='text-2xl font-semibold text-emerald-600 flex justify-center mb-8'>
           Maine&#39;s One Hundred Mile Wilderness
