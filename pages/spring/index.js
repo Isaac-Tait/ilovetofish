@@ -83,6 +83,18 @@ const Spring = () => {
           and got a BFS reel. To break it in I checked out a stream
           near the border of Rhode Island...
         </p>
+        <Link href='/spring/when-racoons-attack' legacyBehavior>
+          <p className='underline text-amber-500'>
+            An intense moment on the river...
+          </p>
+        </Link>
+        <p>
+          There I was just minding my own business switching out my
+          spoon for hard bait when suddenly just upstream and around a
+          bend I heard the most horrific sound of animals fighting,
+          splashing in the water, and a sound like that of deer
+          dying...
+        </p>
       </div>
       <Footer />
     </div>
