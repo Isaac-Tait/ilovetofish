@@ -2,29 +2,29 @@
   /* https://dev.to/andrewespejo/how-to-design-a-simple-and-beautiful-navbar-using-nextjs-and-tailwindcss-26p1 */
 }
 
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-regular-svg-icons';
-import { faFish } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart } from '@fortawesome/free-regular-svg-icons'
+import { faFish } from '@fortawesome/free-solid-svg-icons'
 
-import Link from 'next/link';
+import Link from 'next/link'
 
 const Header = () => {
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(false)
 
   const handleClick = () => {
-    setActive(!active);
-  };
+    setActive(!active)
+  }
 
   return (
     <>
-      <nav className='flex items-center flex-wrap p-3 '>
+      <nav className="flex items-center flex-wrap p-3 ">
         <Link
-          href='/'
-          className='inline-flex items-center p-2 mr-4 lg:w-1/3 text-amber-400 text-6xl'
+          href="/"
+          className="inline-flex items-center p-2 mr-4 lg:w-1/3 text-amber-400 text-6xl"
         >
-          <span className='flex text-amber-400'>
+          <span className="flex text-amber-400">
             I&nbsp;
             <FontAwesomeIcon icon={faHeart} />
             &nbsp;to&nbsp;
@@ -32,46 +32,50 @@ const Header = () => {
           </span>
         </Link>
         <button
-          className=' inline-flex p-3 bg-amber-400 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
+          className=" inline-flex p-3 bg-amber-400 rounded lg:hidden text-white ml-auto hover:text-white outline-none"
           onClick={handleClick}
         >
           <svg
-            className='w-6 h-6'
-            fill='none'
-            stroke='currentColor'
-            viewBox='0 0 24 24'
-            xmlns='http://www.w3.org/2000/svg'
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              strokeLinecap='round'
-              strokeLinejoin='round'
+              strokeLinecap="round"
+              strokeLinejoin="round"
               strokeWidth={2}
-              d='M4 6h16M4 12h16M4 18h16'
+              d="M4 6h16M4 12h16M4 18h16"
             />
           </svg>
         </button>
         {/*Note that in this div I use a ternary operator to decide whether or not to display the content of the div*/}
-        <div
-          className={`${
-            active ? '' : 'hidden'
-          }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
-        >
-          <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto'>
+        <div className={`${active ? '' : 'hidden'}   w-full lg:inline-flex lg:flex-grow lg:w-auto`}>
+          <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto">
             <Link
-              href='/fallfish-tenkara'
-              className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-amber-400 font-bold items-center justify-center hover:bg-indigo-200 hover:text-white'
+              href="/fallfish-tenkara"
+              className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-amber-400 font-bold items-center justify-center hover:bg-indigo-200 hover:text-white"
             >
               Fallfish Tenkara
             </Link>
             <Link
-              href='/about'
-              className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-amber-400 font-bold items-center justify-center hover:bg-indigo-200 hover:text-white'
+              href="https://wormwoodsaga.com"
+              target="__blank"
+              rel="noopener noreferrer"
+              className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-amber-400 font-bold items-center justify-center hover:bg-indigo-200 hover:text-white"
+            >
+              My Novel
+            </Link>
+            <Link
+              href="/about"
+              className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-amber-400 font-bold items-center justify-center hover:bg-indigo-200 hover:text-white"
             >
               About
             </Link>
             <Link
-              href='/contact'
-              className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-amber-400 font-bold items-center justify-center hover:bg-indigo-200 hover:text-white'
+              href="/contact"
+              className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-amber-400 font-bold items-center justify-center hover:bg-indigo-200 hover:text-white"
             >
               Contact
             </Link>
@@ -79,7 +83,7 @@ const Header = () => {
         </div>
       </nav>
     </>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
