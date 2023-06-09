@@ -47,7 +47,6 @@ const Footer = () => {
               className="text-indigo-500 hover:text-fuchsia-400"
               target="_blank"
               rel="noopener noreferrer"
-              legacyBehavior
             >
               mountainTopCoding(&#127956;);
             </Link>{' '}
