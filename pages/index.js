@@ -16,54 +16,48 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <div className="flex flex-col">
-        <div className="pl-1">
-          <Header />
-        </div>
-        <main className="pt-16">
-          <div className="grid grid-cols-1 gap-0 md:grid-cols-6 md:gap-4 max-w-6xl mx-auto">
-            <h3 className="grid-cols-1 md:col-start-2 md:col-span-4 h-20 md:h-48 flex justify-center mb-8 md:mb-0">
-              <Link href="/spring" legacyBehavior>
-                <a className="text-lime-400 hover:text-blue-600 my-auto">
-                  <FontAwesomeIcon icon={faRainbow} className="text-5xl hover:animate-spin-slow" />
-                  <p className="text-center">Spring</p>
-                </a>
-              </Link>
-            </h3>
-
-            <h3 className="grid-cols-1 md:col-start-1 md:col-end-3 h-20 md:h-48 flex justify-center mb-8 md:mb-0">
-              <Link href="/summer" legacyBehavior>
-                <a className="text-rose-400 hover:text-indigo-500 my-auto">
-                  <FontAwesomeIcon icon={faSun} className="text-5xl hover:animate-spin-slow" />
-                  <p className="-ml-1">Summer</p>
-                </a>
-              </Link>
-            </h3>
-
-            <h3 className="grid-cols-1 md:col-end-8 md:col-span-3 h-20 md:h-48 flex justify-center mb-8 md:mb-0">
-              <Link href="/fall" legacyBehavior>
-                <a className="text-fuchsia-400 hover:text-indigo-500 my-auto">
-                  <FontAwesomeIcon icon={faTree} className="text-5xl hover:animate-spin-slow" />
-                  <p className="text-center">Fall</p>
-                </a>
-              </Link>
-            </h3>
-
-            <h3 className="grid-cols-1 md:col-start-1 md:col-span-7 h-20 md:h-48 flex justify-center mb-8 md:mb-0">
-              <Link href="/winter" legacyBehavior>
-                <a className="text-teal-400 hover:text-indigo-500 my-auto">
-                  <FontAwesomeIcon
-                    icon={faSnowflake}
-                    className="text-5xl hover:animate-spin-slow"
-                  />
-                  <p className="-ml-1">Winter</p>
-                </a>
-              </Link>
-            </h3>
-          </div>
-        </main>
-        <p></p>
+      <div className="pl-1">
+        <Header />
       </div>
+      <main className="h-4/5 grid place-content-center">
+        <div className="flex flex-col md:flex-row">
+          <h3 className="mx-14 mb-8 md:mb-0 hover:animate-spin-slow">
+            <Link href="/spring" legacyBehavior>
+              <a className="text-lime-400 hover:text-blue-600">
+                <FontAwesomeIcon icon={faRainbow} className="text-5xl" />
+                <p className="text-center">Spring</p>
+              </a>
+            </Link>
+          </h3>
+
+          <h3 className="mx-14 mb-8 md:mb-0 hover:animate-spin-slow">
+            <Link href="/summer" legacyBehavior>
+              <a className="text-rose-400 hover:text-indigo-500">
+                <FontAwesomeIcon icon={faSun} className="text-5xl" />
+                <p className="-ml-2">Summer</p>
+              </a>
+            </Link>
+          </h3>
+
+          <h3 className="mx-14 mb-8 md:mb-0 hover:animate-spin-slow">
+            <Link href="/fall" legacyBehavior>
+              <a className="text-fuchsia-400 hover:text-indigo-500">
+                <FontAwesomeIcon icon={faTree} className="text-5xl" />
+                <p className="text-center">Fall</p>
+              </a>
+            </Link>
+          </h3>
+
+          <h3 className="mx-14 mb-8 md:mb-0 hover:animate-spin-slow">
+            <Link href="/winter" legacyBehavior>
+              <a className="text-teal-400 hover:text-indigo-500">
+                <FontAwesomeIcon icon={faSnowflake} className="text-5xl" />
+                <p className="-ml-1">Winter</p>
+              </a>
+            </Link>
+          </h3>
+        </div>
+      </main>
 
       <div className="fixed bottom-0 w-full">
         <Footer />
