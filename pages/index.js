@@ -1,70 +1,62 @@
-import Head from 'next/head';
-import Link from 'next/link';
+import Head from 'next/head'
+import Link from 'next/link'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faSnowflake,
-  faSun,
-} from '@fortawesome/free-regular-svg-icons';
-import { faRainbow, faTree } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSnowflake, faSun } from '@fortawesome/free-regular-svg-icons'
+import { faRainbow, faTree } from '@fortawesome/free-solid-svg-icons'
 
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
-    <div className='heropattern-bubbles-neutral-100 h-screen'>
+    <div className="heropattern-bubbles-neutral-100 h-screen">
       <Head>
         <title>I Love To Fish</title>
-        <link rel='icon' href='/favicon.png' />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <div className='flex flex-col'>
-        <div className='pl-1'>
+      <div className="flex flex-col">
+        <div className="pl-1">
           <Header />
         </div>
-        <main className='pt-16'>
-          <div className='grid grid-cols-1 gap-0 md:grid-cols-6 md:gap-4 max-w-6xl mx-auto'>
-            <h3 className='grid-cols-1 md:col-start-2 md:col-span-4 h-20 md:h-48 flex justify-center mb-8 md:mb-0'>
-              <Link href='/spring' legacyBehavior>
-                <a className='text-lime-400 hover:text-blue-600 my-auto'>
-                  <FontAwesomeIcon
-                    icon={faRainbow}
-                    className='text-5xl hover:animate-spin-slow'
-                  />
+        <main className="pt-16">
+          <div className="grid grid-cols-1 gap-0 md:grid-cols-6 md:gap-4 max-w-6xl mx-auto">
+            <h3 className="grid-cols-1 md:col-start-2 md:col-span-4 h-20 md:h-48 flex justify-center mb-8 md:mb-0">
+              <Link href="/spring" legacyBehavior>
+                <a className="text-lime-400 hover:text-blue-600 my-auto">
+                  <FontAwesomeIcon icon={faRainbow} className="text-5xl hover:animate-spin-slow" />
+                  <p className="text-center">Spring</p>
                 </a>
               </Link>
             </h3>
 
-            <h3 className='grid-cols-1 md:col-start-1 md:col-end-3 h-20 md:h-48 flex justify-center mb-8 md:mb-0'>
-              <Link href='/summer' legacyBehavior>
-                <a className='text-rose-400 hover:text-indigo-500 my-auto'>
-                  <FontAwesomeIcon
-                    icon={faSun}
-                    className='text-5xl hover:animate-spin-slow'
-                  />
+            <h3 className="grid-cols-1 md:col-start-1 md:col-end-3 h-20 md:h-48 flex justify-center mb-8 md:mb-0">
+              <Link href="/summer" legacyBehavior>
+                <a className="text-rose-400 hover:text-indigo-500 my-auto">
+                  <FontAwesomeIcon icon={faSun} className="text-5xl hover:animate-spin-slow" />
+                  <p className="-ml-1">Summer</p>
                 </a>
               </Link>
             </h3>
 
-            <h3 className='grid-cols-1 md:col-end-8 md:col-span-3 h-20 md:h-48 flex justify-center mb-8 md:mb-0'>
-              <Link href='/fall' legacyBehavior>
-                <a className='text-fuchsia-400 hover:text-indigo-500 my-auto'>
-                  <FontAwesomeIcon
-                    icon={faTree}
-                    className='text-5xl hover:animate-spin-slow'
-                  />
+            <h3 className="grid-cols-1 md:col-end-8 md:col-span-3 h-20 md:h-48 flex justify-center mb-8 md:mb-0">
+              <Link href="/fall" legacyBehavior>
+                <a className="text-fuchsia-400 hover:text-indigo-500 my-auto">
+                  <FontAwesomeIcon icon={faTree} className="text-5xl hover:animate-spin-slow" />
+                  <p className="text-center">Fall</p>
                 </a>
               </Link>
             </h3>
 
-            <h3 className='grid-cols-1 md:col-start-1 md:col-span-7 h-20 md:h-48 flex justify-center mb-8 md:mb-0'>
-              <Link href='/winter' legacyBehavior>
-                <a className='text-teal-400 hover:text-indigo-500 my-auto'>
+            <h3 className="grid-cols-1 md:col-start-1 md:col-span-7 h-20 md:h-48 flex justify-center mb-8 md:mb-0">
+              <Link href="/winter" legacyBehavior>
+                <a className="text-teal-400 hover:text-indigo-500 my-auto">
                   <FontAwesomeIcon
                     icon={faSnowflake}
-                    className='text-5xl hover:animate-spin-slow'
+                    className="text-5xl hover:animate-spin-slow"
                   />
+                  <p className="-ml-1">Winter</p>
                 </a>
               </Link>
             </h3>
@@ -73,9 +65,9 @@ export default function Home() {
         <p></p>
       </div>
 
-      <div className='fixed bottom-0 w-full'>
+      <div className="fixed bottom-0 w-full">
         <Footer />
       </div>
     </div>
-  );
+  )
 }
