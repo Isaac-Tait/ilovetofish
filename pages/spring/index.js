@@ -81,6 +81,14 @@ const Spring = () => {
           suddenly just upstream and around a bend I heard the most horrific sound of animals
           fighting, splashing in the water, and a sound like that of deer dying...
         </p>
+        <Link href="/spring/lyme-disease" legacyBehavior>
+          <p className="underline text-amber-500">Dealing with ticks...</p>
+        </Link>
+        <p>
+          This season I have had a much bigger problem with ticks than I did last season. I am not
+          sure what the cause is but if I had to venture a guess I would say that our lame (read:
+          warm and hardly any snow) winter is to blame...
+        </p>
       </div>
       <Footer />
     </div>
