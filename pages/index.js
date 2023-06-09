@@ -23,7 +23,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row">
           <h3 className="mx-14 mb-8 md:mb-0 hover:animate-spin-slow">
             <Link href="/spring" legacyBehavior>
-              <a className="text-lime-400 hover:text-blue-600">
+              <a className="text-lime-400 hover:text-blue-500 flex flex-col">
                 <FontAwesomeIcon icon={faRainbow} className="text-5xl" />
                 <p className="text-center">Spring</p>
               </a>
@@ -32,16 +32,16 @@ export default function Home() {
 
           <h3 className="mx-14 mb-8 md:mb-0 hover:animate-spin-slow">
             <Link href="/summer" legacyBehavior>
-              <a className="text-rose-400 hover:text-indigo-500">
+              <a className="text-rose-400 hover:text-indigo-500 flex flex-col">
                 <FontAwesomeIcon icon={faSun} className="text-5xl" />
-                <p className="-ml-2">Summer</p>
+                <p className="text-center">Summer</p>
               </a>
             </Link>
           </h3>
 
           <h3 className="mx-14 mb-8 md:mb-0 hover:animate-spin-slow">
             <Link href="/fall" legacyBehavior>
-              <a className="text-fuchsia-400 hover:text-indigo-500">
+              <a className="text-fuchsia-400 hover:text-indigo-500 flex flex-col">
                 <FontAwesomeIcon icon={faTree} className="text-5xl" />
                 <p className="text-center">Fall</p>
               </a>
@@ -50,15 +50,14 @@ export default function Home() {
 
           <h3 className="mx-14 mb-8 md:mb-0 hover:animate-spin-slow">
             <Link href="/winter" legacyBehavior>
-              <a className="text-teal-400 hover:text-indigo-500">
+              <a className="text-teal-400 hover:text-indigo-500 flex flex-col">
                 <FontAwesomeIcon icon={faSnowflake} className="text-5xl" />
-                <p className="-ml-1">Winter</p>
+                <p className="text-center">Winter</p>
               </a>
             </Link>
           </h3>
         </div>
       </main>
-
       <div className="fixed bottom-0 w-full">
         <Footer />
       </div>

@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <>
-      <nav className="flex items-center flex-wrap p-3 ">
+      <nav className="flex items-center flex-wrap pr-3">
         <Link
           href="/"
           className="inline-flex items-center p-2 mr-4 lg:w-1/3 text-amber-400 text-6xl"
