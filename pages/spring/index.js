@@ -12,8 +12,8 @@ const Spring = () => {
   return (
     <div className="heropattern-topography-neutral-100">
       <Header />
-      <header className="lg:flex lg:flex-wrap lg:justify-center mx-1">
-        <div className="lg:w-2/3 flex my-auto justify-between">
+      <header className="mx-1 lg:flex lg:flex-wrap lg:justify-center">
+        <div className="my-auto flex justify-between lg:w-2/3">
           <h3 className="text-2xl font-semibold">
             <Link href={'/summer'} legacyBehavior>
               <a className="text-rose-400 hover:text-indigo-500">
@@ -30,7 +30,7 @@ const Spring = () => {
             </Link>
           </h3>
 
-          <h3 className="text-2xl font-semibold mr-4">
+          <h3 className="mr-4 text-2xl font-semibold">
             <Link href={'/winter'} legacyBehavior>
               <a className="text-teal-400 hover:text-indigo-500">
                 <FontAwesomeIcon icon={faSnowflake} className="h-10" />
@@ -39,26 +39,32 @@ const Spring = () => {
           </h3>
         </div>
       </header>
-      <div className="max-w-6xl mx-auto h-screen px-1">
-        <h1 className="text-2xl bg-lime-400 flex flex-row justify-center text-neutral-100 rounded-xl mt-1">
+      <div className="mx-auto h-screen max-w-6xl px-1">
+        <h1 className="mt-1 flex flex-row justify-center rounded-xl bg-lime-400 text-2xl text-neutral-100">
           Spring
         </h1>
-        <Link href="/spring/pat-metheny" legacyBehavior>
-          <p className="underline text-amber-500">Pat Metheny</p>
+        <Link href="/spring/pat-metheny">
+          <p className="text-amber-500 underline">
+            <span className="text-lg font-bold">March 2022 -&nbsp;</span>Pat Metheny
+          </p>
         </Link>
         <p>
           My most favorite musician of all time has to be Pat Metheny. The man is a prodigy and his
           music is such a joy to listen too imho...
         </p>
         <Link href="/spring/trout" legacyBehavior>
-          <p className="underline text-amber-500">Trout</p>
+          <p className="text-amber-500 underline">
+            <span className="text-lg font-bold">April 2022 -&nbsp;</span>Trout
+          </p>
         </Link>
         <p>
           It was exactly 180 days since I last caught a wild trout. I was itching to bring one to
           hand. So, I set off for a river that has become my favorite - for some reason...
         </p>
         <Link href="/spring/finesse-fishing" legacyBehavior>
-          <p className="underline text-amber-500">Finesse Fishing</p>
+          <p className="text-amber-500 underline">
+            <span className="text-lg font-bold">May 2022 -&nbsp;</span>Finesse Fishing
+          </p>
         </Link>
         <p>
           One of the last things I bought before moving back to the USA from Japan was a JDM finesse
@@ -66,7 +72,9 @@ const Spring = () => {
           I would get out of that rod over the years...
         </p>
         <Link href="/spring/mountain-laurel" legacyBehavior>
-          <p className="underline text-amber-500">Mountain Laurel</p>
+          <p className="text-amber-500 underline">
+            <span className="text-lg font-bold">June 2022 -&nbsp;</span>Mountain Laurel
+          </p>
         </Link>
         <p>
           After five years of faithful service my Daiwa spin reel seized up and the internal spring
@@ -74,7 +82,10 @@ const Spring = () => {
           the border of Rhode Island...
         </p>
         <Link href="/spring/when-raccoons-attack" legacyBehavior>
-          <p className="underline text-amber-500">An intense moment on the river...</p>
+          <p className="text-amber-500 underline">
+            <span className="text-lg font-bold">April 2023 -&nbsp;</span>An intense moment on the
+            river...
+          </p>
         </Link>
         <p>
           There I was just minding my own business switching out my spoon for hard bait when
@@ -82,7 +93,9 @@ const Spring = () => {
           fighting, splashing in the water, and a sound like that of deer dying...
         </p>
         <Link href="/spring/lyme-disease" legacyBehavior>
-          <p className="underline text-amber-500">Dealing with ticks...</p>
+          <p className="text-amber-500 underline">
+            <span className="text-lg font-bold">June 2023 -&nbsp;</span>Dealing with ticks...
+          </p>
         </Link>
         <p>
           This season I have had a much bigger problem with ticks than I did last season. I am not
