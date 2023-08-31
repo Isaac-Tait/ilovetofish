@@ -12,7 +12,7 @@ const Vacation = () => {
   return (
     <div className="heropattern-topography-neutral-100">
       <Header />
-      {/* <Breadcrumbs useDefaultStyle omitRootLabel labelsToUppercase={true} /> */}
+      <Breadcrumbs useDefaultStyle omitRootLabel labelsToUppercase={true} />
       <div className="mx-auto h-screen max-w-6xl overflow-y-scroll px-1">
         <h1 className="mb-8 flex justify-center text-2xl font-semibold text-emerald-600">
           A summer to remember...
