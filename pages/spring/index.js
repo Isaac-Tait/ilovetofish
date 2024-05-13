@@ -102,6 +102,15 @@ const Spring = () => {
           sure what the cause is but if I had to venture a guess I would say that our lame (read:
           warm and hardly any snow) winter is to blame...
         </p>
+        <Link href="/spring/exquisite" legacyBehavior>
+          <p className="text-amber-500 underline">
+            <span className="text-lg font-bold">May 2024 -&nbsp;</span>A gorgeous first day...
+          </p>
+        </Link>
+        <p>
+          Kicking off the 2024 stream fishing season with an EPIC day on the river. Days like this
+          one are why I never want to leave Connecticut...
+        </p>
       </div>
       <Footer />
     </div>
