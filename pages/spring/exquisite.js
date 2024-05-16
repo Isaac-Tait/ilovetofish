@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-//import Breadcrumbs from 'nextjs-breadcrumbs';
+import Breadcrumbs from 'nextjs-breadcrumbs'
 
 import Comment from '../../components/Comment'
 import Header from '../../components/Header'
@@ -12,7 +12,7 @@ const Blank = () => {
   return (
     <div className="heropattern-topography-neutral-100">
       <Header />
-      {/* <Breadcrumbs useDefaultStyle omitRootLabel labelsToUppercase={true} /> */}
+      <Breadcrumbs useDefaultStyle omitRootLabel labelsToUppercase={true} />
       <div className="mx-auto h-screen max-w-6xl overflow-y-scroll px-1">
         <h1 className="mb-8 flex justify-center text-2xl font-semibold text-emerald-600">
           A Quintessential Spring Day in Connecticut
@@ -83,8 +83,20 @@ const Blank = () => {
             Fallfish Tenkara
           </Link>
           &nbsp;(I know I know it really does need a facelift.) but I did nothing with my platform
-          to highlight ethical fishing practices. I love to fish, but I also recognize that there
-          are many unethical anglers who have a negative impact on the
+          to highlight ethical fishing practices. With my new site - I love to fish, I have begun
+          exploring and recognizing that with climate change and in conjunction with an increase in
+          fishing pressure as well as habitat degradation and destruction it is crucial as an angler
+          to take a closer look at my impact on the ecosystems that I love. What are some ways that
+          you practice ethical fishing? Let me know by reaching out on{' '}
+          <Link
+            href="https://www.instagram.com/p/C662IrmOqnj/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-teal-400 underline hover:text-indigo-400"
+          >
+            Instagram
+          </Link>
+          .
         </p>
       </div>
       <div className="mx-auto max-w-6xl">
