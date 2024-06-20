@@ -1,5 +1,7 @@
 import 'tailwindcss/tailwind.css'
 import 'nextjs-breadcrumbs/dist/index.css'
+
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Analytics } from '@vercel/analytics/react'
 
 import { config } from '@fortawesome/fontawesome-svg-core'
@@ -11,6 +13,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Component {...pageProps} />
       <Analytics />
+      <SpeedInsights />
     </>
   )
 }
