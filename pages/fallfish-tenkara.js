@@ -1,21 +1,18 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Link from 'next/link'
+import Image from 'next/image'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faSnowflake,
-  faSun,
-} from '@fortawesome/free-regular-svg-icons';
-import { faRainbow, faTree } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSnowflake, faSun } from '@fortawesome/free-regular-svg-icons'
+import { faRainbow, faTree } from '@fortawesome/free-solid-svg-icons'
 
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const Fallfish = () => {
   return (
-    <div className='heropattern-bubbles-neutral-100 h-screen'>
+    <div className="h-screen heropattern-bubbles-neutral-100">
       <Header />
-      <header className='lg:flex lg:flex-wrap lg:justify-center mx-1'>
+      {/* <header className='lg:flex lg:flex-wrap lg:justify-center mx-1'>
         <div className='lg:w-2/3 flex my-auto justify-between'>
           <h3 className='text-3xl font-semibold'>
             <Link href={'/spring'} legacyBehavior>
@@ -46,62 +43,53 @@ const Fallfish = () => {
             </Link>
           </h3>
         </div>
-      </header>
+      </header> */}
 
-      <div className='max-w-6xl mx-auto px-1'>
-        <h2 className='font-semibold text-2xl text-center text-red-500'>
-          Fallfish Tenkara
-        </h2>
-        <p className='mt-1'>
-          2013 I was living in the Mid-Atlantic region of the United
-          States of America, when I stumbled upon a method of fishing
-          called tenkara. I immediately fell in love with this style
-          of fishing...
+      <div className="mx-auto max-w-6xl px-1">
+        <h2 className="text-center text-2xl font-semibold text-red-500">Fallfish Tenkara</h2>
+        <p className="mt-1">
+          2013 I was living in the Mid-Atlantic region of the United States of America, when I
+          stumbled upon a method of fishing called tenkara. I immediately fell in love with this
+          style of fishing...
         </p>
-        <p className='mt-1'>
-          In the Mid-Atlantic one of the most prevalent fresh water
-          fish is the Fallfish and I caught a lot of them with my
-          tenkara rod. Many anglers considered the Fallfish a trash
+        <p className="mt-1">
+          In the Mid-Atlantic one of the most prevalent fresh water fish is the Fallfish and I
+          caught a lot of them with my tenkara rod. Many anglers considered the Fallfish a trash
           fish. I did not share that sentiment...
         </p>
-        <p className='mt-1'>
-          In 2014 I moved to Japan and I started a blog about my
-          fishing exploits in the Land of the Rising Sun. I named it
-          Fallfish Tenkara. The site grew every year and became more
-          and more polished. I commissioned a logo, wrote articles for
-          tenkara publications, and even gave video presentations at
-          tenkara events around the world.
+        <p className="mt-1">
+          In 2014 I moved to Japan and I started a blog about my fishing exploits in the Land of the
+          Rising Sun. I named it Fallfish Tenkara. The site grew every year and became more and more
+          polished. I commissioned a logo, wrote articles for tenkara publications, and even gave
+          video presentations at tenkara events around the world.
         </p>
-        <p className='mt-1'>
-          Now there are nearly 140 pages chronicling my adventures in
-          Japan within the confines of Fallfish Tenkara. The whole
-          site is dedicated to my adventures in Japan.
+        <p className="mt-1">
+          Now there are nearly 140 pages chronicling my adventures in Japan within the confines of
+          Fallfish Tenkara. The whole site is dedicated to my adventures in Japan.
         </p>
-        <p className='mt-1'>
-          So, go check it out by clicking the logo below.
-        </p>
-        <div className='flex justify-center pt-10'>
+        <p className="mt-1">So, go check it out by clicking the logo below.</p>
+        <div className="flex justify-center pt-10">
           <Link
-            href='https://fallfishtenkara.com'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='cursor-pointer'
+            href="https://fallfishtenkara.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer"
           >
             <Image
-              src='/images/FfT_logo.png'
+              src="/images/FfT_logo.png"
               height={258}
               width={262}
-              className='rounded-lg'
+              className="rounded-lg"
               alt={'Project'}
             />
           </Link>
         </div>
       </div>
-      <div className='fixed bottom-0 w-full'>
+      <div className="fixed bottom-0 w-full">
         <Footer />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Fallfish;
+export default Fallfish
