@@ -4,6 +4,7 @@ module.exports = {
   plugins: {
     tailwindcss: {},
     autoprefixer: {},
+    'postcss-import': {},
+    'postcss-import-url': { modernBrowser: true },
   },
 }
-
