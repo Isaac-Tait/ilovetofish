@@ -20,7 +20,7 @@ const Header = () => {
   }
 
   return (
-    <div className="rounded-lg bg-gray-800">
+    <div className="rounded-b-lg bg-gray-800">
       <nav className="flex flex-wrap items-center">
         <Link
           href="/"
@@ -34,7 +34,7 @@ const Header = () => {
           </span>
         </Link>
         <button
-          className="ml-auto inline-flex rounded bg-yellow-400 p-3 text-white outline-none hover:text-white lg:hidden"
+          className="ml-auto mr-2 inline-flex rounded bg-yellow-400 p-3 text-white outline-none hover:text-white lg:hidden"
           onClick={handleClick}
         >
           <svg
