@@ -68,7 +68,7 @@ const Fallfish = () => {
           Fallfish Tenkara. The whole site is dedicated to my adventures in Japan.
         </p>
         <p className="mt-1">So, go check it out by clicking the logo below.</p>
-        <div className="flex justify-center pt-10">
+        <div className="flex justify-center">
           <Link
             href="https://fallfishtenkara.com"
             target="_blank"

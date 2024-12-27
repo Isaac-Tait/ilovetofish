@@ -20,8 +20,8 @@ const Header = () => {
   }
 
   return (
-    <>
-      <nav className="flex flex-wrap items-center pr-3">
+    <div className="rounded-lg bg-gray-800">
+      <nav className="flex flex-wrap items-center">
         <Link
           href="/"
           className="mr-4 inline-flex items-center p-2 text-6xl text-amber-400 lg:w-1/3"
@@ -57,7 +57,7 @@ const Header = () => {
           <div className="flex w-full flex-col items-start lg:ml-auto lg:inline-flex lg:h-auto lg:w-auto lg:flex-row lg:items-center">
             <Link
               href="/fallfish-tenkara"
-              className="w-full items-center justify-center rounded px-3 py-2 font-bold text-amber-400 hover:bg-indigo-200 hover:text-white lg:inline-flex lg:w-auto"
+              className="w-full items-center justify-center rounded px-3 py-2 font-bold text-lime-400 hover:bg-yellow-400 hover:text-white lg:inline-flex lg:w-auto"
             >
               Fallfish Tenkara
             </Link>
@@ -65,19 +65,19 @@ const Header = () => {
               href="https://wormwoodsaga.com"
               target="__blank"
               rel="noopener noreferrer"
-              className="w-full items-center justify-center rounded px-3 py-2 font-bold text-amber-400 hover:bg-indigo-200 hover:text-white lg:inline-flex lg:w-auto"
+              className="w-full items-center justify-center rounded px-3 py-2 font-bold text-rose-400 hover:bg-yellow-400 hover:text-white lg:inline-flex lg:w-auto"
             >
               My Novel
             </Link>
             <Link
               href="/about"
-              className="w-full items-center justify-center rounded px-3 py-2 font-bold text-amber-400 hover:bg-indigo-200 hover:text-white lg:inline-flex lg:w-auto"
+              className="w-full items-center justify-center rounded px-3 py-2 font-bold text-fuchsia-400 hover:bg-yellow-400 hover:text-white lg:inline-flex lg:w-auto"
             >
               About
             </Link>
             <Link
               href="/contact"
-              className="w-full items-center justify-center rounded px-3 py-2 font-bold text-amber-400 hover:bg-indigo-200 hover:text-white lg:inline-flex lg:w-auto"
+              className="w-full items-center justify-center rounded px-3 py-2 font-bold text-teal-400 hover:bg-yellow-400 hover:text-white lg:inline-flex lg:w-auto"
             >
               Contact
             </Link>
@@ -86,37 +86,60 @@ const Header = () => {
       </nav>
       <header className="mx-1 mb-2 lg:flex lg:flex-wrap lg:justify-center">
         <div className="my-auto flex justify-between lg:w-2/3">
-          <h3 className="text-3xl font-semibold">
-            <Link href={'/spring'} legacyBehavior>
-              <a className="text-lime-400 hover:text-indigo-500">
-                <FontAwesomeIcon icon={faRainbow} />
-              </a>
+          <div>
+            <h3 className="flex items-center justify-center text-3xl hover:animate-spin-slow">
+              <Link href={'/winter'} legacyBehavior>
+                <a className="text-teal-400 hover:text-yellow-400">
+                  <FontAwesomeIcon icon={faSnowflake} />
+                </a>
+              </Link>
+            </h3>
+            <Link href={'/winter'} className="text-teal-400 hover:text-yellow-400">
+              Winter
             </Link>
-          </h3>
-          <h3 className="text-3xl font-semibold">
-            <Link href={'/summer'} legacyBehavior>
-              <a className="text-rose-400 hover:text-indigo-500">
-                <FontAwesomeIcon icon={faSun} />
-              </a>
+          </div>
+
+          <div>
+            <h3 className="flex items-center justify-center text-3xl hover:animate-spin-slow">
+              <Link href={'/spring'} legacyBehavior>
+                <a className="text-lime-400 hover:text-yellow-400">
+                  <FontAwesomeIcon icon={faRainbow} />
+                </a>
+              </Link>
+            </h3>
+            <Link href={'/spring'} className="text-lime-400 hover:text-yellow-400">
+              Spring
             </Link>
-          </h3>
-          <h3 className="text-3xl font-semibold">
-            <Link href={'/fall'} legacyBehavior>
-              <a className="text-fuchsia-400 hover:text-indigo-500">
-                <FontAwesomeIcon icon={faTree} />
-              </a>
+          </div>
+
+          <div>
+            <h3 className="flex items-center justify-center text-3xl hover:animate-spin-slow">
+              <Link href={'/summer'} legacyBehavior>
+                <a className="text-rose-400 hover:text-yellow-400">
+                  <FontAwesomeIcon icon={faSun} />
+                </a>
+              </Link>
+            </h3>
+            <Link href={'/summer'} className="text-rose-400 hover:text-yellow-400">
+              Summer
             </Link>
-          </h3>
-          <h3 className="mr-4 text-3xl font-semibold">
-            <Link href={'/winter'} legacyBehavior>
-              <a className="text-teal-400 hover:text-indigo-500">
-                <FontAwesomeIcon icon={faSnowflake} />
-              </a>
+          </div>
+
+          <div>
+            <h3 className="flex items-center justify-center text-3xl hover:animate-spin-slow">
+              <Link href={'/fall'} legacyBehavior>
+                <a className="text-fuchsia-400 hover:text-yellow-400">
+                  <FontAwesomeIcon icon={faTree} />
+                </a>
+              </Link>
+            </h3>
+            <Link href={'/fall'} className="text-fuchsia-400 hover:text-yellow-400">
+              Fall
             </Link>
-          </h3>
+          </div>
         </div>
       </header>
-    </>
+    </div>
   )
 }
 

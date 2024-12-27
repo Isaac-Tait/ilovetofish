@@ -4,13 +4,13 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <div className="flex items-center justify-between text-xs mx-1">
-      <div className="text-slate-500 w-1/3">
+    <div className="flex items-center justify-between bg-gray-800 px-2 text-xs">
+      <div className="w-1/3 text-yellow-400">
         <p className="hidden md:block">
           © 2021 - {new Date().getFullYear()}, Built with&nbsp;
           <Link
             href="https://nextjs.org/"
-            className="text-indigo-500 hover:text-amber-400"
+            className="text-lime-400 hover:text-rose-400"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -19,7 +19,7 @@ const Footer = () => {
           &&nbsp;
           <Link
             href="https://tailwindcss.com"
-            className="text-indigo-500 hover:text-lime-400"
+            className="text-fuchsia-400 hover:text-teal-400"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -28,7 +28,7 @@ const Footer = () => {
           .
         </p>
       </div>
-      <div className="mt-2 flex justify-center w-1/3 pb-1">
+      <div className="flex w-fit justify-center rounded-full bg-gray-400 p-1">
         <Link
           href="https://github.com/Isaac-Tait/ilovetofish"
           target="_blank"
@@ -38,18 +38,17 @@ const Footer = () => {
           <Image src="/GitHub.png" height={20} width={20} alt={'GitHub'} />
         </Link>
       </div>
-      <div className="text-slate-500 w-1/3 flex justify-end">
+      <div className="flex w-1/3 justify-end text-yellow-400">
         <p className="hidden md:block">
-          Another&nbsp;
+          Made with ❤️ by&nbsp;
           <Link
             href="https://mountaintopcoding.dev"
-            className="text-indigo-500 hover:text-fuchsia-400"
+            className="text-rose-400 hover:text-fuchsia-400"
             target="_blank"
             rel="noopener noreferrer"
           >
             mountainTopCoding(&#127956;);
-          </Link>{' '}
-          project
+          </Link>
         </p>
       </div>
     </div>
