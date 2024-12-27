@@ -1,25 +1,22 @@
-import React from 'react'
 import Link from 'next/link'
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSnowflake } from '@fortawesome/free-regular-svg-icons'
-import { faRainbow, faTree } from '@fortawesome/free-solid-svg-icons'
 
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
 const Summer = () => {
   return (
-    <div className="bg-gray-400">
+    <div className="h-screen overflow-y-scroll bg-gray-600">
       <Header />
-      <div className="mx-auto h-screen max-w-6xl px-1">
-        <h1 className="mx-auto w-fit rounded-md bg-rose-400 p-1 text-2xl text-lime-400">Summer</h1>
+      <div className="mx-auto max-w-6xl px-1">
+        <h1 className="mx-auto w-fit rounded-md bg-rose-400 p-1 text-2xl font-semibold text-lime-400">
+          Summer
+        </h1>
 
         <Link href="/summer/chanterelle-adventure" className="hover:text-lime-400">
           <p className="w-fit rounded-md bg-rose-400 px-1 text-lime-400 underline">
             <span className="text-lg font-bold">June 2022 -&nbsp;</span>Chanterelle Adventure
           </p>
-          <p>
+          <p className="text-neutral-300">
             After a pleasant, yet jam packed, with yard work, 4th of July weekend I was itching to
             catch some fish...
           </p>
@@ -29,7 +26,7 @@ const Summer = () => {
           <p className="w-fit rounded-md bg-rose-400 px-1 text-lime-400 underline">
             <span className="text-lg font-bold">July 2022 -&nbsp;</span>Have kayak, will travel
           </p>
-          <p>
+          <p className="text-neutral-300">
             For the past month or two I have been dreaming about buying a kayak and using it to
             access water that had proven to be out of reach by foot. Well last week I found a really
             good deal for one on Craigslist and took the plunge...
@@ -40,7 +37,7 @@ const Summer = () => {
           <p className="w-fit rounded-md bg-rose-400 px-1 text-lime-400 underline">
             <span className="text-lg font-bold">August 2022 -&nbsp;</span>The White Mountains
           </p>
-          <p>
+          <p className="text-neutral-300">
             Back in March of 2022 I skied, for four days in the White Mountains of New Hampshire. It
             was an epic trip and I got a small taste of what these mountains could offer in terms of
             fishing in the spring or summer. I knew I had to come back. Well I did come back in
@@ -54,7 +51,7 @@ const Summer = () => {
             <span className="text-lg font-bold">September 2022 -&nbsp;</span>Mycologist in the
             making
           </p>
-          <p>
+          <p className="text-neutral-300">
             Ever since my days of fishing in Japan I have been enamored with mushrooms. Then I moved
             to New England and mycology transitioned from interest to obsession...
           </p>
@@ -65,13 +62,15 @@ const Summer = () => {
             <span className="text-lg font-bold">August 2023 -&nbsp;</span>The summer vacation I wish
             I had when I was a kid
           </p>
-          <p>
+          <p className="text-neutral-300">
             Seriously, it's been nearly a year since I wrote a summer blog post!? This is a travesty
             I must reconcile...
           </p>
         </Link>
       </div>
-      <Footer />
+      <div className="fixed bottom-0 w-full">
+        <Footer />
+      </div>
     </div>
   )
 }

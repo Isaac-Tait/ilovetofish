@@ -1,9 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSnowflake, faSun } from '@fortawesome/free-regular-svg-icons'
-import { faRainbow, faTree } from '@fortawesome/free-solid-svg-icons'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'

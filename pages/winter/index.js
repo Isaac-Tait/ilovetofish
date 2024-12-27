@@ -1,19 +1,15 @@
 import React from 'react'
 import Link from 'next/link'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSun } from '@fortawesome/free-regular-svg-icons'
-import { faRainbow, faTree } from '@fortawesome/free-solid-svg-icons'
-
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
 const Skiing = () => {
   return (
-    <div className="bg-gray-400">
+    <div className="h-screen overflow-y-scroll bg-gray-600">
       <Header />
-      <div className="mx-auto h-screen max-w-6xl px-1">
-        <h1 className="mx-auto w-fit rounded-xl bg-teal-400 p-1 text-2xl font-semibold text-rose-400">
+      <div className="mx-auto max-w-6xl px-1">
+        <h1 className="mx-auto w-fit rounded-md bg-teal-400 p-1 text-2xl font-semibold text-rose-400">
           Winter
         </h1>
 
@@ -21,7 +17,7 @@ const Skiing = () => {
           <p className="w-fit rounded-md bg-teal-400 px-1 text-rose-400 underline">
             <span className="text-lg font-bold">January 2022 -&nbsp;</span>Koselig
           </p>
-          <p>
+          <p className="text-neutral-300">
             Let's get cozy for a second and have a quick chat about creating a positive mental state
             surrounding winter and all her cold & dark glory...
           </p>
@@ -31,7 +27,7 @@ const Skiing = () => {
           <p className="w-fit rounded-md bg-teal-400 px-1 text-rose-400 underline">
             <span className="text-lg font-bold">February</span>Nordic Skiing
           </p>
-          <p>
+          <p className="text-neutral-300">
             I thought you had to be wealthy to go skiing; that is until I discovered nordic
             skiing...
           </p>
@@ -41,14 +37,16 @@ const Skiing = () => {
           <p className="w-fit rounded-md bg-teal-400 px-1 text-rose-400 underline">
             <span className="text-lg font-bold">March 2022 -&nbsp;</span>New England
           </p>
-          <p>I have fallen in love with New England. I don't think I could ever leave...</p>
+          <p className="text-neutral-300">
+            I have fallen in love with New England. I don't think I could ever leave...
+          </p>
         </Link>
 
         <Link href="/winter/father-son" className="hover:text-rose-400">
           <p className="w-fit rounded-md bg-teal-400 px-1 text-rose-400 underline">
             <span className="text-lg font-bold">January 2023 -&nbsp;</span>Father Son Ski Trip
           </p>
-          <p>
+          <p className="text-neutral-300">
             I used to be entirely opposed to skiing during the holidays. I tried it once and the
             crowds (and prices) were insane. Well now that my son is in school I had no choice. Well
             it was a great trip and I was pleasantly surprised by the solitude and adventure...
@@ -59,7 +57,7 @@ const Skiing = () => {
           <p className="w-fit rounded-md bg-teal-400 px-1 text-rose-400 underline">
             <span className="text-lg font-bold">February 2023 -nbsp;</span>100 Mile Wilderness
           </p>
-          <p>
+          <p className="text-neutral-300">
             In the far north of Maine lies a wilderness area called the 100 Mile Wilderness. There
             are several huts that you can ski to and from that make visiting this winter wonderland
             a truly special experience...
@@ -70,14 +68,16 @@ const Skiing = () => {
           <p className="w-fit rounded-md bg-teal-400 px-1 text-rose-400 underline">
             <span className="text-lg font-bold">January 2024 -&nbsp;</span>Deconstruction
           </p>
-          <p>
+          <p className="text-neutral-300">
             2023 was an exhausting, challenging, and sometimes down right scary journey of growing,
             stretching, unlearning, and learning. I fished a lot, not as much as last year but still
             a decent amount...
           </p>
         </Link>
       </div>
-      <Footer />
+      <div className="fixed bottom-0 w-full">
+        <Footer />
+      </div>
     </div>
   )
 }

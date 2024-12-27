@@ -1,105 +1,78 @@
-import React from 'react';
-import Link from 'next/link';
+import React from 'react'
+import Link from 'next/link'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faSnowflake,
-  faSun,
-} from '@fortawesome/free-regular-svg-icons';
-import { faRainbow } from '@fortawesome/free-solid-svg-icons';
-
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 
 const Blog = () => {
   return (
-    <div className='heropattern-topography-neutral-100'>
+    <div className="h-screen overflow-y-scroll bg-gray-600">
       <Header />
-      <header className='lg:flex lg:flex-wrap lg:justify-center mx-1'>
-        <div className='lg:w-2/3 flex my-auto justify-between'>
-          <h3 className='text-2xl font-semibold'>
-            <Link href='/spring' legacyBehavior>
-              <a className='text-lime-400 hover:text-indigo-500'>
-                <FontAwesomeIcon icon={faRainbow} className='h-10' />
-              </a>
-            </Link>
-          </h3>
-          <h3 className='text-2xl font-semibold'>
-            <Link href='/summer' legacyBehavior>
-              <a className='text-rose-400 hover:text-indigo-500'>
-                <FontAwesomeIcon icon={faSun} className='h-10' />
-              </a>
-            </Link>
-          </h3>
-          <h3 className='text-2xl font-semibold mr-4'>
-            <Link href='/winter' legacyBehavior>
-              <a className='text-teal-400 hover:text-indigo-500'>
-                <FontAwesomeIcon
-                  icon={faSnowflake}
-                  className='h-10'
-                />
-              </a>
-            </Link>
-          </h3>
-        </div>
-      </header>
-      <div className='max-w-6xl mx-auto h-screen px-1'>
-        <h1 className='text-2xl bg-fuchsia-400 flex flex-row justify-center text-neutral-100 rounded-xl mt-1'>
+      <div className="mx-auto h-screen max-w-6xl px-1">
+        <h1 className="mx-auto w-fit rounded-md bg-fuchsia-400 p-1 text-2xl font-semibold text-teal-400">
           Fall
         </h1>
-        <Link href='/fall/bouldering' legacyBehavior>
-          <p className='underline text-amber-500'>Boulders</p>
-        </Link>
-        <p>
-          I like to climb rocks. So, imagine my excitement when I
-          discoverd a collection of boulders not too far from home...
-        </p>
 
-        <Link href='/fall/october' legacyBehavior>
-          <p className='underline text-amber-500'>October</p>
-        </Link>
-        <p>
-          It has been too long since I chased down obscure blue lines
-          on a map to see if they held trout. It was time to brush off
-          the cobwebs...
-        </p>
-        <Link href='/fall/autumn-equinox' legacyBehavior>
-          <p className='underline text-amber-500'>
-            Fall is in the air!
+        <Link href="/fall/october" className="hover:text-teal-400">
+          <div className="w-fit rounded-md bg-fuchsia-400 px-1 text-teal-400 underline">
+            <span className="text-lg font-bold">October 2021 -&nbsp;</span>October
+          </div>
+          <p className="text-neutral-300">
+            It has been too long since I chased down obscure blue lines on a map to see if they held
+            trout. It was time to brush off the cobwebs...
           </p>
         </Link>
-        <p>
-          The days are getting shorter, the weather is cooler, and the
-          trees leaves are turning from green to gold, red, yellow,
-          and orange...
-        </p>
-        <Link href='/fall/anniversary' legacyBehavior>
-          <p className='underline text-amber-500'>
-            My first year living in New England
+
+        <Link href="/fall/bouldering" className="hover:text-teal-400">
+          <p className="w-fit rounded-md bg-fuchsia-400 px-1 text-teal-400 underline">
+            <span className="text-lg font-bold">November 2021 -&nbsp;</span>Boulders
+          </p>
+          <p className="text-neutral-300">
+            I like to climb rocks. So, imagine my excitement when I discoverd a collection of
+            boulders not too far from home...
           </p>
         </Link>
-        <p>
-          My first year living in Connecticut is now in the history
-          books. I must say that I was absolutely blown away my first
-          year living here. Everything about this state has surpassed
-          my expectations...
-        </p>
-        <Link href='/fall/second-summer' legacyBehavior>
-          <p className='underline text-amber-500'>
-            A second chance at summer, but if only for a day
+
+        <Link href="/fall/autumn-equinox" className="hover:text-teal-400">
+          <p className="w-fit rounded-md bg-fuchsia-400 px-1 text-teal-400 underline">
+            <span className="text-lg font-bold">September 2022 -&nbsp;</span>Fall is in the air!
+          </p>
+          <p className="text-neutral-300">
+            The days are getting shorter, the weather is cooler, and the trees leaves are turning
+            from green to gold, red, yellow, and orange...
           </p>
         </Link>
-        <p>
-          Fresh off the plane from California (a two week visit to see
-          family, friends, and go to a wedding) I was itching to get
-          back out into the wild places of New England that I have
-          fallen madly in love with. Lucky for me the weather was a
-          warm 77 degrees in early November...
-        </p>
+
+        <Link href="/fall/anniversary" className="hover:text-teal-400">
+          <p className="w-fit rounded-md bg-fuchsia-400 px-1 text-teal-400 underline">
+            <span className="text-lg font-bold">October 2022 -&nbsp;</span>My first year living in
+            New England
+          </p>
+          <p className="text-neutral-300">
+            My first year living in Connecticut is now in the history books. I must say that I was
+            absolutely blown away my first year living here. Everything about this state has
+            surpassed my expectations...
+          </p>
+        </Link>
+
+        <Link href="/fall/second-summer" className="hover:text-teal-400">
+          <p className="w-fit rounded-md bg-fuchsia-400 px-1 text-teal-400 underline">
+            <span className="text-lg font-bold">November 2022 -&nbsp;</span>A second chance at
+            summer, but if only for a day
+          </p>{' '}
+          <p className="text-neutral-300">
+            Fresh off the plane from California (a two week visit to see family, friends, and go to
+            a wedding) I was itching to get back out into the wild places of New England that I have
+            fallen madly in love with. Lucky for me the weather was a warm 77 degrees in early
+            November...
+          </p>
+        </Link>
       </div>
-      <Footer />
+      <div className="fixed bottom-0 w-full">
+        <Footer />
+      </div>
     </div>
-  );
-};
+  )
+}
 
-export default Blog;
+export default Blog
