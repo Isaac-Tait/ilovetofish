@@ -17,8 +17,8 @@ const Skiing = () => {
             <span className="text-lg font-bold">January 2022 -&nbsp;</span>Koselig
           </p>
           <p className="text-neutral-300">
-            Let's get cozy for a second and have a quick chat about creating a positive mental state
-            surrounding winter and all her cold & dark glory...
+            Let&#39;s get cozy for a second and have a quick chat about creating a positive mental
+            state surrounding winter and all her cold & dark glory...
           </p>
         </Link>
 
@@ -37,7 +37,7 @@ const Skiing = () => {
             <span className="text-lg font-bold">March 2022 -&nbsp;</span>New England
           </p>
           <p className="text-neutral-300">
-            I have fallen in love with New England. I don't think I could ever leave...
+            I have fallen in love with New England. I don&#39;t think I could ever leave...
           </p>
         </Link>
 

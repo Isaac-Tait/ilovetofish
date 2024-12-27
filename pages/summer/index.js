@@ -63,8 +63,8 @@ const Summer = () => {
             I had when I was a kid
           </p>
           <p className="text-neutral-300">
-            Seriously, it's been nearly a year since I wrote a summer blog post!? This is a travesty
-            I must reconcile...
+            Seriously, it&#39;s been nearly a year since I wrote a summer blog post!? This is a
+            travesty I must reconcile...
           </p>
         </Link>
       </div>
