@@ -10,7 +10,7 @@ import Footer from '../components/Footer'
 
 const About = () => {
   return (
-    <div className="h-screen overflow-y-auto heropattern-bubbles-neutral-100">
+    <div className="h-screen overflow-y-auto bg-gray-400">
       <Header />
       {/*       <header className='lg:flex lg:flex-wrap lg:justify-center mx-1'>
         <div className='lg:w-2/3 flex my-auto justify-between'>
@@ -45,8 +45,10 @@ const About = () => {
         </div>
       </header> */}
       <div className="mx-auto max-w-6xl px-1">
-        <h2 className="text-center text-2xl font-semibold text-red-500">About the author</h2>
-        <p>
+        <h2 className="mx-auto w-fit rounded-md bg-rose-400 p-1 text-2xl font-semibold text-lime-400">
+          About the author
+        </h2>
+        <p className="rounded-md bg-rose-400 p-1 text-lime-400">
           My name is Isaac Tait. I love to fish. I also love trail running, cycling, skiing, rock
           climbing, && backpacking. When I am at home I enjoy cooking vegan meals and listening to
           jazz.
@@ -66,7 +68,7 @@ const About = () => {
             href="https://www.instagram.com/iloveto.fish/"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline underline-offset-4 hover:text-blue-500"
+            className="hover:text-blue-500 underline underline-offset-4"
           >
             Instagram
           </Link>
@@ -75,7 +77,7 @@ const About = () => {
             href="https://twitter.com/Isaac_Tait_83"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline underline-offset-4 hover:text-blue-500"
+            className="hover:text-blue-500 underline underline-offset-4"
           >
             Twitter
           </Link>
