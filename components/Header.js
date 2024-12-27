@@ -84,7 +84,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
-      <header className="mx-1 lg:flex lg:flex-wrap lg:justify-center">
+      <header className="mx-1 mb-2 lg:flex lg:flex-wrap lg:justify-center">
         <div className="my-auto flex justify-between lg:w-2/3">
           <h3 className="text-3xl font-semibold">
             <Link href={'/spring'} legacyBehavior>
