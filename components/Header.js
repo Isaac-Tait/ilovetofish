@@ -24,9 +24,9 @@ const Header = () => {
       <nav className="flex flex-wrap items-center">
         <Link
           href="/"
-          className="mr-4 inline-flex items-center p-2 text-6xl text-amber-400 lg:w-1/3"
+          className="text-amber-400 mr-4 inline-flex items-center p-2 text-6xl lg:w-1/3"
         >
-          <span className="flex text-amber-400">
+          <span className="flex text-yellow-400">
             I&nbsp;
             <FontAwesomeIcon icon={faHeart} />
             &nbsp;to&nbsp;
@@ -34,7 +34,7 @@ const Header = () => {
           </span>
         </Link>
         <button
-          className="ml-auto inline-flex rounded bg-amber-400 p-3 text-white outline-none hover:text-white lg:hidden"
+          className="ml-auto inline-flex rounded bg-yellow-400 p-3 text-white outline-none hover:text-white lg:hidden"
           onClick={handleClick}
         >
           <svg

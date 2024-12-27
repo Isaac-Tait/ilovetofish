@@ -17,29 +17,37 @@ const Skiing = () => {
           Winter
         </h1>
 
-        <Link href="/winter/koselig">
-          <span className="font-semibold text-teal-400 underline">Koselig</span>
+        <Link href="/winter/koselig" className="hover:text-rose-400">
+          <p className="w-fit rounded-md bg-teal-400 px-1 text-rose-400 underline">
+            <span className="text-lg font-bold">January 2022 -&nbsp;</span>Koselig
+          </p>
           <p>
             Let's get cozy for a second and have a quick chat about creating a positive mental state
             surrounding winter and all her cold & dark glory...
           </p>
         </Link>
 
-        <Link href="/winter/nordic-skiing">
-          <span className="font-semibold text-teal-400 underline">Nordic Skiing</span>
+        <Link href="/winter/nordic-skiing" className="hover:text-rose-400">
+          <p className="w-fit rounded-md bg-teal-400 px-1 text-rose-400 underline">
+            <span className="text-lg font-bold">February</span>Nordic Skiing
+          </p>
           <p>
             I thought you had to be wealthy to go skiing; that is until I discovered nordic
             skiing...
           </p>
         </Link>
 
-        <Link href="/winter/new-england">
-          <span className="font-semibold text-teal-400 underline">New England</span>
+        <Link href="/winter/new-england" className="hover:text-rose-400">
+          <p className="w-fit rounded-md bg-teal-400 px-1 text-rose-400 underline">
+            <span className="text-lg font-bold">March 2022 -&nbsp;</span>New England
+          </p>
           <p>I have fallen in love with New England. I don't think I could ever leave...</p>
         </Link>
 
-        <Link href="/winter/father-son">
-          <span className="font-semibold text-teal-400 underline">Father Son Ski Trip</span>
+        <Link href="/winter/father-son" className="hover:text-rose-400">
+          <p className="w-fit rounded-md bg-teal-400 px-1 text-rose-400 underline">
+            <span className="text-lg font-bold">January 2023 -&nbsp;</span>Father Son Ski Trip
+          </p>
           <p>
             I used to be entirely opposed to skiing during the holidays. I tried it once and the
             crowds (and prices) were insane. Well now that my son is in school I had no choice. Well
@@ -47,8 +55,10 @@ const Skiing = () => {
           </p>
         </Link>
 
-        <Link href="/winter/100-mile-wilderness">
-          <span className="font-semibold text-teal-400 underline">100 Mile Wilderness</span>{' '}
+        <Link href="/winter/100-mile-wilderness" className="hover:text-rose-400">
+          <p className="w-fit rounded-md bg-teal-400 px-1 text-rose-400 underline">
+            <span className="text-lg font-bold">February 2023 -nbsp;</span>100 Mile Wilderness
+          </p>
           <p>
             In the far north of Maine lies a wilderness area called the 100 Mile Wilderness. There
             are several huts that you can ski to and from that make visiting this winter wonderland
@@ -56,8 +66,10 @@ const Skiing = () => {
           </p>
         </Link>
 
-        <Link href="/winter/deconstruction">
-          <span className="font-semibold text-teal-400 underline">Deconstruction</span>
+        <Link href="/winter/deconstruction" className="hover:text-rose-400">
+          <p className="w-fit rounded-md bg-teal-400 px-1 text-rose-400 underline">
+            <span className="text-lg font-bold">January 2024 -&nbsp;</span>Deconstruction
+          </p>
           <p>
             2023 was an exhausting, challenging, and sometimes down right scary journey of growing,
             stretching, unlearning, and learning. I fished a lot, not as much as last year but still

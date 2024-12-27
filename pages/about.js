@@ -12,45 +12,13 @@ const About = () => {
   return (
     <div className="h-screen overflow-y-auto bg-gray-400 heropattern-bubbles-gray-800">
       <Header />
-      {/*       <header className='lg:flex lg:flex-wrap lg:justify-center mx-1'>
-        <div className='lg:w-2/3 flex my-auto justify-between'>
-          <h3 className='text-3xl font-semibold'>
-            <Link href={'/spring'} legacyBehavior>
-              <a className='text-lime-400 hover:text-indigo-500'>
-                <FontAwesomeIcon icon={faRainbow} />
-              </a>
-            </Link>
-          </h3>
-          <h3 className='text-3xl font-semibold'>
-            <Link href={'/summer'} legacyBehavior>
-              <a className='text-rose-400 hover:text-indigo-500'>
-                <FontAwesomeIcon icon={faSun} />
-              </a>
-            </Link>
-          </h3>
-          <h3 className='text-3xl font-semibold'>
-            <Link href={'/fall'} legacyBehavior>
-              <a className='text-fuchsia-400 hover:text-indigo-500'>
-                <FontAwesomeIcon icon={faTree} />
-              </a>
-            </Link>
-          </h3>
-          <h3 className='text-3xl font-semibold mr-4'>
-            <Link href={'/winter'} legacyBehavior>
-              <a className='text-teal-400 hover:text-indigo-500'>
-                <FontAwesomeIcon icon={faSnowflake} />
-              </a>
-            </Link>
-          </h3>
-        </div>
-      </header> */}
       <div className="mx-auto max-w-6xl px-1">
-        <h2 className="mx-auto w-fit rounded-md bg-rose-400 p-1 text-2xl font-semibold text-lime-400">
+        <h2 className="mx-auto w-fit rounded-t-md bg-rose-400 p-1 text-2xl font-semibold text-lime-400">
           About the author
         </h2>
-        <p className="rounded-md bg-rose-400 p-1 text-lime-400">
-          My name is Isaac Tait. I love to fish. I also love trail running, cycling, skiing, rock
-          climbing, && backpacking. When I am at home I enjoy cooking vegan meals and listening to
+        <p className="rounded-md bg-rose-400 p-1 text-center text-lime-400">
+          My name is Isaac Tait. I love to fish. I also love trail running, cycling, skiing,
+          climbing, && hiking. When I am at home I enjoy cooking vegetarian meals and listening to
           jazz.
         </p>
         <div className="flex justify-center pt-10">
