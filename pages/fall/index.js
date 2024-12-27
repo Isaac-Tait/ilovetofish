@@ -8,7 +8,7 @@ const Blog = () => {
     <div className="h-screen overflow-y-scroll bg-gray-600">
       <Header />
       <div className="mx-auto h-screen max-w-6xl px-1">
-        <h1 className="mx-auto w-fit rounded-md bg-fuchsia-400 p-1 text-2xl font-semibold text-teal-400">
+        <h1 className="mx-auto mb-2 w-fit rounded-md bg-fuchsia-400 p-1 text-2xl font-semibold text-teal-400">
           Fall
         </h1>
 

@@ -85,7 +85,7 @@ const Header = () => {
         </div>
       </nav>
 
-      <header className="mx-1 mb-2 lg:flex lg:flex-wrap lg:justify-center">
+      <header className="mx-1 lg:flex lg:flex-wrap lg:justify-center">
         <div className="my-auto flex justify-between lg:w-2/3">
           <div>
             <h3 className="flex items-center justify-center text-3xl hover:animate-spin-slow">
