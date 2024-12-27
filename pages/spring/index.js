@@ -12,7 +12,7 @@ const Spring = () => {
           Spring
         </h1>
 
-        <Link href="/spring/pat-metheny" className="hover:text-fuchsia-400" legacyBehavior>
+        <Link href="/spring/pat-metheny" className="hover:text-fuchsia-400">
           <p className="w-fit rounded-md bg-lime-400 px-1 text-fuchsia-400 underline">
             <span className="text-lg font-bold">March 2022 -&nbsp;</span>Pat Metheny
           </p>
@@ -22,7 +22,7 @@ const Spring = () => {
           </p>
         </Link>
 
-        <Link href="/spring/trout" className="hover:text-fuchsia-400" legacyBehavior>
+        <Link href="/spring/trout" className="hover:text-fuchsia-400">
           <p className="w-fit rounded-md bg-lime-400 px-1 text-fuchsia-400 underline">
             <span className="text-lg font-bold">April 2022 -&nbsp;</span>Trout
           </p>
@@ -32,7 +32,7 @@ const Spring = () => {
           </p>
         </Link>
 
-        <Link href="/spring/finesse-fishing" className="hover:text-fuchsia-400" legacyBehavior>
+        <Link href="/spring/finesse-fishing" className="hover:text-fuchsia-400">
           <p className="w-fit rounded-md bg-lime-400 px-1 text-fuchsia-400 underline">
             <span className="text-lg font-bold">May 2022 -&nbsp;</span>Finesse Fishing
           </p>
@@ -43,7 +43,7 @@ const Spring = () => {
           </p>
         </Link>
 
-        <Link href="/spring/mountain-laurel" className="hover:text-fuchsia-400" legacyBehavior>
+        <Link href="/spring/mountain-laurel" className="hover:text-fuchsia-400">
           <p className="w-fit rounded-md bg-lime-400 px-1 text-fuchsia-400 underline">
             <span className="text-lg font-bold">June 2022 -&nbsp;</span>Mountain Laurel
           </p>
@@ -54,7 +54,7 @@ const Spring = () => {
           </p>
         </Link>
 
-        <Link href="/spring/when-raccoons-attack" className="hover:text-fuchsia-400" legacyBehavior>
+        <Link href="/spring/when-raccoons-attack" className="hover:text-fuchsia-400">
           <p className="w-fit rounded-md bg-lime-400 px-1 text-fuchsia-400 underline">
             <span className="text-lg font-bold">April 2023 -&nbsp;</span>An intense moment on the
             river...
@@ -66,7 +66,7 @@ const Spring = () => {
           </p>
         </Link>
 
-        <Link href="/spring/lyme-disease" className="hover:text-fuchsia-400" legacyBehavior>
+        <Link href="/spring/lyme-disease" className="hover:text-fuchsia-400">
           <p className="w-fit rounded-md bg-lime-400 px-1 text-fuchsia-400 underline">
             <span className="text-lg font-bold">June 2023 -&nbsp;</span>Dealing with ticks...
           </p>
@@ -77,7 +77,7 @@ const Spring = () => {
           </p>
         </Link>
 
-        <Link href="/spring/exquisite" className="hover:text-fuchsia-400" legacyBehavior>
+        <Link href="/spring/exquisite" className="hover:text-fuchsia-400">
           <p className="w-fit rounded-md bg-lime-400 px-1 text-fuchsia-400 underline">
             <span className="text-lg font-bold">May 2024 -&nbsp;</span>A gorgeous first day...
           </p>

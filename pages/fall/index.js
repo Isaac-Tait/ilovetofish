@@ -12,7 +12,7 @@ const Blog = () => {
           Fall
         </h1>
 
-        <Link href="/fall/october" className="hover:text-teal-400" legacyBehavior>
+        <Link href="/fall/october" className="hover:text-teal-400">
           <div className="w-fit rounded-md bg-fuchsia-400 px-1 text-teal-400 underline">
             <span className="text-lg font-bold">October 2021 -&nbsp;</span>October
           </div>
@@ -22,7 +22,7 @@ const Blog = () => {
           </p>
         </Link>
 
-        <Link href="/fall/bouldering" className="hover:text-teal-400" legacyBehavior>
+        <Link href="/fall/bouldering" className="hover:text-teal-400">
           <p className="w-fit rounded-md bg-fuchsia-400 px-1 text-teal-400 underline">
             <span className="text-lg font-bold">November 2021 -&nbsp;</span>Boulders
           </p>
@@ -32,7 +32,7 @@ const Blog = () => {
           </p>
         </Link>
 
-        <Link href="/fall/autumn-equinox" className="hover:text-teal-400" legacyBehavior>
+        <Link href="/fall/autumn-equinox" className="hover:text-teal-400">
           <p className="w-fit rounded-md bg-fuchsia-400 px-1 text-teal-400 underline">
             <span className="text-lg font-bold">September 2022 -&nbsp;</span>Fall is in the air!
           </p>
@@ -42,7 +42,7 @@ const Blog = () => {
           </p>
         </Link>
 
-        <Link href="/fall/anniversary" className="hover:text-teal-400" legacyBehavior>
+        <Link href="/fall/anniversary" className="hover:text-teal-400">
           <p className="w-fit rounded-md bg-fuchsia-400 px-1 text-teal-400 underline">
             <span className="text-lg font-bold">October 2022 -&nbsp;</span>My first year living in
             New England
@@ -54,7 +54,7 @@ const Blog = () => {
           </p>
         </Link>
 
-        <Link href="/fall/second-summer" className="hover:text-teal-400" legacyBehavior>
+        <Link href="/fall/second-summer" className="hover:text-teal-400">
           <p className="w-fit rounded-md bg-fuchsia-400 px-1 text-teal-400 underline">
             <span className="text-lg font-bold">November 2022 -&nbsp;</span>A second chance at
             summer, but if only for a day
