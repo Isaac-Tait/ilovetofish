@@ -1,4 +1,3 @@
-import React from 'react'
 import Link from 'next/link'
 
 import Header from '../../components/Header'
@@ -13,7 +12,7 @@ const Skiing = () => {
           Winter
         </h1>
 
-        <Link href="/winter/koselig" className="hover:text-rose-400">
+        <Link href="/winter/koselig" className="hover:text-rose-400" legacyBehavior>
           <p className="w-fit rounded-md bg-teal-400 px-1 text-rose-400 underline">
             <span className="text-lg font-bold">January 2022 -&nbsp;</span>Koselig
           </p>
@@ -23,7 +22,7 @@ const Skiing = () => {
           </p>
         </Link>
 
-        <Link href="/winter/nordic-skiing" className="hover:text-rose-400">
+        <Link href="/winter/nordic-skiing" className="hover:text-rose-400" legacyBehavior>
           <p className="w-fit rounded-md bg-teal-400 px-1 text-rose-400 underline">
             <span className="text-lg font-bold">February</span>Nordic Skiing
           </p>
@@ -33,7 +32,7 @@ const Skiing = () => {
           </p>
         </Link>
 
-        <Link href="/winter/new-england" className="hover:text-rose-400">
+        <Link href="/winter/new-england" className="hover:text-rose-400" legacyBehavior>
           <p className="w-fit rounded-md bg-teal-400 px-1 text-rose-400 underline">
             <span className="text-lg font-bold">March 2022 -&nbsp;</span>New England
           </p>
@@ -42,7 +41,7 @@ const Skiing = () => {
           </p>
         </Link>
 
-        <Link href="/winter/father-son" className="hover:text-rose-400">
+        <Link href="/winter/father-son" className="hover:text-rose-400" legacyBehavior>
           <p className="w-fit rounded-md bg-teal-400 px-1 text-rose-400 underline">
             <span className="text-lg font-bold">January 2023 -&nbsp;</span>Father Son Ski Trip
           </p>
@@ -53,7 +52,7 @@ const Skiing = () => {
           </p>
         </Link>
 
-        <Link href="/winter/100-mile-wilderness" className="hover:text-rose-400">
+        <Link href="/winter/100-mile-wilderness" className="hover:text-rose-400" legacyBehavior>
           <p className="w-fit rounded-md bg-teal-400 px-1 text-rose-400 underline">
             <span className="text-lg font-bold">February 2023 -nbsp;</span>100 Mile Wilderness
           </p>
@@ -64,7 +63,7 @@ const Skiing = () => {
           </p>
         </Link>
 
-        <Link href="/winter/deconstruction" className="hover:text-rose-400">
+        <Link href="/winter/deconstruction" className="hover:text-rose-400" legacyBehavior>
           <p className="w-fit rounded-md bg-teal-400 px-1 text-rose-400 underline">
             <span className="text-lg font-bold">January 2024 -&nbsp;</span>Deconstruction
           </p>

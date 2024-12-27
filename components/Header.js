@@ -25,6 +25,7 @@ const Header = () => {
         <Link
           href="/"
           className="text-amber-400 mr-4 inline-flex items-center p-2 text-6xl lg:w-1/3"
+          legacyBehavior
         >
           <span className="flex text-yellow-400">
             I&nbsp;

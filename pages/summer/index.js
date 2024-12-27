@@ -12,7 +12,7 @@ const Summer = () => {
           Summer
         </h1>
 
-        <Link href="/summer/chanterelle-adventure" className="hover:text-lime-400">
+        <Link href="/summer/chanterelle-adventure" className="hover:text-lime-400" legacyBehavior>
           <p className="w-fit rounded-md bg-rose-400 px-1 text-lime-400 underline">
             <span className="text-lg font-bold">June 2022 -&nbsp;</span>Chanterelle Adventure
           </p>
@@ -22,7 +22,7 @@ const Summer = () => {
           </p>
         </Link>
 
-        <Link href="/summer/kayaking" className="hover:text-lime-400">
+        <Link href="/summer/kayaking" className="hover:text-lime-400" legacyBehavior>
           <p className="w-fit rounded-md bg-rose-400 px-1 text-lime-400 underline">
             <span className="text-lg font-bold">July 2022 -&nbsp;</span>Have kayak, will travel
           </p>
@@ -33,7 +33,7 @@ const Summer = () => {
           </p>
         </Link>
 
-        <Link href="/summer/the-whites" className="hover:text-lime-400">
+        <Link href="/summer/the-whites" className="hover:text-lime-400" legacyBehavior>
           <p className="w-fit rounded-md bg-rose-400 px-1 text-lime-400 underline">
             <span className="text-lg font-bold">August 2022 -&nbsp;</span>The White Mountains
           </p>
@@ -46,7 +46,7 @@ const Summer = () => {
           </p>
         </Link>
 
-        <Link href="/summer/mushrooms" className="hover:text-lime-400">
+        <Link href="/summer/mushrooms" className="hover:text-lime-400" legacyBehavior>
           <p className="w-fit rounded-md bg-rose-400 px-1 text-lime-400 underline">
             <span className="text-lg font-bold">September 2022 -&nbsp;</span>Mycologist in the
             making
@@ -57,7 +57,7 @@ const Summer = () => {
           </p>
         </Link>
 
-        <Link href="/summer/vacation" className="hover:text-lime-400">
+        <Link href="/summer/vacation" className="hover:text-lime-400" legacyBehavior>
           <p className="w-fit rounded-md bg-rose-400 px-1 text-lime-400 underline">
             <span className="text-lg font-bold">August 2023 -&nbsp;</span>The summer vacation I wish
             I had when I was a kid

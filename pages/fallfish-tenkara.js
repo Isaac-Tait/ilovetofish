@@ -1,10 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSnowflake, faSun } from '@fortawesome/free-regular-svg-icons'
-import { faRainbow, faTree } from '@fortawesome/free-solid-svg-icons'
-
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
@@ -45,6 +41,7 @@ const Fallfish = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="cursor-pointer"
+            legacyBehavior
           >
             <Image
               src="/images/FfT_logo.png"
