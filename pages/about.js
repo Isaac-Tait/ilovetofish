@@ -10,7 +10,7 @@ import Footer from '../components/Footer'
 
 const About = () => {
   return (
-    <div className="h-screen overflow-y-auto bg-gray-400">
+    <div className="h-screen overflow-y-auto bg-gray-400 heropattern-bubbles-gray-800">
       <Header />
       {/*       <header className='lg:flex lg:flex-wrap lg:justify-center mx-1'>
         <div className='lg:w-2/3 flex my-auto justify-between'>
