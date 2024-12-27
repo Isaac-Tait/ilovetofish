@@ -24,8 +24,7 @@ const Header = () => {
       <nav className="flex flex-wrap items-center">
         <Link
           href="/"
-          className="text-amber-400 mr-4 inline-flex items-center p-2 text-6xl lg:w-1/3"
-          legacyBehavior
+          className="mr-4 inline-flex items-center p-2 text-6xl text-yellow-400 lg:w-1/3"
         >
           <span className="flex text-yellow-400">
             I&nbsp;
@@ -85,14 +84,16 @@ const Header = () => {
           </div>
         </div>
       </nav>
+
       <header className="mx-1 mb-2 lg:flex lg:flex-wrap lg:justify-center">
         <div className="my-auto flex justify-between lg:w-2/3">
           <div>
             <h3 className="flex items-center justify-center text-3xl hover:animate-spin-slow">
-              <Link href={'/winter'} legacyBehavior>
-                <a className="text-teal-400 hover:text-yellow-400">
-                  <FontAwesomeIcon icon={faSnowflake} />
-                </a>
+              <Link href={'/winter'}>
+                <FontAwesomeIcon
+                  icon={faSnowflake}
+                  className="text-teal-400 hover:text-yellow-400"
+                />
               </Link>
             </h3>
             <Link href={'/winter'} className="text-teal-400 hover:text-yellow-400">
@@ -102,10 +103,8 @@ const Header = () => {
 
           <div>
             <h3 className="flex items-center justify-center text-3xl hover:animate-spin-slow">
-              <Link href={'/spring'} legacyBehavior>
-                <a className="text-lime-400 hover:text-yellow-400">
-                  <FontAwesomeIcon icon={faRainbow} />
-                </a>
+              <Link href={'/spring'}>
+                <FontAwesomeIcon icon={faRainbow} className="text-lime-400 hover:text-yellow-400" />
               </Link>
             </h3>
             <Link href={'/spring'} className="text-lime-400 hover:text-yellow-400">
@@ -115,10 +114,8 @@ const Header = () => {
 
           <div>
             <h3 className="flex items-center justify-center text-3xl hover:animate-spin-slow">
-              <Link href={'/summer'} legacyBehavior>
-                <a className="text-rose-400 hover:text-yellow-400">
-                  <FontAwesomeIcon icon={faSun} />
-                </a>
+              <Link href={'/summer'}>
+                <FontAwesomeIcon icon={faSun} className="text-rose-400 hover:text-yellow-400" />
               </Link>
             </h3>
             <Link href={'/summer'} className="text-rose-400 hover:text-yellow-400">
@@ -128,10 +125,8 @@ const Header = () => {
 
           <div>
             <h3 className="flex items-center justify-center text-3xl hover:animate-spin-slow">
-              <Link href={'/fall'} legacyBehavior>
-                <a className="text-fuchsia-400 hover:text-yellow-400">
-                  <FontAwesomeIcon icon={faTree} />
-                </a>
+              <Link href={'/fall'}>
+                <FontAwesomeIcon icon={faTree} className="text-fuchsia-400 hover:text-yellow-400" />
               </Link>
             </h3>
             <Link href={'/fall'} className="text-fuchsia-400 hover:text-yellow-400">
