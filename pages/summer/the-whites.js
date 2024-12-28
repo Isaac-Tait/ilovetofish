@@ -11,6 +11,7 @@ import Footer from '../../components/Footer'
 export default function WhiteMountains() {
   return (
     <div className="bg-gray-400">
+      <Header />
       <div className="mx-auto h-screen max-w-6xl overflow-y-scroll px-1">
         <h1 className="mb-8 flex justify-center text-2xl font-semibold text-lime-400">
           Tenkara fishing in the White Mountains
