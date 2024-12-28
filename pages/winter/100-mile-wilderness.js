@@ -1,8 +1,5 @@
-import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-
-import Breadcrumbs from 'nextjs-breadcrumbs'
 
 import Comment from '../../components/Comment'
 import Header from '../../components/Header'
@@ -12,22 +9,20 @@ const Wilderness = () => {
   return (
     <div className="heropattern-topography-neutral-100">
       <Header />
-      <Breadcrumbs useDefaultStyle omitRootLabel labelsToUppercase={true} />
       <div className="mx-auto h-screen max-w-6xl overflow-y-scroll px-1">
-        <h1 className="mb-8 flex justify-center text-2xl font-semibold text-emerald-600">
+        <h1 className="mb-8 flex justify-center text-2xl font-semibold text-lime-400">
           Maine&#39;s One Hundred Mile Wilderness
         </h1>
         <p
-          className="first-letter:float-left first-letter:mr-3
-                    first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
-                    first-line:uppercase first-line:tracking-widest"
+          style={{ fontFamily: 'var(--font-kablammo)' }}
+          className="rounded-t-sm p-1 text-yellow-400 first-letter:float-left first-letter:mr-3 first-letter:text-7xl first-letter:font-bold first-line:uppercase first-line:tracking-widest"
         >
           When I first{' '}
           <Link
             href="https://www.nytimes.com/2021/11/16/travel/maine-cross-country-skiing.html"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-teal-400 underline hover:text-indigo-400"
+            className="hover:text-indigo-400 text-teal-400 underline"
           >
             read about the AMC hut system
           </Link>
@@ -69,7 +64,7 @@ const Wilderness = () => {
             href="https://www.wormwoodsaga.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-teal-400 underline hover:text-indigo-400"
+            className="hover:text-indigo-400 text-teal-400 underline"
           >
             self-publishing my novel
           </Link>
@@ -84,7 +79,7 @@ const Wilderness = () => {
           and happiness. In the end I decided to take a leap and blog about my trip through the 100
           Mile Wilderness on skis...
         </p>
-        <h4 className="text-center text-xl font-bold text-emerald-600">Day One</h4>
+        <h4 className="text-emerald-600 text-center text-xl font-bold">Day One</h4>
         <p className="py-2">
           I woke up before my alarm at 0445. My clothes were laid out in the living room and I had
           made overnight oats the evening before for my breakfast. While the tea kettle came to a
@@ -125,7 +120,7 @@ const Wilderness = () => {
         <p className="flex justify-center py-2 text-xs italic">
           Stopping to admire the sunset over First West Branch Pond
         </p>
-        <h4 className="text-center text-xl font-bold text-emerald-600">Day Two</h4>
+        <h4 className="text-emerald-600 text-center text-xl font-bold">Day Two</h4>
         <p className="py-2">
           The morning dawned crystal clear and cold. Without windchill it was -7. The week prior an
           arctic blast had dropped into New England sending the temperatures plummeting to -40
@@ -161,7 +156,7 @@ const Wilderness = () => {
         <p className="flex justify-center py-2 text-xs italic">
           Crossing an unnamed tributary of the West Branch Pleasant River
         </p>
-        <h4 className="text-center text-xl font-bold text-emerald-600">Day Three</h4>
+        <h4 className="text-emerald-600 text-center text-xl font-bold">Day Three</h4>
         <p>
           The night before we had laid out a fun looking route to take us to Gorman Chairback Lodge.
           While most folks did the Lodge to Lodge trail we were going to piece together a much
@@ -209,7 +204,7 @@ const Wilderness = () => {
         <p className="flex justify-center py-2 text-xs italic">
           Three unknown skiers arriving at Gorman Chairback
         </p>
-        <h4 className="text-center text-xl font-bold text-emerald-600">Day Four</h4>
+        <h4 className="text-emerald-600 text-center text-xl font-bold">Day Four</h4>
         <p>
           Out of all the lodges Gorman Chairback was my favorite in terms of ambiance. West Branch
           Pond Camp was the best in terms of food. That morning I enjoyed a tofu scramble, fruit
@@ -242,7 +237,7 @@ const Wilderness = () => {
           headlamps back on, pointed our skis downhill and whooped and hollered with glee all the
           way back to camp.
         </p>
-        <h4 className="text-center text-xl font-bold text-emerald-600">Day Five</h4>
+        <h4 className="text-emerald-600 text-center text-xl font-bold">Day Five</h4>
         <p>
           A little groggy from too much beer, too little sleep, and a dose of sadness to be leaving
           we donned our skis and pushed on to WBPC where we had left our truck. We had eight miles
@@ -313,7 +308,7 @@ const Wilderness = () => {
             href=" https://photos.app.goo.gl/A18gDkx1egmckvrr6"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-teal-400 underline hover:text-indigo-400"
+            className="hover:text-indigo-400 text-teal-400 underline"
           >
             click here
           </Link>

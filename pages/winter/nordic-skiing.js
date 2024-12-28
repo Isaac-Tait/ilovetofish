@@ -1,10 +1,8 @@
-import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import Breadcrumbs from 'nextjs-breadcrumbs'
 
 import Comment from '../../components/Comment'
 import Header from '../../components/Header'
@@ -12,14 +10,16 @@ import Footer from '../../components/Footer'
 
 export default function NordicSkiing() {
   return (
-    <div className="heropattern-topography-neutral-100">
+    <div className="bg-gray-400">
       <Header />
-      <Breadcrumbs useDefaultStyle omitRootLabel labelsToUppercase={true} />
       <div className="mx-auto h-screen max-w-6xl overflow-y-scroll px-1">
-        <h1 className="mb-8 flex justify-center text-2xl font-semibold text-emerald-600">
+        <h1 className="mb-8 flex justify-center text-2xl font-semibold text-lime-400">
           Prospect Mountain Nordic Skiing
         </h1>
-        <p className="first-letter:float-left first-letter:mr-3 first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900 first-line:uppercase first-line:tracking-widest">
+        <p
+          style={{ fontFamily: 'var(--font-kablammo)' }}
+          className="rounded-t-sm p-1 text-yellow-400 first-letter:float-left first-letter:mr-3 first-letter:text-7xl first-letter:font-bold first-line:uppercase first-line:tracking-widest"
+        >
           I wanted to go on a family ski trip last season but COVID made things difficult and the
           snow in southern California was not very inspirational. Then there were the astronomical
           prices...
@@ -36,7 +36,7 @@ export default function NordicSkiing() {
             href="https://prospectmountain.com/prices/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-teal-400 underline hover:text-indigo-400"
+            className="hover:text-indigo-400 text-teal-400 underline"
           >
             great
           </Link>

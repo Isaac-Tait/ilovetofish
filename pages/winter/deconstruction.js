@@ -1,8 +1,5 @@
-import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-
-import Breadcrumbs from 'nextjs-breadcrumbs'
 
 import Comment from '../../components/Comment'
 import Header from '../../components/Header'
@@ -10,20 +7,18 @@ import Footer from '../../components/Footer'
 
 const Blank = () => {
   return (
-    <div className="heropattern-topography-neutral-100">
+    <div className="bg-gray-400">
       <Header />
-      <Breadcrumbs useDefaultStyle omitRootLabel labelsToUppercase={true} />
       <div className="mx-auto h-screen max-w-6xl overflow-y-scroll px-1">
-        <h1 className="mb-8 flex justify-center text-2xl font-semibold text-emerald-600">
+        <h1 className="mb-8 flex justify-center text-2xl font-semibold text-lime-400">
           Namaste&nbsp;
           <span role="img" aria-label="folded hands">
             &#128591;
           </span>
         </h1>
         <p
-          className="first-letter:float-left first-letter:mr-3
-                    first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
-                    first-line:uppercase first-line:tracking-widest"
+          style={{ fontFamily: 'var(--font-kablammo)' }}
+          className="rounded-t-sm p-1 text-yellow-400 first-letter:float-left first-letter:mr-3 first-letter:text-7xl first-letter:font-bold first-line:uppercase first-line:tracking-widest"
         >
           Deconstructing and disentangling from an ultra conservative, far right, fundamentalist,
           christian upbringing, indoctrination, and brainwashing can be a very intimidating process.{' '}
@@ -31,7 +26,7 @@ const Blank = () => {
             href="https://docs.eandp.cc/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-teal-400 underline hover:text-indigo-400"
+            className="hover:text-indigo-400 text-teal-400 underline"
           >
             I have been chronicling that journey
           </Link>{' '}
@@ -52,7 +47,7 @@ const Blank = () => {
             href="https://en.wikipedia.org/wiki/That_All_Shall_Be_Saved"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-teal-400 underline hover:text-indigo-400"
+            className="hover:text-indigo-400 text-teal-400 underline"
           >
             universalism
           </Link>{' '}
@@ -79,7 +74,7 @@ const Blank = () => {
             href="https://wormwoodsaga.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-teal-400 underline hover:text-indigo-400"
+            className="hover:text-indigo-400 text-teal-400 underline"
           >
             book two
           </Link>{' '}
@@ -88,7 +83,7 @@ const Blank = () => {
             href="/summer/vacation"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-teal-400 underline hover:text-indigo-400"
+            className="hover:text-indigo-400 text-teal-400 underline"
           >
             We had a great summer
           </Link>{' '}
@@ -115,7 +110,7 @@ const Blank = () => {
             href="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1704976787/deconstruction%20-%20ilovetofish/san_jacinto_ght5rf.jpg"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-teal-400 underline hover:text-indigo-400"
+            className="hover:text-indigo-400 text-teal-400 underline"
           >
             the summit of San Jacinto
           </Link>{' '}
@@ -140,7 +135,7 @@ const Blank = () => {
             href="https://www.alfaoutdoor.com/products/free-a-p-s-gtx-m-black"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-teal-400 underline hover:text-indigo-400"
+            className="hover:text-indigo-400 text-teal-400 underline"
           >
             Alfa Free ski boots.
           </Link>{' '}
