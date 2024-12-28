@@ -1,8 +1,5 @@
-import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-
-import Breadcrumbs from 'nextjs-breadcrumbs'
 
 import Comment from '../../components/Comment'
 import Header from '../../components/Header'
@@ -12,15 +9,13 @@ const Vacation = () => {
   return (
     <div className="heropattern-topography-neutral-100">
       <Header />
-      <Breadcrumbs useDefaultStyle omitRootLabel labelsToUppercase={true} />
       <div className="mx-auto h-screen max-w-6xl overflow-y-scroll px-1">
-        <h1 className="mb-8 flex justify-center text-2xl font-semibold text-emerald-600">
+        <h1 className="mb-8 flex justify-center text-2xl font-semibold text-lime-400">
           A summer to remember...
         </h1>
         <p
-          className="first-letter:float-left first-letter:mr-3
-                    first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
-                    first-line:uppercase first-line:tracking-widest"
+          style={{ fontFamily: 'var(--font-kablammo)' }}
+          className="rounded-t-sm p-1 text-yellow-400 first-letter:float-left first-letter:mr-3 first-letter:text-7xl first-letter:font-bold first-line:uppercase first-line:tracking-widest"
         >
           I had a great life growing up, I really have nothing to complain about. That is until I
           was 15 or so. As far back as I can remember my mother struggled with{' '}
@@ -28,7 +23,7 @@ const Vacation = () => {
             href="https://macadamgrinding.com/posts/year-of-the-ox/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-teal-400 underline hover:text-indigo-400"
+            className="hover:text-indigo-400 text-teal-400 underline"
           >
             mental illness
           </Link>
@@ -42,7 +37,7 @@ const Vacation = () => {
             href="/spring/pat-metheny"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-teal-400 underline hover:text-indigo-400"
+            className="hover:text-indigo-400 text-teal-400 underline"
           >
             Joshua Tree National Park
           </Link>
