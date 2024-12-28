@@ -15,10 +15,10 @@ export default function Home() {
       <div className="grow place-content-center justify-between">
         <main className="mt-6 flex flex-col justify-center">
           <div
-            style={{ fontFamily: 'var(--font-eater)' }}
-            className="text-center text-5xl font-bold tracking-wider text-yellow-400"
+            style={{ fontFamily: 'var(--font-kablammo)' }}
+            className="mx-auto w-fit rounded-2xl px-1 text-6xl font-bold tracking-wider text-lime-400"
           >
-            <h1 className="mb-2">The Mountains Are Calling</h1>
+            <h1 className="mb-2 text-center">The Mountains Are Calling</h1>
           </div>
           <Image
             src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1735332491/nathan-dumlao-q3YZ4g7j9yc-unsplash_j2gmzi.jpg"

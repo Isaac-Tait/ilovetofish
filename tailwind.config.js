@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        eater: ['var(--font-eater)', 'sans-serif'], // Always include a fallback font
+        kablammo: ['var(--font-kablammo)', 'sans-serif'], // Always include a fallback font
       },
     },
     colors: {
