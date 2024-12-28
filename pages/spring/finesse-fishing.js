@@ -1,8 +1,5 @@
-import React from 'react'
-
 import Image from 'next/image'
 import Link from 'next/link'
-import Breadcrumbs from 'nextjs-breadcrumbs'
 
 import Comment from '../../components/Comment'
 import Header from '../../components/Header'
@@ -12,12 +9,14 @@ const Finesse = () => {
   return (
     <div className="heropattern-topography-neutral-100">
       <Header />
-      <Breadcrumbs useDefaultStyle omitRootLabel labelsToUppercase={true} />
       <div className="mx-auto h-screen max-w-6xl overflow-y-scroll px-1">
-        <h1 className="mb-8 flex justify-center text-2xl font-semibold text-emerald-600">
+        <h1 className="mb-8 flex justify-center text-2xl font-semibold text-lime-400">
           Fishing with a finesse spin setup
         </h1>
-        <p className="first-letter:float-left first-letter:mr-3 first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900 first-line:uppercase first-line:tracking-widest">
+        <p
+          style={{ fontFamily: 'var(--font-kablammo)' }}
+          className="first-letter:text-slate-900 rounded-t-sm p-1 text-yellow-400 first-letter:float-left first-letter:mr-3 first-letter:text-7xl first-letter:font-bold first-line:uppercase first-line:tracking-widest"
+        >
           Discovering tenkara in 2013 launched my love affair with fishing. I was 30, perhaps a
           little late in life to &quot;discover&quot; a love for fishing but honestly up until that
           point in my life I found fishing to be a pretty boring way to pass time. The few times I
@@ -136,7 +135,7 @@ const Finesse = () => {
             href="https://vmcpeche.com/products/light-inline-single"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-teal-400 underline hover:text-indigo-400"
+            className="hover:text-indigo-400 text-teal-400 underline"
           >
             VMC Inline Single X Strong-Large Ring Size 2
           </Link>
@@ -162,7 +161,7 @@ const Finesse = () => {
             href="https://baitfinesseempire.com/product-category/lines/braid/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-teal-400 underline hover:text-indigo-400"
+            className="hover:text-indigo-400 text-teal-400 underline"
           >
             Bait Finesse Empire
           </Link>{' '}
@@ -215,7 +214,7 @@ const Finesse = () => {
             href="https://www.finesse-fishing.com/finesse-spin-fishing.html"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-teal-400 underline hover:text-indigo-400"
+            className="hover:text-indigo-400 text-teal-400 underline"
           >
             read
           </Link>{' '}

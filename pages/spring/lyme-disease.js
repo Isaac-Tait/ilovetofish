@@ -1,8 +1,5 @@
-import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-
-import Breadcrumbs from 'nextjs-breadcrumbs'
 
 import Comment from '../../components/Comment'
 import Header from '../../components/Header'
@@ -10,17 +7,15 @@ import Footer from '../../components/Footer'
 
 const Blank = () => {
   return (
-    <div className="heropattern-topography-neutral-100">
+    <div className="bg-gray-400">
       <Header />
-      <Breadcrumbs useDefaultStyle omitRootLabel labelsToUppercase={true} />
-      <div className="h-screen max-w-6xl mx-auto overflow-y-scroll px-1">
-        <h1 className="text-2xl font-semibold text-emerald-600 flex justify-center mb-8">
+      <div className="mx-auto h-screen max-w-6xl overflow-y-scroll px-1">
+        <h1 className="mb-8 flex justify-center text-2xl font-semibold text-lime-400">
           Dealing with ticks
         </h1>
         <p
-          className="first-line:uppercase first-line:tracking-widest
-                    first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
-                    first-letter:mr-3 first-letter:float-left"
+          style={{ fontFamily: 'var(--font-kablammo)' }}
+          className="first-letter:text-slate-900 rounded-t-sm p-1 text-yellow-400 first-letter:float-left first-letter:mr-3 first-letter:text-7xl first-letter:font-bold first-line:uppercase first-line:tracking-widest"
         >
           When I was living in Japan I had to deal with a different blood sucking nuisance. No, it
           was not mosquitos{' '}
@@ -28,7 +23,7 @@ const Blank = () => {
             href="https://fallfishtenkara.com/yamabirugawa/"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline text-teal-400 hover:text-indigo-400"
+            className="hover:text-indigo-400 text-teal-400 underline"
           >
             it was land leaches.
           </Link>
@@ -62,7 +57,7 @@ const Blank = () => {
             href="https://macadamgrinding.com/posts/healthy-lifestyle/"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline text-teal-400 hover:text-indigo-400"
+            className="hover:text-indigo-400 text-teal-400 underline"
           >
             I hate chemicals
           </Link>
@@ -111,7 +106,7 @@ const Blank = () => {
             href="https://pubmed.ncbi.nlm.nih.gov/27156138/"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline text-teal-400 hover:text-indigo-400"
+            className="hover:text-indigo-400 text-teal-400 underline"
           >
             and dry them on high for at least twenty minutes
           </Link>
@@ -141,7 +136,7 @@ const Blank = () => {
             href="https://www.instagram.com/p/CtPF3ampHTL/"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline text-teal-400 hover:text-indigo-400"
+            className="hover:text-indigo-400 text-teal-400 underline"
           >
             I live-streamed a short section of the trip
           </Link>
@@ -166,7 +161,7 @@ const Blank = () => {
           how anyone figured that one out...
         </p>
       </div>
-      <div className="max-w-6xl mx-auto">
+      <div className="mx-auto max-w-6xl">
         <Comment />
       </div>
       <Footer />

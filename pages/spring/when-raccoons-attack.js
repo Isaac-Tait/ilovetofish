@@ -1,8 +1,5 @@
-import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-
-import Breadcrumbs from 'nextjs-breadcrumbs'
 
 import Comment from '../../components/Comment'
 import Header from '../../components/Header'
@@ -10,24 +7,23 @@ import Footer from '../../components/Footer'
 
 const Blank = () => {
   return (
-    <div className="heropattern-topography-neutral-100">
+    <div className="bg-gray-400">
       <Header />
       <Breadcrumbs useDefaultStyle omitRootLabel labelsToUppercase={true} />
-      <div className="h-screen max-w-6xl mx-auto overflow-y-scroll px-1">
-        <h1 className="text-2xl font-semibold text-emerald-600 flex justify-center mb-8">
+      <div className="mx-auto h-screen max-w-6xl overflow-y-scroll px-1">
+        <h1 className="mb-8 flex justify-center text-2xl font-semibold text-lime-400">
           An encounter with angry animals
         </h1>
         <p
-          className="first-line:uppercase first-line:tracking-widest
-                    first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
-                    first-letter:mr-3 first-letter:float-left"
+          style={{ fontFamily: 'var(--font-kablammo)' }}
+          className="first-letter:text-slate-900 rounded-t-sm p-1 text-yellow-400 first-letter:float-left first-letter:mr-3 first-letter:text-7xl first-letter:font-bold first-line:uppercase first-line:tracking-widest"
         >
           There is a river I visited in the fall last year{' '}
           <Link
             href="https://youtu.be/LEaS8Xs3sVs"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline text-teal-400 hover:text-indigo-400"
+            className="hover:text-indigo-400 text-teal-400 underline"
           >
             it was a clear and crisp fall day - I caught one fish.
           </Link>
@@ -40,7 +36,7 @@ const Blank = () => {
           slunk back up the trail to look for a spot where I could cut cross country and start
           fishing where I had left off the previous season.{' '}
         </p>
-        <div className="flex justify-center mt-2">
+        <div className="mt-2 flex justify-center">
           <Image
             src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1682180644/when%20raccoons%20attack/river-connecticut-fishing-bfs-tenkara-adventure_lspbzx.jpg"
             height={562}
@@ -57,7 +53,7 @@ const Blank = () => {
           to the river from the trail though I managed to pick up five ticks on my legs. I flicked
           them off into the river, setup my rod, and began making my way upstream.
         </p>
-        <div className="flex justify-center mt-2">
+        <div className="mt-2 flex justify-center">
           <Image
             src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1682180643/when%20raccoons%20attack/river-connecticut-fishing-bfs-tenkara-adventure-wild_violets_ewrlon.jpg"
             height={562}
@@ -76,7 +72,7 @@ const Blank = () => {
             href="https://www.seiyuinstitute.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline text-teal-400 hover:text-indigo-400"
+            className="hover:text-indigo-400 text-teal-400 underline"
           >
             thank you to my good friend and fellow tenkara enthusiast who runs the Sieyu Institute
           </Link>
@@ -86,7 +82,7 @@ const Blank = () => {
           eaten I wanted someone to know by what...You can check out the wildlife encounter in the
           video below...
         </p>
-        <div className="flex justify-center my-4">
+        <div className="my-4 flex justify-center">
           <iframe
             width="560"
             height="315"
@@ -104,7 +100,7 @@ const Blank = () => {
           started growling and hissing at me. I grabbed a nearby log in case he came for me and
           booked it upstream as quickly as possible.{' '}
         </p>
-        <div className="flex justify-center mt-2">
+        <div className="mt-2 flex justify-center">
           <Image
             src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1682180643/when%20raccoons%20attack/river-connecticut-fishing-bfs-tenkara-adventure-spring_yshoca.jpg"
             height={562}
@@ -122,7 +118,7 @@ const Blank = () => {
             href="https://www.instagram.com/p/CrJ7vm5JHS8/"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline text-teal-400 hover:text-indigo-400"
+            className="hover:text-indigo-400 text-teal-400 underline"
           >
             had found a great tenkara stream.
           </Link>{' '}
@@ -131,7 +127,7 @@ const Blank = () => {
           another area I want to scope out. More to come...
         </p>
       </div>
-      <div className="max-w-6xl mx-auto">
+      <div className="mx-auto max-w-6xl">
         <Comment />
       </div>
       <Footer />

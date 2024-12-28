@@ -1,8 +1,5 @@
-import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-
-import Breadcrumbs from 'nextjs-breadcrumbs'
 
 import Comment from '../../components/Comment'
 import Header from '../../components/Header'
@@ -10,17 +7,15 @@ import Footer from '../../components/Footer'
 
 const Blank = () => {
   return (
-    <div className="heropattern-topography-neutral-100">
+    <div className="bg-gray-400">
       <Header />
-      <Breadcrumbs useDefaultStyle omitRootLabel labelsToUppercase={true} />
       <div className="mx-auto h-screen max-w-6xl overflow-y-scroll px-1">
-        <h1 className="mb-8 flex justify-center text-2xl font-semibold text-emerald-600">
+        <h1 className="mb-8 flex justify-center text-2xl font-semibold text-lime-400">
           A Quintessential Spring Day in Connecticut
         </h1>
         <p
-          className="first-letter:float-left first-letter:mr-3
-                    first-letter:text-7xl first-letter:font-bold first-letter:text-slate-900
-                    first-line:uppercase first-line:tracking-widest"
+          style={{ fontFamily: 'var(--font-kablammo)' }}
+          className="first-letter:text-slate-900 rounded-t-sm p-1 text-yellow-400 first-letter:float-left first-letter:mr-3 first-letter:text-7xl first-letter:font-bold first-line:uppercase first-line:tracking-widest"
         >
           What an absolutely spectacular day I kept saying to myself over and over again. It is days
           like this that make me fall in love all over again with New England. I have been doing a
@@ -29,7 +24,7 @@ const Blank = () => {
             href="https://docs.eandp.cc/docs/Medicine"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-teal-400 underline hover:text-indigo-400"
+            className="hover:text-indigo-400 text-teal-400 underline"
           >
             spirituality
           </Link>
@@ -78,7 +73,7 @@ const Blank = () => {
             href="https://fallfishtenkara.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-teal-400 underline hover:text-indigo-400"
+            className="hover:text-indigo-400 text-teal-400 underline"
           >
             Fallfish Tenkara
           </Link>
@@ -92,7 +87,7 @@ const Blank = () => {
             href="https://www.instagram.com/p/C662IrmOqnj/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-teal-400 underline hover:text-indigo-400"
+            className="hover:text-indigo-400 text-teal-400 underline"
           >
             Instagram
           </Link>
