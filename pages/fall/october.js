@@ -1,11 +1,8 @@
-import React from 'react'
-
 import Image from 'next/image'
 import Link from 'next/link'
 
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import Breadcrumbs from 'nextjs-breadcrumbs'
 
 import Comment from '../../components/Comment'
 import Header from '../../components/Header'
@@ -14,14 +11,16 @@ import Footer from '../../components/Footer'
 export default function October() {
   var Carousel = require('react-responsive-carousel').Carousel
   return (
-    <div className="heropattern-topography-neutral-100">
+    <div className="bg-gray-400">
       <Header />
-      <Breadcrumbs useDefaultStyle omitRootLabel labelsToUppercase={true} />
       <div className="mx-auto h-screen max-w-6xl overflow-y-scroll px-1">
         <h1 className="text-emerald-600 mb-8 flex justify-center text-2xl font-semibold">
           Lake Fishing in October
         </h1>
-        <p className="first-letter:text-slate-900 first-letter:float-left first-letter:mr-3 first-letter:text-7xl first-letter:font-bold first-line:uppercase first-line:tracking-widest">
+        <p
+          style={{ fontFamily: 'var(--font-kablammo)' }}
+          className="first-letter:text-slate-900 rounded-t-sm p-1 text-yellow-400 first-letter:float-left first-letter:mr-3 first-letter:text-7xl first-letter:font-bold first-line:uppercase first-line:tracking-widest"
+        >
           We arrived in Connecticut after a long&nbsp;
           <Link
             href="https://macadamgrinding.com/posts/connecticut/"
