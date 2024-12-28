@@ -14,7 +14,7 @@ export default function October() {
     <div className="bg-gray-400">
       <Header />
       <div className="mx-auto h-screen max-w-6xl overflow-y-scroll px-1">
-        <h1 className="text-emerald-600 mb-8 flex justify-center text-2xl font-semibold">
+        <h1 className="mb-8 flex justify-center text-2xl font-semibold text-lime-400">
           Lake Fishing in October
         </h1>
         <p
