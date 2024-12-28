@@ -1,5 +1,4 @@
 import 'tailwindcss/tailwind.css'
-import 'nextjs-breadcrumbs/dist/index.css'
 import { Kablammo } from 'next/font/google'
 
 import { SpeedInsights } from '@vercel/speed-insights/next'
