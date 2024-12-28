@@ -9,7 +9,6 @@ const Blank = () => {
   return (
     <div className="bg-gray-400">
       <Header />
-      <Breadcrumbs useDefaultStyle omitRootLabel labelsToUppercase={true} />
       <div className="mx-auto h-screen max-w-6xl overflow-y-scroll px-1">
         <h1 className="mb-8 flex justify-center text-2xl font-semibold text-lime-400">
           A Chanterelle Fishing Adventure

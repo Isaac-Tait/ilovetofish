@@ -47,7 +47,7 @@ const SecondSummer = () => {
             alt={'Project'}
           />
         </div>
-        <p className="flex justify-center text-xs italic">I'm so grateful for Connecticut!</p>
+        <p className="flex justify-center text-xs italic">I&#39;m so grateful for Connecticut!</p>
         <p>
           I checked the water temperature with my new Apple Ultra watch and it came in at 63
           degrees. I saw numerous fish but was having zero luck enticing any to chomp my lure until
