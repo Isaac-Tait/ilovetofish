@@ -9,15 +9,15 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 
-const press = Eater({
+const eaterFont = Eater({
   subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-press',
+  weight: '400',
+  variable: '--font-eater',
 })
 
 function MyApp({ Component, pageProps }) {
   return (
-    <main className={`${press.variable} mono`}>
+    <main className={eaterFont.variable}>
       <Component {...pageProps} />
       <Analytics />
       <SpeedInsights />

@@ -12,14 +12,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <div className="grow place-content-center">
-        <main className="mt-6 flex justify-center">
+      <div className="grow place-content-center justify-between">
+        <main className="mt-6 flex flex-col justify-center">
+          <div
+            style={{ fontFamily: 'var(--font-eater)' }}
+            className="text-center text-5xl font-bold tracking-wider text-yellow-400"
+          >
+            <h1 className="mb-2">The Mountains Are Calling</h1>
+          </div>
           <Image
             src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1735332491/nathan-dumlao-q3YZ4g7j9yc-unsplash_j2gmzi.jpg"
             width={700}
             height={300}
             alt="Photo by Nathan Dumlao on Unsplash"
-            className="rounded-full md:rounded-xl"
+            className="mx-auto rounded-full md:rounded-xl"
           />
         </main>
       </div>

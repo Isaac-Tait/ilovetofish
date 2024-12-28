@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        mono: ['var(--font-press'],
+        eater: ['var(--font-eater)', 'sans-serif'], // Always include a fallback font
       },
     },
     colors: {
