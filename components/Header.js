@@ -83,6 +83,13 @@ const Header = () => {
               My Novel
             </Link>
             <Link
+              href="https://docs.eandp.cc/"
+              target="_blank"
+              className="w-full items-center justify-center rounded px-3 py-2 font-bold text-yellow-400 hover:bg-teal-400 hover:text-white lg:inline-flex lg:w-auto"
+            >
+              E&P
+            </Link>
+            <Link
               href="/about"
               className="w-full items-center justify-center rounded px-3 py-2 font-bold text-fuchsia-400 hover:bg-yellow-400 hover:text-white lg:inline-flex lg:w-auto"
             >
