@@ -3,12 +3,11 @@ import Image from 'next/image'
 
 export default function SocialCard({ url, image, slug, title }) {
   return (
-    <div className="columns-2">
+    <div className="">
       <Link href={url} legacyBehavior>
-        <a target="_blank" className="">
-          <Image src={image} alt={title} className="h-32 w-32 rounded-xl object-cover shadow-xl" />
-        </a>
+        <Image src={image} alt={title} width={100} height={100} className="h-32 w-32" />
       </Link>
+      <p className="w-full text-wrap bg-neutral-200">{slug}</p>
     </div>
   )
 }

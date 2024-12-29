@@ -36,6 +36,20 @@ const social = [
     url: '',
     title: '',
   },
+  {
+    id: '',
+    image: '',
+    slug: '',
+    url: '',
+    title: '',
+  },
+  {
+    id: '',
+    image: '',
+    slug: '',
+    url: '',
+    title: '',
+  },
 ]
 
 export default social
