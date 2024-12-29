@@ -20,13 +20,18 @@ export default function Home() {
           >
             <h1 className="mb-2 text-center">The Mountains Are Calling</h1>
           </div>
-          <Image
-            src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1735332491/nathan-dumlao-q3YZ4g7j9yc-unsplash_j2gmzi.jpg"
-            width={700}
-            height={300}
-            alt="Photo by Nathan Dumlao on Unsplash"
-            className="mx-auto rounded-full md:rounded-xl"
-          />
+          <div className="mx-auto">
+            <iframe
+              width="610"
+              height="365"
+              src="https://www.youtube.com/embed/1Ax3euD-pyE?si=Jwe7tVkvLs9T0LuZ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
         </main>
       </div>
       <div className="sticky bottom-0">
