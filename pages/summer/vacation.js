@@ -7,7 +7,7 @@ import Footer from '../../components/Footer'
 
 const Vacation = () => {
   return (
-    <div className="heropattern-topography-neutral-100">
+    <div className="bg-gray-400">
       <Header />
       <div className="mx-auto h-screen max-w-6xl overflow-y-scroll px-1">
         <h1 className="mb-8 flex justify-center text-2xl font-semibold text-lime-400">
