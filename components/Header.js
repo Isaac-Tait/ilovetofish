@@ -1,8 +1,7 @@
-{
-  /* https://dev.to/andrewespejo/how-to-design-a-simple-and-beautiful-navbar-using-nextjs-and-tailwindcss-26p1 */
-}
+/* https://dev.to/andrewespejo/how-to-design-a-simple-and-beautiful-navbar-using-nextjs-and-tailwindcss-26p1 */
 
 import React, { useState } from 'react'
+import { useRouter } from 'next/router'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-regular-svg-icons'
@@ -14,25 +13,39 @@ import Link from 'next/link'
 
 const Header = () => {
   const [active, setActive] = useState(false)
+  const router = useRouter()
 
   const handleClick = () => {
     setActive(!active)
   }
 
+  const isHomePage = router.pathname === '/'
+
   return (
     <div className="rounded-b-lg bg-gray-800">
       <nav className="flex flex-wrap items-center">
-        <Link
-          href="/"
-          className="mr-4 inline-flex items-center p-2 text-6xl text-yellow-400 lg:w-1/3"
-        >
-          <span className="flex text-yellow-400">
-            I&nbsp;
-            <FontAwesomeIcon icon={faHeart} />
-            &nbsp;to&nbsp;
-            <FontAwesomeIcon icon={faFish} />
-          </span>
-        </Link>
+        {isHomePage ? (
+          <div className="mr-4 inline-flex items-center p-2 text-6xl text-yellow-400 lg:w-1/3">
+            <span className="flex text-yellow-400">
+              I&nbsp;
+              <FontAwesomeIcon icon={faHeart} />
+              &nbsp;to&nbsp;
+              <FontAwesomeIcon icon={faFish} />
+            </span>
+          </div>
+        ) : (
+          <Link
+            href="/"
+            className="mr-4 inline-flex items-center p-2 text-6xl text-yellow-400 lg:w-1/3"
+          >
+            <span className="flex text-yellow-400">
+              I&nbsp;
+              <FontAwesomeIcon icon={faHeart} />
+              &nbsp;to&nbsp;
+              <FontAwesomeIcon icon={faFish} />
+            </span>
+          </Link>
+        )}
         <button
           className="ml-auto mr-2 inline-flex rounded bg-yellow-400 p-3 text-white outline-none hover:text-white lg:hidden"
           onClick={handleClick}

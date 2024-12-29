@@ -24,7 +24,7 @@ const Skiing = () => {
 
         <Link href="/winter/nordic-skiing" className="hover:text-rose-400">
           <p className="w-fit rounded-md bg-teal-400 px-1 text-rose-400 underline">
-            <span className="text-lg font-bold">February</span>Nordic Skiing
+            <span className="text-lg font-bold">February 2022 -&nbsp;</span>Nordic Skiing
           </p>
           <p className="text-neutral-300">
             I thought you had to be wealthy to go skiing; that is until I discovered nordic
@@ -54,7 +54,7 @@ const Skiing = () => {
 
         <Link href="/winter/100-mile-wilderness" className="hover:text-rose-400">
           <p className="w-fit rounded-md bg-teal-400 px-1 text-rose-400 underline">
-            <span className="text-lg font-bold">February 2023 -nbsp;</span>100 Mile Wilderness
+            <span className="text-lg font-bold">February 2023 -&nbsp;</span>100 Mile Wilderness
           </p>
           <p className="text-neutral-300">
             In the far north of Maine lies a wilderness area called the 100 Mile Wilderness. There
