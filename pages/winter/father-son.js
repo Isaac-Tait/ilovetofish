@@ -11,7 +11,7 @@ const FatherSon = () => {
       <Header />
       <div className="mx-auto h-screen max-w-6xl overflow-y-scroll px-1">
         <h1 className="mb-8 flex justify-center text-2xl font-semibold text-lime-400">
-          A father son ski adventure in southern New England
+          A father son ski adventure in New England
         </h1>
         <p
           style={{ fontFamily: 'var(--font-kablammo)' }}
