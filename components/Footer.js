@@ -40,7 +40,7 @@ const Footer = () => {
       </div>
       <div className="flex w-1/3 justify-end text-yellow-400">
         <p className="hidden md:block">
-          Made with ❤️ by&nbsp;
+          Made with 🏳️‍🌈 by&nbsp;
           <Link
             href="https://mountaintopcoding.dev"
             className="text-rose-400 hover:text-fuchsia-400"
